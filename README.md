@@ -4,7 +4,7 @@
 
 # kbot
 
-A ai aimbot that I made that uses the yolov7 detection model.
+A ai aimbot that I made that uses the yolov7 detection model, the normal.py shows a window that has the detection rendering, the streamer.py doesn't show the window and is slightly faster.
 
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fkbdevs%2Fai-aimbot&count_bg=%23703DA3&title_bg=%23555555&icon=python.svg&icon_color=%23E7E7E7&title=Views&edge_flat=false)](https://hits.seeyoufarm.com)
 
