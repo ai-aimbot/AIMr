@@ -2,6 +2,8 @@
 
 (p.s this is shit but works)
 
+[Video](https://kb.likes-to-co.de/n8hzdfry.mp4)
+
 # kbot
 
 A ai aimbot that I made that uses the yolov7 detection model, the normal.py shows a window that has the detection rendering, the streamer.py doesn't show the window and is slightly faster.
