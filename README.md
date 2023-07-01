@@ -8,6 +8,10 @@
 
 A ai aimbot that I made that uses the yolov7 detection model, the normal.py shows a window that has the detection rendering, the streamer.py doesn't show the window and is slightly faster.
 
+The proto files are prototypes of the end goal of smooth constant adjustments, when you run them it asks for 1 or 2, 1 shoots 2 doesn't, 
+2 has about as smooth as I can get it aim but I'm still figuring out how to make it shoot well, 1 has little bit better than non proto aim
+but not by much but it does shoot.
+
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fkbdevs%2Fai-aimbot&count_bg=%23703DA3&title_bg=%23555555&icon=python.svg&icon_color=%23E7E7E7&title=Views&edge_flat=false)](https://hits.seeyoufarm.com)
 
 # FAQ
