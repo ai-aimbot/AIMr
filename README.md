@@ -2,7 +2,7 @@
 
 (p.s this is shit but works)
 
-[Video](https://kb.likes-to-co.de/n8hzdfry.mp4)
+[Old Version Video](https://kb.likes-to-co.de/n8hzdfry.mp4)
 
 # kbot
 
