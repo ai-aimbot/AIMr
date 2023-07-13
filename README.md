@@ -1,4 +1,6 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=300&section=header&text=kbot&fontSize=90&animation=fadeIn)
+**Disclaimer** If you get banned it is not my fault, this is a use at your own risk program.
+
 
 [Old Version Video](https://kb.likes-to-co.de/n8hzdfry.mp4)
 
