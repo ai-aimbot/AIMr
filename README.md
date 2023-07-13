@@ -1,45 +1,27 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=300&section=header&text=kbot&fontSize=90&animation=fadeIn)
 
-(p.s this is shit but works)
-
-
-
 [Old Version Video](https://kb.likes-to-co.de/n8hzdfry.mp4)
 
 # kbot
 
-A ai aimbot that I made that uses the yolov7 detection model, the normal.py shows a window that has the detection rendering, the streamer.py doesn't show the window and is slightly faster.
+kbot is an AI aimbot that utilizes the yolov7 detection model. The `normal.py` file displays a window with the detection rendering, while the `streamer.py` file runs without displaying the window, resulting in slightly faster performance.
 
-The proto files are prototypes of the end goal of smooth constant adjustments, when you run them it asks for 1 or 2, 1 shoots 2 doesn't, 
-2 has about as smooth as I can get it aim but I'm still figuring out how to make it shoot well, 1 has little bit better than non proto aim
-but not by much but it does shoot.
+The proto files serve as prototypes for achieving smooth and consistent adjustments. When executed, they prompt the user to choose between two options: 1 (shoot) and 2 (do not shoot). Option 2 provides a reasonably smooth aiming experience, although the shooting aspect is still being refined. Option 1 offers slightly better aiming performance than the non-prototype version, but the shooting functionality is implemented.
 
 [![Views](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fkbdevs%2Fai-aimbot&count_bg=%239279B5&title_bg=%23555555&icon=&icon_color=%23FFFFFF&title=Views&edge_flat=false)](https://hits.seeyoufarm.com)
 
 # FAQ
 
-## What games does this work on?
+## Which games is kbot compatible with?
 
-This works on I'd assume any game that the players anatomy is similar to a human.
+kbot is expected to work with games that have player models resembling human anatomy.
 
-## How do I use it?
+## How can I use kbot?
 
-You change change the window title in the python code to be the game you want to use it on, currently its set
-to csgo but just change that and it should work, once you run it and it detects somebody you can hold down 1 (changeable)
-and then it will aim and shoot at the detected players (does not discriminate based on team).
+To configure kbot for your desired game, simply modify the window title within the provided Python code. By default, it is set to work with CS:GO, but changing it should enable compatibility with other games. Once executed and a player is detected, pressing and holding the assigned key (modifiable) will cause kbot to aim and shoot at the detected players, without differentiating between teams.
 
+## I need assistance!
 
-## I need help! 
-
-just dm me on discord @kb.kb
-
-
-
-
+Feel free to reach out to me via Discord at @kb.kb.
 
 © Catch Me If You Can Industries
-
-
-
-
-
