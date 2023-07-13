@@ -6,6 +6,7 @@ import time
 import win32ui
 import keyboard
 import threading
+import pygetwindow as gw
 
 CONFIG_FILE = './yolov7-tiny.cfg'
 WEIGHT_FILE = './yolov7-tiny.weights'
@@ -17,10 +18,11 @@ net.setPreferableTarget(cv2.dnn.DNN_TARGET_CUDA)
 ln = net.getLayerNames()
 ln = [ln[i - 1] for i in net.getUnconnectedOutLayers()]
 
-# Get rect of Window
-hwnd = win32gui.FindWindow(None, 'Counter-Strike: Global Offensive - Direct3D 9')
-rect = win32gui.GetWindowRect(hwnd)
-region = rect[0], rect[1], rect[2] - rect[0], rect[3] - rect[1]
+# Get screen size
+screen_info = gw.getWindowsWithTitle('Counter-Strike: Global Offensive - Direct3D 9')[0]
+screen_size = screen_info.width, screen_info.height
+
+region = 0, 0, screen_size[0], screen_size[1]
 
 size_scale = 2
 
@@ -47,7 +49,7 @@ def movement_thread_func(x, y):
 
     current_x, current_y = win32api.GetCursorPos()
     target_x = current_x + x_smooth + 2
-    target_y = current_y + y_smooth + 30
+    target_y = current_y + y_smooth + 17
 
     steps = 5  # Number of steps for smooth movement
     delta_x = ((target_x - current_x) / steps) / 1.2
@@ -94,24 +96,24 @@ def shooting_thread_func():
 
 while True:
     # Get image of screen
-    hwnd_dc = win32gui.GetWindowDC(hwnd)
-    mfc_dc = win32ui.CreateDCFromHandle(hwnd_dc)
-    save_dc = mfc_dc.CreateCompatibleDC()
+    hwnd = win32gui.GetDesktopWindow()
+    wDC = win32gui.GetWindowDC(hwnd)
+    dcObj = win32ui.CreateDCFromHandle(wDC)
+    cDC = dcObj.CreateCompatibleDC()
 
-    save_bitmap = win32ui.CreateBitmap()
-    save_bitmap.CreateCompatibleBitmap(mfc_dc, region[2], region[3])
+    bmp = win32ui.CreateBitmap()
+    bmp.CreateCompatibleBitmap(dcObj, region[2], region[3])
+    cDC.SelectObject(bmp)
+    cDC.BitBlt((0, 0), (region[2], region[3]), dcObj, (region[0], region[1]), win32con.SRCCOPY)
 
-    save_dc.SelectObject(save_bitmap)
-    save_dc.BitBlt((0, 0), (region[2], region[3]), mfc_dc, (region[0], region[1]), win32con.SRCCOPY)
-
-    signed_ints_array = save_bitmap.GetBitmapBits(True)
+    signed_ints_array = bmp.GetBitmapBits(True)
     frame = np.frombuffer(signed_ints_array, dtype='uint8')
     frame.shape = (region[3], region[2], 4)
 
-    mfc_dc.DeleteDC()
-    save_dc.DeleteDC()
-    win32gui.ReleaseDC(hwnd, hwnd_dc)
-    win32gui.DeleteObject(save_bitmap.GetHandle())
+    dcObj.DeleteDC()
+    cDC.DeleteDC()
+    win32gui.ReleaseDC(hwnd, wDC)
+    win32gui.DeleteObject(bmp.GetHandle())
 
     frame = frame[..., 2::-1]  # Remove the alpha channel
     frame = cv2.cvtColor(frame, cv2.COLOR_BGRA2RGB)
@@ -122,6 +124,7 @@ while True:
     square_frame = frame[square_y:square_y + square_size, square_x:square_x + square_size]
     square_frame_height, square_frame_width = square_frame.shape[:2]
 
+    # Add a block rectangle to the square frame
     rect_size_y = 250  # Size of the rectangle
     rect_size_x = 150  # Size of the rectangle
     rect_color = (0, 0, 0)  # Color of the rectangle (in BGR format)
