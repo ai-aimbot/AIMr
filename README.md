@@ -16,6 +16,11 @@ The files with V serve as prototypes for achieving smooth and consistent adjustm
 
 [![Views](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fkbdevs%2Fai-aimbot&count_bg=%239279B5&title_bg=%23555555&icon=&icon_color=%23FFFFFF&title=Views&edge_flat=false)](https://hits.seeyoufarm.com)
 
+#TODO
+- Refine aim
+- Release ESP
+- Polish/Make a GUI
+
 # FAQ
 
 ## Which games is kbot compatible with?
