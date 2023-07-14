@@ -28,6 +28,11 @@ kbot is expected to work with games that have player models resembling human ana
 
 To configure kbot for your desired game, simply modify the window title within the provided Python code. By default, it is set to work with CS:GO, but changing it should enable compatibility with other games, **make sure the game is windowed/windowed fullscreen**. Once executed and a player is detected, pressing and holding the assigned key (modifiable) will cause kbot to aim and shoot at the detected players, without differentiating between teams, I would recommend using this more as an assist, it works but not enough that in high stakes you don't need to move your mouse.
 
+## How do I make it use GPU?
+![image](https://github.com/kbdevs/ai-aimbot/assets/86767129/4231cfa3-6a3f-485e-aaa7-ef7a78680ae8)
+You can use [this](https://medium.com/analytics-vidhya/build-opencv-from-source-with-cuda-for-gpu-access-on-windows-5cd0ce2b9b37) guide
+
+
 ## I need assistance!
 
 Feel free to reach out to me via Discord at @kb.kb.
