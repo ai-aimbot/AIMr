@@ -40,6 +40,6 @@ To configure kbot for your desired game, simply modify the window title within t
 
 ## I need assistance!
 
-Feel free to reach out to me via Discord at @kb.kb.
+Feel free to reach out to me via Discord at @kb.kb or create a github issue request
 
 © Catch Me If You Can Industries
