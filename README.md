@@ -4,7 +4,7 @@
 
 [Old Version Video](https://kb.likes-to-co.de/n8hzdfry.mp4)
 
-## Please create issue requests with new feature requests
+## Please create issue requests with the new feature label to request features
 
 # kbot
 
