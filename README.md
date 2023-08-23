@@ -4,6 +4,8 @@
 
 [Old Version Video](https://kb.likes-to-co.de/n8hzdfry.mp4)
 
+## Please create issue requests with new feature requests
+
 # kbot
 
 kbot is an AI aimbot that utilizes the yolov7 detection model. The `normal.py` file displays a window with the detection rendering, while the `streamer.py` file runs without displaying the window, resulting in slightly faster performance.
