@@ -23,6 +23,9 @@ The files with V serve as prototypes for achieving smooth and consistent adjustm
 - Release ESP
 - Polish/Make a GUI
 
+# How to
+[here is a bad tutorial](https://streamable.com/7yt9ls) 
+
 # FAQ
 
 ## Which games is kbot compatible with?
