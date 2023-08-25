@@ -23,8 +23,11 @@ The files with V serve as prototypes for achieving smooth and consistent adjustm
 - Release ESP
 - Polish/Make a GUI
 
-# How to
-[here is a bad tutorial](https://streamable.com/7yt9ls) 
+
+# How to 
+[tutorial](https://github.com/user-attachments/assets/dda5a2f0-89b7-4cb8-9332-a61588bc0123)
+
+
 
 # FAQ
 
