@@ -2,7 +2,6 @@
 **Disclaimer** If you get banned it is not my fault, this is a use at your own risk program.
 
 
-[Old Version Video](https://kb.likes-to-co.de/n8hzdfry.mp4)
 
 ## Please create issue requests with the new feature label to request features
 
@@ -17,7 +16,7 @@ The files with V serve as prototypes for achieving smooth and consistent adjustm
 
 [![Views](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fkbdevs%2Fai-aimbot&count_bg=%239279B5&title_bg=%23555555&icon=&icon_color=%23FFFFFF&title=Views&edge_flat=false)](https://hits.seeyoufarm.com)
 
-# Notices
+# NOTICES
 - Currently the mouse movements are not functioning in VALORANT but it will still work as a triggerbot.
 - You need to use right hand in csgo
 
@@ -26,10 +25,12 @@ The files with V serve as prototypes for achieving smooth and consistent adjustm
 - Release ESP
 - Polish/Make a GUI
 - Add options for the blocked detection areas
+- Make a full tutorial and explain everything
 
 
-# How to 
-[tutorial](https://github.com/kbdevs/ai-aimbot/assets/86767129/dda5a2f0-89b7-4cb8-9332-a61588bc0123)
+# How to
+
+[bad tutorial](https://github.com/kbdevs/ai-aimbot/assets/86767129/dda5a2f0-89b7-4cb8-9332-a61588bc0123)
 
 
 
