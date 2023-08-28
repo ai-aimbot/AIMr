@@ -10,13 +10,16 @@
 
 kbot is an AI aimbot that utilizes the yolov7 detection model. The `normal.py` file displays a window with the detection rendering, while the `streamer.py` file runs without displaying the window, resulting in slightly faster performance.
 
-Currently the mouse movements are not functioning in VALORANT but it will still work as a triggerbot.
 
 In the time since creating this I have not been banned.
 
 The files with V serve as prototypes for achieving smooth and consistent adjustments. When executed, they prompt the user to choose between two options: 1 (shoot) and 2 (do not shoot). Option 1 provides a reasonably smooth aiming experience, with shooting (Set delay so may not be perfect for some weapons). Option 2 offers slightly better aiming performance than the option 1 version, but the shooting functionality is unimplemented.
 
 [![Views](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fkbdevs%2Fai-aimbot&count_bg=%239279B5&title_bg=%23555555&icon=&icon_color=%23FFFFFF&title=Views&edge_flat=false)](https://hits.seeyoufarm.com)
+
+# Notices
+- Currently the mouse movements are not functioning in VALORANT but it will still work as a triggerbot.
+- You need to use right hand in csgo
 
 # TODO
 - Refine aim
@@ -49,6 +52,6 @@ To configure kbot for your desired game, simply modify the window title within t
 
 ## I need assistance!
 
-Feel free to reach out to me via Discord at @kb.kb or create a github issue request
+Feel free to create a github issue request.
 
 © Catch Me If You Can Industries
