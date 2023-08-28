@@ -12,7 +12,7 @@ kbot is an AI aimbot that utilizes the yolov7 detection model. The `normal.py` f
 
 Currently the mouse movements are not functioning in VALORANT but it will still work as a triggerbot.
 
-In the two weeks I've tested this on CS:GO I have not been banned.
+In the time since creating this I have not been banned.
 
 The files with V serve as prototypes for achieving smooth and consistent adjustments. When executed, they prompt the user to choose between two options: 1 (shoot) and 2 (do not shoot). Option 1 provides a reasonably smooth aiming experience, with shooting (Set delay so may not be perfect for some weapons). Option 2 offers slightly better aiming performance than the option 1 version, but the shooting functionality is unimplemented.
 
