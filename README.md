@@ -22,6 +22,7 @@ The files with V serve as prototypes for achieving smooth and consistent adjustm
 - Refine aim
 - Release ESP
 - Polish/Make a GUI
+- Add options for the blocked detection areas
 
 
 # How to 
