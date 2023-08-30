@@ -18,7 +18,8 @@ The files with V serve as prototypes for achieving smooth and consistent adjustm
 
 # NOTICES
 - Currently the mouse movements are not functioning in VALORANT but it will still work as a triggerbot.
-- You need to use right hand in csgo
+- Fortnite currently doesnt work due to it detected the player in 3rd person (BEING FIXED)
+- You need to use right hand in csgo (BEING FIXED)
 - I'm pretty busy due to school so updates will mostly be on weekends
 
 # TODO
