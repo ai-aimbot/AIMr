@@ -24,8 +24,8 @@ The files with V serve as prototypes for achieving smooth and consistent adjustm
 
 # TODO
 - Refine aim
-- Release ESP
-- Polish/Make a GUI
+- Fully make ESP
+- Make a GUI
 - Add options for the blocked detection areas
 - Make a full tutorial and explain everything
 - Reupload new versions to repo
