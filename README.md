@@ -19,6 +19,7 @@ The files with V serve as prototypes for achieving smooth and consistent adjustm
 # NOTICES
 - Currently the mouse movements are not functioning in VALORANT but it will still work as a triggerbot.
 - You need to use right hand in csgo
+- I'm pretty busy due to school so updates will mostly be on weekends
 
 # TODO
 - Refine aim
