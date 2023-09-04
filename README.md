@@ -9,7 +9,6 @@
 
 kbot is an AI aimbot that utilizes the yolov7 detection model. The `normal.py` file displays a window with the detection rendering, while the `streamer.py` file runs without displaying the window, resulting in slightly faster performance.
 
-
 In the time since creating this I have not been banned.
 
 The files with V serve as prototypes for achieving smooth and consistent adjustments. When executed, they prompt the user to choose between two options: 1 (shoot) and 2 (do not shoot). Option 1 provides a reasonably smooth aiming experience, with shooting (Set delay so may not be perfect for some weapons). Option 2 offers slightly better aiming performance than the option 1 version, but the shooting functionality is unimplemented.
@@ -24,6 +23,7 @@ The files with V serve as prototypes for achieving smooth and consistent adjustm
 
 # TODO
 - Refine aim
+- Create EXE's for no install running
 - Fully make ESP
 - Make a GUI
 - Add options for the blocked detection areas
