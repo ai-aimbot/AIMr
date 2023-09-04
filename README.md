@@ -55,6 +55,6 @@ To configure kbot for your desired game, simply modify the window title within t
 
 ## I need assistance!
 
-Feel free to create a github issue request.
+Feel free to create a github issue request, or use [support](https://chat.openai.com).
 
 © Catch Me If You Can Industries
