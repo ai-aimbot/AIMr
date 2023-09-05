@@ -42,6 +42,12 @@ try:
 except ValueError:
     print("Invalid input. Please enter a number.")
 
+shoot = input("Press 1 for shooting, or anything else for just aim: \n")
+placement_side = input("Enter 'left' or 'right' to place the rectangle: ").lower()
+smoothness = input("Smoothness? (1-10): \n")
+firekey = input("What key do you want to hold to aim?: \n").lower()
+
+smoothness = int(smoothness)
 wintitle = selected_window.title
 
 # Get screen size
@@ -65,10 +71,7 @@ max_frames_without_detection = 10
 
 first_execution = True
 
-shoot = input("Press 1 for shooting, or anything else for just aim: \n")
-placement_side = input("Enter 'left' or 'right' to place the rectangle: ").lower()
-smoothness = input("Smoothness? (1-10): \n")
-smoothness = int(smoothness)
+
 
 def movement_thread_func(x, y):
     # Move mouse towards the closest enemy
@@ -84,7 +87,7 @@ def movement_thread_func(x, y):
     delta_x = ((target_x - current_x) / steps) / 1.2
     delta_y = ((target_y - current_y) / steps) / 1.2
 
-    if keyboard.is_pressed('1'):  # Check if the "1" key is held
+    if keyboard.is_pressed(firekey):  # Check if the "1" key is held
         if abs(current_x - target_x) + abs(current_y - target_y) < 1200:
             for step in range(steps):
                 current_x += delta_x
@@ -94,7 +97,7 @@ def movement_thread_func(x, y):
                 rand_y = np.random.randint(-2, 2)
                 win32api.mouse_event(win32con.MOUSEEVENTF_MOVE, int(delta_x) + rand_x, int(delta_y) + rand_y, 0, 0)
                 time.sleep(0.00000000000000000000000000000000000000001)
-            if shoot == "1":
+            if shoot == firekey:
                 global first_execution
 
                 if first_execution:
@@ -177,7 +180,7 @@ while True:
         # Add a block rectangle to the square frame
         cv2.rectangle(square_frame, (rect_x, rect_y), (rect_x + rect_size_x, rect_y + rect_size_y), rect_color, -1)
 
-        if keyboard.is_pressed('1'):  # Check if the "1" key is held
+        if keyboard.is_pressed(firekey):  # Check if the "1" key is held
             # Detection loop
             blob = cv2.dnn.blobFromImage(square_frame, 1 / 255.0, (320, 320), crop=False)
             net.setInput(blob)
