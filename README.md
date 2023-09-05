@@ -17,8 +17,6 @@ The files with V serve as prototypes for achieving smooth and consistent adjustm
 
 # NOTICES
 - Currently the mouse movements are not functioning in VALORANT but it will still work as a triggerbot.
-- Fortnite currently doesnt work due to it detected the player in 3rd person (BEING FIXED)
-- You need to use right hand in csgo (BEING FIXED)
 - I'm pretty busy due to school so updates will mostly be on weekends
 
 # TODO
@@ -26,9 +24,7 @@ The files with V serve as prototypes for achieving smooth and consistent adjustm
 - Create EXE's for no install running
 - Fully make ESP
 - Make a GUI
-- Add options for the blocked detection areas
 - Make a full tutorial and explain everything
-- Reupload new versions to repo
 
 # How to
 
