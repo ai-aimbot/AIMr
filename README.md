@@ -24,7 +24,7 @@ kBOT is an ai aimbot that uses the yolov7 detection model, the streamer version 
 - Make Config Files
 
 
-# How to
+# How to (Outdated)
 
 [bad tutorial](https://github.com/user-attachments/assets/dda5a2f0-89b7-4cb8-9332-a61588bc0123)
 
