@@ -53,6 +53,6 @@ To configure kBOT for your desired game, simply run the program, answer the ques
 
 ## I need assistance!
 
-Feel free to create a github issue request, or if you want to self-solve https://chat.openai.com.
+Feel free to create a github issue request (will be closed 3d without reply), or if you want to self-solve https://chat.openai.com.
 
 © Catch Me If You Can Industries
