@@ -45,7 +45,7 @@ kBOT is expected to work with games that have player models resembling human ana
 
 **Due to the valorant bypass I implemented you need to make sure there are no windows in the way of the image grabber, make sure the detection window sees just the game, you can check using a `normal` version.
 
-To configure kBOT for your desired game, simply run the program, answer the questions it asks then use it! The firing key is currently 1 but that will be easily changeable in a future update.
+To configure kBOT for your desired game, simply run the program, answer the questions it asks then use it! The firing key is set when you run it (V1.3).
 
 ## How do I make it use GPU?
 ![image](https://github.com/kbdevs/ai-aimbot/assets/86767129/4231cfa3-6a3f-485e-aaa7-ef7a78680ae8)
