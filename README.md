@@ -14,6 +14,7 @@ kBOT is an ai aimbot that uses the yolov7 detection model, the streamer version 
 # NOTICES
 - The mouse movements are not functioning in VALORANT but it will still work as a triggerbot.
 - I'm pretty busy due to school so updates will mostly be on weekends
+- Cannot be on fullscreen
 
 # TODO
 - Refine aim
