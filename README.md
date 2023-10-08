@@ -24,6 +24,7 @@ kBOT is an ai aimbot that uses the yolov7 detection model, the streamer version 
 - Make a full tutorial and explain everything
 - Make config files
 - Add mouse button support to aim key
+- Widescreen support
 
 
 # How to (Outdated)
