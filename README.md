@@ -57,14 +57,14 @@ To configure kBOT for your desired game, simply run the program, answer the ques
 Feel free to create a github issue request (if you follow the example you are more likely to get a solution, will be closed 3d without reply), or if you want to self-solve https://chat.openai.com.
 
 **How to create an example issue request (copy paste and fill in)**
-What's wrong:
-Game:
-GPU:
-CPU:
-Windows Resolution:
-Game Resolution:
-OS:
-Any things you tried:
+What's wrong: <br>
+Game: <br>
+GPU: <br>
+CPU: <br>
+Windows Resolution: <br>
+Game Resolution: <br>
+OS: <br>
+Any things you tried: <br>
 
 
 © Catch Me If You Can Industries
