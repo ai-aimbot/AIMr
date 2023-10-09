@@ -1,14 +1,12 @@
 import numpy as np
+import win32api, win32con, win32gui
 import cv2
+import math
 import time
-import win32gui
 import win32ui
-import win32api
-import win32con
 import keyboard
 import threading
 import pygetwindow as gw
-import math
 
 CONFIG_FILE = './yolov7-tiny.cfg'
 WEIGHT_FILE = './yolov7-tiny.weights'
@@ -20,15 +18,19 @@ net.setPreferableTarget(cv2.dnn.DNN_TARGET_CUDA)
 ln = net.getLayerNames()
 ln = [ln[i - 1] for i in net.getUnconnectedOutLayers()]
 
+# Get a list of all windows (including minimized)
 windows = [window for window in gw.getAllTitles() if window]
+
+# Sort windows alphabetically by title
 windows.sort()
 
+# Print a numbered list of open windows
 for i, window in enumerate(windows, start=1):
     print(f"{i}: {window}")
 
 try:
-    selection = int(input("Enter the number of the window you want to select (0 to exit): \n"))
-
+    selection = int(input("Enter the number of the window you want to select (0 to exit): "))
+    
     if 1 <= selection <= len(windows):
         selected_window = gw.getWindowsWithTitle(windows[selection - 1])[0]
         print(f"Selected window: {selected_window.title}")
@@ -46,6 +48,9 @@ screen_size = screen_info.width, screen_info.height
 
 region = 0, 0, screen_size[0], screen_size[1]
 
+size_scale = 2
+
+# Define the square region in the middle
 square_size = min(region[2], region[3]) // 2
 square_x = region[0] + (region[2] - square_size) // 2
 square_y = region[1] + (region[3] - square_size) // 2
@@ -60,13 +65,10 @@ cv2.namedWindow('Cropped Frame', cv2.WINDOW_NORMAL)
 first_execution = True
 
 shoot = input("Press 1 for shooting, or anything else for just aim: \n")
-placement_side = input("Enter 'left' or 'right' or 'none' to place the detection block rectangle: ").lower()
 smoothness = input("Smoothness? (1-10): \n")
-firekey = input("What key do you want to hold to aim?: \n").lower()
-
 smoothness = int(smoothness)
 
-
+placement_side = input("Enter 'left' or 'right' to place the rectangle: ").lower()
 
 def movement_thread_func(x, y):
     # Move mouse towards the closest enemy
@@ -82,7 +84,7 @@ def movement_thread_func(x, y):
     delta_x = ((target_x - current_x) / steps) / 1.2
     delta_y = ((target_y - current_y) / steps) / 1.2
 
-    if keyboard.is_pressed(firekey):  # Check if the "1" key is held
+    if keyboard.is_pressed('1'):  # Check if the "1" key is held
         if abs(current_x - target_x) + abs(current_y - target_y) < 1200:
             for step in range(steps):
                 current_x += delta_x
@@ -92,7 +94,7 @@ def movement_thread_func(x, y):
                 rand_y = np.random.randint(-2, 2)
                 win32api.mouse_event(win32con.MOUSEEVENTF_MOVE, int(delta_x) + rand_x, int(delta_y) + rand_y, 0, 0)
                 time.sleep(0.00000000000000000000000000000000000000001)
-            if shoot == firekey:
+            if shoot == "1":
                 global first_execution
 
                 if first_execution:
@@ -165,15 +167,8 @@ while True:
         rect_color = (0, 0, 0)
         rect_x = square_frame_width - rect_size_x  # Right side
         rect_y = square_frame_height - rect_size_y
-    elif placement_side == 'none':
-        # Rectangle on the right side
-        rect_size_y = 0
-        rect_size_x = 0
-        rect_color = (0, 0, 0)
-        rect_x = square_frame_width - rect_size_x  # Right side
-        rect_y = square_frame_height - rect_size_y
     else:
-        print("Invalid input. Please enter 'left' or 'right' or 'none'.")
+        print("Invalid input. Please enter 'left' or 'right'.")
         exit(1)
 
     # Add a block rectangle to the square frame
@@ -241,7 +236,7 @@ while True:
 
         movement(x, y)
         if shoot == "1":
-            if keyboard.is_pressed(firekey):  # Check if the "1" key is held
+            if keyboard.is_pressed('1'):  # Check if the "1" key is held
                 # Shoot
 
                 win32api.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN, 0, 0, 0, 0)
