@@ -1,4 +1,4 @@
-## **Mostly abandoning this project for an indefinite amount of time, I will still try to help people with it in github issues but I no longer have a use for it and will likely not do many or any updates (more info at bottom of page)**
+## **Mostly abandoning this project for an indefinite amount of time, I will still try to help people with it in github issues (more info at bottom of page)**
 
 
 ![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=300&section=header&text=kBOT&fontSize=90&animation=fadeIn)
@@ -74,4 +74,5 @@ Any things you tried: <br>
 © Catch Me If You Can Industries
 
 More info: <br>
-I used to play a ton of csgo with my friend but we no longer play and it seems on my end that it has stopped working in cs2.
+I used to play a ton of csgo with my friend but we no longer play and it seems on my end that it has stopped working in cs2. <br>
+I will likely not do many or any updates 
