@@ -76,3 +76,8 @@ Any things you tried: <br>
 More info: <br>
 I used to play a ton of csgo with my friend but we no longer play and it seems on my end that it has stopped working in cs2. <br>
 I will likely not do many or any updates 
+
+Replacement programs: <br>
+https://github.com/RootKit-Org/AI-Aimbot <br>
+https://www.unknowncheats.me/forum/apex-legends/577624-ai-accurate-aimbot-trigger-bot.html
+
