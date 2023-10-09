@@ -1,3 +1,6 @@
+## **Mostly abandoning this project for an indefinite amount of time, I will still try to help people with it in github issues but I no longer have a use for it and will likely not do many or any updates**
+
+
 ![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=300&section=header&text=kBOT&fontSize=90&animation=fadeIn)
 ## **Disclaimer** If you get banned it is not my fault, this is a use at your own risk program.
 
