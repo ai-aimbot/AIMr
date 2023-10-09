@@ -1,12 +1,14 @@
 import numpy as np
-import win32api, win32con, win32gui
 import cv2
-import math
 import time
+import win32gui
 import win32ui
+import win32api
+import win32con
 import keyboard
 import threading
 import pygetwindow as gw
+import math
 
 CONFIG_FILE = './yolov7-tiny.cfg'
 WEIGHT_FILE = './yolov7-tiny.weights'
@@ -18,19 +20,15 @@ net.setPreferableTarget(cv2.dnn.DNN_TARGET_CUDA)
 ln = net.getLayerNames()
 ln = [ln[i - 1] for i in net.getUnconnectedOutLayers()]
 
-# Get a list of all windows (including minimized)
 windows = [window for window in gw.getAllTitles() if window]
-
-# Sort windows alphabetically by title
 windows.sort()
 
-# Print a numbered list of open windows
 for i, window in enumerate(windows, start=1):
     print(f"{i}: {window}")
 
 try:
-    selection = int(input("Enter the number of the window you want to select (0 to exit): "))
-    
+    selection = int(input("Enter the number of the window you want to select (0 to exit): \n"))
+
     if 1 <= selection <= len(windows):
         selected_window = gw.getWindowsWithTitle(windows[selection - 1])[0]
         print(f"Selected window: {selected_window.title}")
@@ -48,9 +46,6 @@ screen_size = screen_info.width, screen_info.height
 
 region = 0, 0, screen_size[0], screen_size[1]
 
-size_scale = 2
-
-# Define the square region in the middle
 square_size = min(region[2], region[3]) // 2
 square_x = region[0] + (region[2] - square_size) // 2
 square_y = region[1] + (region[3] - square_size) // 2
@@ -64,14 +59,13 @@ cv2.namedWindow('Cropped Frame', cv2.WINDOW_NORMAL)
 
 first_execution = True
 
-
 shoot = input("Press 1 for shooting, or anything else for just aim: \n")
-placement_side = input("Enter 'left' or 'right' to place the rectangle: ").lower()
+placement_side = input("Enter 'left' or 'right' or 'none' to place the detection block rectangle: ").lower()
 smoothness = input("Smoothness? (1-10): \n")
 firekey = input("What key do you want to hold to aim?: \n").lower()
 
 smoothness = int(smoothness)
-wintitle = selected_window.title
+
 
 
 def movement_thread_func(x, y):
@@ -171,8 +165,15 @@ while True:
         rect_color = (0, 0, 0)
         rect_x = square_frame_width - rect_size_x  # Right side
         rect_y = square_frame_height - rect_size_y
+    elif placement_side == 'none':
+        # Rectangle on the right side
+        rect_size_y = 0
+        rect_size_x = 0
+        rect_color = (0, 0, 0)
+        rect_x = square_frame_width - rect_size_x  # Right side
+        rect_y = square_frame_height - rect_size_y
     else:
-        print("Invalid input. Please enter 'left' or 'right'.")
+        print("Invalid input. Please enter 'left' or 'right' or 'none'.")
         exit(1)
 
     # Add a block rectangle to the square frame
