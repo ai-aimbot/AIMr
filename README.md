@@ -74,7 +74,7 @@ Any things you tried: <br>
 © Catch Me If You Can Industries
 
 More info: <br>
-I used to play a ton of csgo with my friend but we no longer play and it seems on my end that it has stopped working in cs2. <br>
+I used to play a ton of csgo with my friend but we no longer play. <br>
 I will likely not do many or any updates 
 
 Replacement programs: <br>
