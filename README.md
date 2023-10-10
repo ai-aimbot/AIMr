@@ -79,5 +79,6 @@ I will likely not do many or any updates
 
 Replacement programs: <br>
 https://github.com/RootKit-Org/AI-Aimbot <br>
-https://www.unknowncheats.me/forum/apex-legends/577624-ai-accurate-aimbot-trigger-bot.html
+https://www.unknowncheats.me/forum/apex-legends/577624-ai-accurate-aimbot-trigger-bot.html <br>
+https://github.com/NTUYWANG103/APEX_AIMBOT
 
