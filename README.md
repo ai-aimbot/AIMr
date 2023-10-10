@@ -74,7 +74,7 @@ Any things you tried: <br>
 © Catch Me If You Can Industries
 
 More info: <br>
-I used to play a ton of csgo with my friend but we no longer play. <br>
+I used to play a ton of csgo with my friend but we no longer play, it no longer works in cs2 on my end, after some further testing it seems cs2 isnt accepting any python mouse input <br>
 I will likely not do many or any updates 
 
 Replacement programs: <br>
