@@ -78,6 +78,7 @@ I used to play a ton of csgo with my friend but we no longer play, it no longer 
 I will likely not do many or any updates 
 
 Replacement programs: <br>
+https://github.com/Valthrun/Valthrun <br>
 https://github.com/RootKit-Org/AI-Aimbot <br>
 https://www.unknowncheats.me/forum/apex-legends/577624-ai-accurate-aimbot-trigger-bot.html <br>
 https://github.com/NTUYWANG103/APEX_AIMBOT
