@@ -1,5 +1,3 @@
-## **Mostly abandoning this project for an indefinite amount of time, I will still try to help people with it in github issues (more info at bottom of page)**
-
 
 ![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=300&section=header&text=kBOT&fontSize=90&animation=fadeIn)
 ## **Disclaimer** If you get banned it is not my fault, this is a use at your own risk program.
@@ -73,11 +71,7 @@ Any things you tried: <br>
 
 © Catch Me If You Can Industries
 
-More info: <br>
-I used to play a ton of csgo with my friend but we no longer play, it no longer works in cs2 on my end, after some further testing it seems cs2 isnt accepting any python mouse input <br>
-I will likely not do many or any updates 
-
-Replacement programs: <br>
+Similair programs: <br>
 https://github.com/Valthrun/Valthrun <br>
 https://github.com/RootKit-Org/AI-Aimbot <br>
 https://www.unknowncheats.me/forum/apex-legends/577624-ai-accurate-aimbot-trigger-bot.html <br>
