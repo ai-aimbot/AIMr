@@ -48,7 +48,7 @@ kBOT is expected to work with games that have player models resembling human ana
 
 To configure kBOT for your desired game, simply run the program, answer the questions it asks then use it! The firing key is set when you run it (V1.3).
 
-## How do I make it use GPU?
+## How do I make it use GPU (RTX-ONLY)?
 ![image](https://github.com/kbdevs/ai-aimbot/assets/86767129/4231cfa3-6a3f-485e-aaa7-ef7a78680ae8)
 [You can use this guide.](https://medium.com/analytics-vidhya/build-opencv-from-source-with-cuda-for-gpu-access-on-windows-5cd0ce2b9b37) 
 
