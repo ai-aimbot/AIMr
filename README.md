@@ -52,6 +52,9 @@ To configure kBOT for your desired game, simply run the program, answer the ques
 ![image](https://github.com/kbdevs/ai-aimbot/assets/86767129/4231cfa3-6a3f-485e-aaa7-ef7a78680ae8)
 [You can use this guide.](https://medium.com/analytics-vidhya/build-opencv-from-source-with-cuda-for-gpu-access-on-windows-5cd0ce2b9b37) 
 
+## Free spoofer if you want to use one
+
+https://github.com/SecHex/SecHex-Spoofy
 
 ## I need assistance!
 
