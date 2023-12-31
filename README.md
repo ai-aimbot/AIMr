@@ -1,5 +1,5 @@
 
-![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=300&section=header&text=AIMR&fontSize=90&animation=fadeIn)
+![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=300&section=header&text=AIMr&fontSize=90&animation=fadeIn)
 > [!WARNING]
 > I am not responsible if you get banned
 
