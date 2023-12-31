@@ -1,7 +1,7 @@
 
 ![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=300&section=header&text=kBOT&fontSize=90&animation=fadeIn)
 > [!WARNING]
-> How many times do I have to tell you to stop using Aimmy in Fortnite! If you keep using it in Fortnite, it's not our fault you get banned!
+> I am not responsible if you get banned
 
 
 
