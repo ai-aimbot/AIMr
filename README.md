@@ -7,9 +7,9 @@
 
 ## Please create issue requests with the new feature label to request features
 
-# AIMR
+# AIMr
 
-AIMR is an ai aimbot that uses the yolov7 detection model, the streamer version doesnt show the detection visualization and is slightly faster, the normal version has a visualizer window that shows the detections/etc.
+AIMr is an ai aimbot that uses the yolov7 detection model, the streamer version doesnt show the detection visualization and is slightly faster, the normal version has a visualizer window that shows the detections/etc.
 
 [![Views](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fkbdevs%2Fai-aimbot&count_bg=%239279B5&title_bg=%23555555&icon=&icon_color=%23FFFFFF&title=Views&edge_flat=false)](https://hits.seeyoufarm.com)
 
@@ -39,15 +39,15 @@ AIMR is an ai aimbot that uses the yolov7 detection model, the streamer version 
 
 # FAQ
 
-## Which games is AIMR compatible with?
+## Which games is AIMr compatible with?
 
-AIMR is expected to work with games that have player models resembling human anatomy.
+AIMr is expected to work with games that have player models resembling human anatomy.
 
-## How can I use AIMR?
+## How can I use AIMr?
 
 **Due to the valorant bypass I implemented you need to make sure there are no windows in the way of the image grabber, make sure the detection window sees just the game, you can check using a `normal` version.
 
-To configure AIMR for your desired game, simply run the program, answer the questions it asks then use it! The firing key is set when you run it (V1.3).
+To configure AIMr for your desired game, simply run the program, answer the questions it asks then use it! The firing key is set when you run it (V1.3).
 
 ## How do I make it use GPU (RTX-ONLY)?
 ![image](https://github.com/kbdevs/ai-aimbot/assets/86767129/4231cfa3-6a3f-485e-aaa7-ef7a78680ae8)
