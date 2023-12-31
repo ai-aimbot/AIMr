@@ -29,7 +29,7 @@ AIMr is an ai aimbot that uses the yolov7 detection model, the streamer version 
 - Widescreen support
 
 
-# How to (Outdated)
+# How to (Working on it)
 
 - You'll need python
 - If you don't have some modules download the "req.txt" and run "pip3 install -r req.txt"
