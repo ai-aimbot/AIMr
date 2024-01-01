@@ -1,5 +1,5 @@
 
-![header](h![AIMr](https://github.com/user-attachments/assets/c0f4fc84-b93d-4f3f-aadb-10bdb244c1b4)
+(h![AIMr](https://github.com/user-attachments/assets/c0f4fc84-b93d-4f3f-aadb-10bdb244c1b4))
 > [!WARNING]
 > I am not responsible if you get banned
 
