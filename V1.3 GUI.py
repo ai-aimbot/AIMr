@@ -64,7 +64,7 @@ cv2.namedWindow('Cropped Frame', cv2.WINDOW_NORMAL)
 
 first_execution = True
 
-shoot = input("Press 1 for shooting, or anything else for just aim: \n")
+shoot = input("Press 1 for to enable shooting, or anything else for just aim to be enabled: \n")
 smoothness = input("Smoothness? (1-10): \n")
 smoothness = int(smoothness)
 
