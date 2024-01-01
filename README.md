@@ -9,14 +9,13 @@
 
 # AIMr
 
-AIMr is an ai aimbot that uses the yolov7 detection model, the streamer version doesnt show the detection visualization and is slightly faster, the GUI version has a visualizer window that shows the detections/etc.
+AIMr is an ai aimbot that uses the yolov7 detection model, you can choose in the script if you want a gui, shooting key, if you just want it to aim, where the block window is (to block player model in fn), and smoothness of aim.
 
 [![Views](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fkbdevs%2Fai-aimbot&count_bg=%239279B5&title_bg=%23555555&icon=&icon_color=%23FFFFFF&title=Views&edge_flat=false)](https://hits.seeyoufarm.com)
 
 # NOTICES
 - The mouse movements are not functioning in VALORANT but it will still work as a triggerbot.
-- I'm pretty busy due to school so updates will mostly be on weekends
-- Cannot be on fullscreen
+- Game must be on windowed fullscreen
 
 # TODO
 - Refine aim
@@ -25,7 +24,6 @@ AIMr is an ai aimbot that uses the yolov7 detection model, the streamer version 
 - Make a GUI
 - Make a full tutorial and explain everything
 - Make config files
-- Reimplement changing aim button
 - Widescreen support
 
 
@@ -45,9 +43,8 @@ AIMr is expected to work with games that have player models resembling human ana
 
 ## How can I use AIMr?
 
-**Due to the valorant bypass I implemented you need to make sure there are no windows in the way of the image grabber, make sure the detection window sees just the game, you can check using a `GUI` version.
+To configure AIMr for your desired game, simply run the program, answer the questions it asks then use it! 
 
-To configure AIMr for your desired game, simply run the program, answer the questions it asks then use it! The firing key is set when you run it (V1.3).
 
 ## How do I make it use GPU (RTX-ONLY)?
 ![image](https://github.com/kbdevs/ai-aimbot/assets/86767129/4231cfa3-6a3f-485e-aaa7-ef7a78680ae8)
