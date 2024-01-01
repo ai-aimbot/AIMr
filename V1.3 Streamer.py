@@ -65,7 +65,7 @@ max_frames_without_detection = 10
 
 first_execution = True
 
-shoot = input("Press 1 for shooting, or anything else for just aim: \n")
+shoot = input("Press 1 for to enable shooting, or anything else for just aim to be enabled: \n")
 placement_side = input("Enter 'left' or 'right' to place the rectangle: ").lower()
 smoothness = input("Smoothness? (1-10): \n")
 smoothness = int(smoothness)
