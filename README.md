@@ -1,8 +1,7 @@
-
-![AIMr](https://github.com/kbdevs/ai-aimbot/assets/86767129/7aa03c60-7593-491a-a8d9-b19797263521)
-
 > [!WARNING]
 > I am not responsible if you get banned
+
+![AIMr](https://github.com/kbdevs/ai-aimbot/assets/86767129/7aa03c60-7593-491a-a8d9-b19797263521)
 
 
 
