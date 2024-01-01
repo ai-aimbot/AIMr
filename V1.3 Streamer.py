@@ -66,7 +66,8 @@ max_frames_without_detection = 10
 first_execution = True
 
 shoot = input("Press 1 for to enable shooting, or anything else for just aim to be enabled: \n")
-placement_side = input("Enter 'left' or 'right' to place the rectangle: ").lower()
+key = input("Press the key you want to use to aim: \n").lower()
+placement_side = input("Enter 'left' or 'right' or 'none' to place the detection block rectangle: ").lower()
 smoothness = input("Smoothness? (1-10): \n")
 smoothness = int(smoothness)
 
@@ -84,7 +85,7 @@ def movement_thread_func(x, y):
     delta_x = ((target_x - current_x) / steps) / 1.2
     delta_y = ((target_y - current_y) / steps) / 1.2
 
-    if keyboard.is_pressed('1'):  # Check if the "1" key is held
+    if keyboard.is_pressed(key):  # Check if the "1" key is held
         if abs(current_x - target_x) + abs(current_y - target_y) < 1200:
             for step in range(steps):
                 current_x += delta_x
@@ -170,8 +171,15 @@ while True:
             rect_color = (0, 0, 0)
             rect_x = square_frame_width - rect_size_x  # Right side
             rect_y = square_frame_height - rect_size_y
+        elif placement_side == 'none':
+            # Rectangle on the right side
+            rect_size_y = 0
+            rect_size_x = 0
+            rect_color = (0, 0, 0)
+            rect_x = square_frame_width - rect_size_x  # Right side
+            rect_y = square_frame_height - rect_size_y
         else:
-            print("Invalid input. Please enter 'left' or 'right'.")
+            print("Invalid input. Please enter 'left' or 'right' or 'none'.")
             exit(1)
 
         # Add a block rectangle to the square frame
