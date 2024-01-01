@@ -65,10 +65,10 @@ cv2.namedWindow('Cropped Frame', cv2.WINDOW_NORMAL)
 first_execution = True
 
 shoot = input("Press 1 for to enable shooting, or anything else for just aim to be enabled: \n")
+placement_side = input("Enter 'left' or 'right' to place the rectangle: ").lower()
 smoothness = input("Smoothness? (1-10): \n")
 smoothness = int(smoothness)
 
-placement_side = input("Enter 'left' or 'right' to place the rectangle: ").lower()
 
 def movement_thread_func(x, y):
     # Move mouse towards the closest enemy
