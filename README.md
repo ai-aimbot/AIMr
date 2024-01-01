@@ -3,7 +3,7 @@
 
 ![AIMr](https://github.com/kbdevs/ai-aimbot/assets/86767129/7aa03c60-7593-491a-a8d9-b19797263521)
 
-<h1 style="text-align: center;"> Join the Discord for announcements https://dsc.gg/AIMr</h1>
+<h2 style="text-align: center;"> Join the Discord for announcements https://dsc.gg/AIMr</h2>
 
 # AIMr
 
