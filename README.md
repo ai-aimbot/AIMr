@@ -3,7 +3,7 @@
 
 ![AIMr](https://github.com/kbdevs/ai-aimbot/assets/86767129/7aa03c60-7593-491a-a8d9-b19797263521)
 
-
+<h1 style="text-align: center;"> Join the Discord https://dsc.gg/AIMr</h1>
 
 ## Please create issue requests with the new feature label to request features
 
@@ -58,6 +58,8 @@ To configure AIMr for your desired game, simply run the program, answer the ques
 https://github.com/SecHex/SecHex-Spoofy
 
 ## I need assistance!
+
+You can join the [discord](https://dsc.gg/AIMr) for help. <br>
 
 Feel free to create a github issue request (if you follow the example you are more likely to get a solution, will be closed 3d without reply), or if you want to self-solve https://chat.openai.com.
 
