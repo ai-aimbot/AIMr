@@ -1,5 +1,5 @@
 
-![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=300&section=header&text=AIMr&fontSize=90&animation=fadeIn)
+![header](h![AIMr](https://github.com/kbdevs/ai-aimbot/assets/86767129/c0f4fc84-b93d-4f3f-aadb-10bdb244c1b4)
 > [!WARNING]
 > I am not responsible if you get banned
 
