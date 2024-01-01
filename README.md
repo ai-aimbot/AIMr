@@ -17,6 +17,7 @@ AIMr is an ai aimbot that uses the yolov7 detection model, you can choose in the
 
 # TODO
 - Refine aim
+- Showcase Video
 - Create EXE's for no install running
 - Fully make ESP
 - Make a GUI
