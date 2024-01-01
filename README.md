@@ -5,7 +5,7 @@
 
 <h1 style="text-align: center;"> Join the Discord https://dsc.gg/AIMr</h1>
 
-## Please join the Discord to request new features in the ```Support``` channel
+## Please join the Discord for announcements
 
 # AIMr
 
