@@ -59,10 +59,3 @@ You can join the [discord](https://dsc.gg/AIMr) and make a ticket or if you want
 
 
 © Catch Me If You Can Industries
-
-Similair programs: <br>
-https://github.com/Valthrun/Valthrun <br>
-https://github.com/RootKit-Org/AI-Aimbot <br>
-https://www.unknowncheats.me/forum/apex-legends/577624-ai-accurate-aimbot-trigger-bot.html <br>
-https://github.com/NTUYWANG103/APEX_AIMBOT
-
