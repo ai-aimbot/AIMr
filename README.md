@@ -53,21 +53,9 @@ To configure AIMr for your desired game, simply run the program, answer the ques
 
 https://github.com/SecHex/SecHex-Spoofy
 
-## I need assistance!
+## I need help!
 
-You can join the [discord](https://dsc.gg/AIMr) for help. <br>
-
-Feel free to create a github issue request (if you follow the example you are more likely to get a solution, will be closed 3d without reply), or if you want to self-solve https://chat.openai.com.
-
-**How to create an example issue request (copy paste and fill in)**
-What's wrong: <br>
-Game: <br>
-GPU: <br>
-CPU: <br>
-Windows Resolution: <br>
-Game Resolution: <br>
-OS: <br>
-Any things you tried: <br>
+You can join the [discord](https://dsc.gg/AIMr) and make a ticket or if you want to self-solve https://chat.openai.com.
 
 
 © Catch Me If You Can Industries
