@@ -35,7 +35,9 @@ AIMr is an ai aimbot that uses the yolov7 detection model, you can choose in the
 - If you don't have some modules download the "req.txt" and run "pip3 install -r req.txt"
 
 
+## I need help!
 
+You can join the [discord](https://dsc.gg/AIMr) and make a ticket in the support channel and we also have guides there.
 
 # FAQ
 
@@ -55,10 +57,6 @@ To configure AIMr for your desired game, simply run the program, answer the ques
 ## Free spoofer if you want to use one
 
 https://github.com/SecHex/SecHex-Spoofy
-
-## I need help!
-
-You can join the [discord](https://dsc.gg/AIMr) and make a ticket in the support channel.
 
 
 © Catch Me If You Can Industries
