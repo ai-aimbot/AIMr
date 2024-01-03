@@ -3,3 +3,4 @@ pywin32
 opencv-python
 keyboard
 pygetwindow
+pyfiglet
