@@ -1,15 +1,33 @@
 import numpy as np
-import win32api, win32con, win32gui, win32ui
+import win32api, win32con, win32gui
 import cv2
 import math
 import time
+import win32ui
 import keyboard
 import threading
 import pygetwindow as gw
+import pyfiglet
+import os
 import json
+
+def clearfig():
+    os.system('cls' if os.name == 'nt' else 'clear')
+    result = pyfiglet.figlet_format("A I M r", font="3-d")
+    print(result)
+
 
 CONFIG_FILE = './yolov7-tiny.cfg'
 WEIGHT_FILE = './yolov7-tiny.weights'
+
+clearfig()
+
+show_frame = True if input("Enter 1 for GUI, or 2 for no GUI: ") == "1" else False
+
+clearfig()
+
+config = True if input("Enter 1 for using a config, or 2 for no config: ") == "1" else False
+
 
 net = cv2.dnn.readNetFromDarknet(CONFIG_FILE, WEIGHT_FILE)
 net.setPreferableBackend(cv2.dnn.DNN_BACKEND_CUDA)
@@ -23,9 +41,6 @@ windows = [window for window in gw.getAllTitles() if window]
 
 # Sort windows alphabetically by title
 windows.sort()
-
-show_frame = True if input("Enter 1 for GUI, or 2 for no GUI: ") == "1" else False
-config = True if input("Enter 1 for using a config, or 2 for no config: ") == "1" else False
 
 # Print a numbered list of open windows
 for i, window in enumerate(windows, start=1):
@@ -68,7 +83,6 @@ if show_frame:
 
 first_execution = True
 
-
 if config:
     # Load config from config.json file
     with open('config.json') as f:
@@ -84,7 +98,7 @@ if config:
 else:
     shoot = input("Press 1 for to enable shooting, or anything else for just aim to be enabled: \n")
     key = input("Press the key you want to use to aim: \n").lower()
-    placement_side = input("Enter 'left' or 'right' or 'nothing' to place the detection block rectangle: ").lower()
+    placement_side = input("Enter 'left' or 'right' or 'no' to place the detection block rectangle: ").lower()
     smoothness = input("Smoothness? (1-10): \n")
     smoothness = int(smoothness)
     save_config = input("Do you want to save your answers to a config.json file? (y/n): ").lower()
@@ -101,7 +115,7 @@ else:
     else:
         print("Config file not saved.")
 
-
+clearfig()
 
 def movement_thread_func(x, y):
     # Move mouse towards the closest enemy
@@ -200,7 +214,7 @@ while True:
         rect_color = (0, 0, 0)
         rect_x = square_frame_width - rect_size_x  # Right side
         rect_y = square_frame_height - rect_size_y
-    elif placement_side == 'nothing':
+    elif placement_side == 'no':
         # Rectangle on the right side
         rect_size_y = 0
         rect_size_x = 0
@@ -208,15 +222,15 @@ while True:
         rect_x = square_frame_width - rect_size_x  # Right side
         rect_y = square_frame_height - rect_size_y
     else:
-        print("Invalid input. Please enter 'left' or 'right' or 'nothing'.")
+        print("Invalid input. Please enter 'left' or 'no'.")
         exit(1)
 
     # Add a block rectangle to the square frame
     cv2.rectangle(square_frame, (rect_x, rect_y), (rect_x + rect_size_x, rect_y + rect_size_y), rect_color, -1)
 
-
-    # Display the cropped frame in the new window
-    cropped_frame = np.copy(square_frame)  # Create a copy of the cropped frame
+    if show_frame:
+        # Display the cropped frame in the new window
+        cropped_frame = np.copy(square_frame)  # Create a copy of the cropped frame
 
     # Detection loop
     blob = cv2.dnn.blobFromImage(square_frame, 1 / 255.0, (320, 320), crop=False)
@@ -303,7 +317,7 @@ while True:
         text_width, text_height = cv2.getTextSize(confidence_text, cv2.FONT_HERSHEY_SIMPLEX, 0.5, 1)[0]
         cv2.putText(cropped_frame, confidence_text, (x - square_x, y - square_y - 5),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 1, cv2.LINE_AA)
-
-        if show_frame:
-            cv2.imshow("Cropped Frame", cropped_frame)
-            cv2.waitKey(1)
+        
+    if show_frame:
+        cv2.imshow("Cropped Frame", cropped_frame)
+        cv2.waitKey(1)
