@@ -1,5 +1,5 @@
 
-<h2 style="text-align: center;"> Join the Discord for announcements and help https://dsc.gg/AIMr</h2>
+<h2 style="text-align: center;"> Join the Discord for help and announcements https://dsc.gg/AIMr</h2>
 
 > [!WARNING]
 > I am not responsible if you get banned (Haven't gotten any reports of bans)
