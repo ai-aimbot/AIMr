@@ -4,7 +4,7 @@
 > [!WARNING]
 > I am not responsible if you get banned (Haven't gotten any reports of bans)
 
-![AIMr](https://github.com/user-attachments/assets/7aa03c60-7593-491a-a8d9-b19797263521)
+![AIMr](https://github.com/user-attachments/assets/d9e63986-163e-4044-9436-5dd5cfe20980)
 
 
 # AIMr
