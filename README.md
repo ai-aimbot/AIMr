@@ -1,9 +1,11 @@
+
+<h2 style="text-align: center;"> Join the Discord for announcements and help https://dsc.gg/AIMr</h2>
+
 > [!WARNING]
 > I am not responsible if you get banned (Haven't gotten any reports of bans)
 
 ![AIMr](https://github.com/kbdevs/ai-aimbot/assets/86767129/7aa03c60-7593-491a-a8d9-b19797263521)
 
-<h2 style="text-align: center;"> Join the Discord for announcements https://dsc.gg/AIMr</h2>
 
 # AIMr
 
