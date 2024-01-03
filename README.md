@@ -58,7 +58,7 @@ https://github.com/SecHex/SecHex-Spoofy
 
 ## I need help!
 
-You can join the [discord](https://dsc.gg/AIMr) and make a ticket or if you want to self-solve https://chat.openai.com.
+You can join the [discord](https://dsc.gg/AIMr) and make a ticket in the support channel.
 
 
 © Catch Me If You Can Industries
