@@ -69,7 +69,7 @@ first_execution = True
 
 shoot = input("Press 1 for to enable shooting, or anything else for just aim to be enabled: \n")
 key = input("Press the key you want to use to aim: \n").lower()
-placement_side = input("Enter 'left' or 'right' or 'none' to place the detection block rectangle: ").lower()
+placement_side = input("Enter 'left' or 'right' or 'nothing' to place the detection block rectangle: ").lower()
 smoothness = input("Smoothness? (1-10): \n")
 smoothness = int(smoothness)
 
@@ -172,7 +172,7 @@ while True:
         rect_color = (0, 0, 0)
         rect_x = square_frame_width - rect_size_x  # Right side
         rect_y = square_frame_height - rect_size_y
-    elif placement_side == 'none':
+    elif placement_side == 'nothing':
         # Rectangle on the right side
         rect_size_y = 0
         rect_size_x = 0
@@ -180,7 +180,7 @@ while True:
         rect_x = square_frame_width - rect_size_x  # Right side
         rect_y = square_frame_height - rect_size_y
     else:
-        print("Invalid input. Please enter 'left' or 'right' or 'none'.")
+        print("Invalid input. Please enter 'left' or 'right' or 'nothing'.")
         exit(1)
 
     # Add a block rectangle to the square frame
