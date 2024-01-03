@@ -4,7 +4,7 @@
 > [!WARNING]
 > I am not responsible if you get banned (Haven't gotten any reports of bans)
 
-![AIMr](https://i.imgur.com/KREk0tS.gif)
+![AIMr](https://external-content.duckduckgo.com/iu/?u=https://i.imgur.com/KREk0tS.gif)
 
 
 # AIMr
