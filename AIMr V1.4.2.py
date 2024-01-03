@@ -6,6 +6,7 @@ import time
 import keyboard
 import threading
 import pygetwindow as gw
+import json
 
 CONFIG_FILE = './yolov7-tiny.cfg'
 WEIGHT_FILE = './yolov7-tiny.weights'
@@ -24,6 +25,7 @@ windows = [window for window in gw.getAllTitles() if window]
 windows.sort()
 
 show_frame = True if input("Enter 1 for GUI, or 2 for no GUI: ") == "1" else False
+config = True if input("Enter 1 for using a config, or 2 for no config: ") == "1" else False
 
 # Print a numbered list of open windows
 for i, window in enumerate(windows, start=1):
@@ -67,11 +69,37 @@ if show_frame:
 first_execution = True
 
 
-shoot = input("Press 1 for to enable shooting, or anything else for just aim to be enabled: \n")
-key = input("Press the key you want to use to aim: \n").lower()
-placement_side = input("Enter 'left' or 'right' or 'nothing' to place the detection block rectangle: ").lower()
-smoothness = input("Smoothness? (1-10): \n")
-smoothness = int(smoothness)
+if config:
+    # Load config from config.json file
+    with open('config.json') as f:
+        config = json.load(f)
+
+    shoot = config.get("enable_shooting", "0")
+    key = config.get("aim_key", "").lower()
+    placement_side = config.get("placement_side", "").lower()
+    smoothness = config.get("smoothness", 1)
+
+    # Convert smoothness to integer
+    smoothness = int(smoothness)
+else:
+    shoot = input("Press 1 for to enable shooting, or anything else for just aim to be enabled: \n")
+    key = input("Press the key you want to use to aim: \n").lower()
+    placement_side = input("Enter 'left' or 'right' or 'nothing' to place the detection block rectangle: ").lower()
+    smoothness = input("Smoothness? (1-10): \n")
+    smoothness = int(smoothness)
+    save_config = input("Do you want to save your answers to a config.json file? (y/n): ").lower()
+    if save_config == "y":
+        config_data = {
+            "enable_shooting": shoot,
+            "aim_key": key,
+            "placement_side": placement_side,
+            "smoothness": smoothness
+        }
+        with open('config.json', 'w') as f:
+            json.dump(config_data, f)
+            print("Config file saved.")
+    else:
+        print("Config file not saved.")
 
 
 
