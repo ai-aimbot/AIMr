@@ -32,7 +32,7 @@ AIMr is an ai aimbot that uses the yolov7 detection model, you can choose in the
 
 
 # How to run
-Join the (discord)[https://dsc.gg/AIMr] and check the guides channel and if those don't work open a ticket <br>
+Join the [discord](https://dsc.gg/AIMr) and check the guides channel and if those don't work open a ticket <br>
 Basic Help Guide: https://www.youtube.com/embed/-QbQrsrmpo0
 ## I need help!
 
