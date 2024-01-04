@@ -270,6 +270,7 @@ while True:
 
     if locked_box is None:
         if len(indices) > 0:
+            clearfig()
             print(f"Detected: {len(indices)}")
             center_x = square_x + square_size // 2
             center_y = square_y + square_size // 2
@@ -290,7 +291,7 @@ while True:
 
         movement(x, y)
         if shoot == "1":
-            if keyboard.is_pressed('1'):  # Check if the "1" key is held
+            if keyboard.is_pressed(key):  # Check if the "1" key is held
                 # Shoot
 
                 win32api.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN, 0, 0, 0, 0)
