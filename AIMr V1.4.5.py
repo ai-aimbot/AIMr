@@ -140,7 +140,7 @@ def movement_thread_func(x, y):
                 rand_x = np.random.randint(-2, 2)
                 rand_y = np.random.randint(-2, 2)
                 win32api.mouse_event(win32con.MOUSEEVENTF_MOVE, int(delta_x) + rand_x, int(delta_y) + rand_y, 0, 0)
-                time.sleep(0.00000000000000000000000000000000000000001)
+                time.sleep(0.005)
             if shoot == "1":
                 global first_execution
 
