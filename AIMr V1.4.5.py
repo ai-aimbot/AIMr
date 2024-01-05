@@ -14,7 +14,7 @@ import win32api, win32con, win32gui, win32ui
 
 # Check if AIMr is up to date
 newest_version = "https://raw.githubusercontent.com/kbdevs/ai-aimbot/main/current_version.txt"
-local_version = "1.4.5.3"
+local_version = "V1.4.5.3"
 
 
 
@@ -23,7 +23,7 @@ def clearfig():
     result = pyfiglet.figlet_format("A I M r", font="3-d")
     print(result)
     print(local_version)
-    response = requests.get(newest_version)
+    response = requests.get(newest_version, headers={"Cache-Control": 'no-cache', "Pragma": "no-cache"})
     remote_version = response.text.strip()
 
     if remote_version != local_version:
