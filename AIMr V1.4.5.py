@@ -1,27 +1,41 @@
-import numpy as np
-import win32api, win32con, win32gui
+import os
 import cv2
-import math
+import json
 import time
-import win32ui
+import math
+import pyfiglet
+import requests
 import keyboard
 import threading
+import numpy as np
 import pygetwindow as gw
-import pyfiglet
-import os
-import json
+import win32api, win32con, win32gui, win32ui
+
+
+# Check if AIMr is up to date
+newest_version = "https://raw.githubusercontent.com/kbdevs/ai-aimbot/main/current_version.txt"
+local_version = "1.4.5.2"
+
+
 
 def clearfig():
     os.system('cls' if os.name == 'nt' else 'clear')
     result = pyfiglet.figlet_format("A I M r", font="3-d")
     print(result)
-    print("V1.4.5.2 \n")
+    print("V1.4.5.2")
+    response = requests.get(newest_version)
+    remote_version = response.text.strip()
+
+    if remote_version != local_version:
+        print("\033[91mYour version of AIMr is out of date!!\033[0m")
+
 
 
 CONFIG_FILE = './yolov7-tiny.cfg'
 WEIGHT_FILE = './yolov7-tiny.weights'
 
 clearfig()
+
 
 show_frame = True if input("Enter 1 for GUI, or 2 for no GUI: ") == "1" else False
 
