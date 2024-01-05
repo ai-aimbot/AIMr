@@ -22,7 +22,7 @@ def clearfig():
     os.system('cls' if os.name == 'nt' else 'clear')
     result = pyfiglet.figlet_format("A I M r", font="3-d")
     print(result)
-    print("V1.4.5.2")
+    print("V1.4.5.3")
     response = requests.get(newest_version)
     remote_version = response.text.strip()
 
