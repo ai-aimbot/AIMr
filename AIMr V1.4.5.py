@@ -22,7 +22,7 @@ def clearfig():
     os.system('cls' if os.name == 'nt' else 'clear')
     result = pyfiglet.figlet_format("A I M r", font="3-d")
     print(result)
-    print(local_version)
+    print(local_version + "\n")
     response = requests.get(newest_version, headers={"Cache-Control": 'no-cache', "Pragma": "no-cache"})
     remote_version = response.text.strip()
 
