@@ -4,3 +4,4 @@ opencv-python
 keyboard
 pygetwindow
 pyfiglet
+requests
