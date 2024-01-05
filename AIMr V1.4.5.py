@@ -14,7 +14,7 @@ import win32api, win32con, win32gui, win32ui
 
 # Check if AIMr is up to date
 newest_version = "https://raw.githubusercontent.com/ai-aimbot/AIMr/main/current_version.txt"
-local_version = "1.4.5.2"
+local_version = "1.4.5.3"
 
 
 
