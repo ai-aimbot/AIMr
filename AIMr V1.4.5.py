@@ -10,11 +10,12 @@ import threading
 import numpy as np
 import pygetwindow as gw
 import win32api, win32con, win32gui, win32ui
+import os
 
 
 # Check if AIMr is up to date
 newest_version = "https://raw.githubusercontent.com/kbdevs/ai-aimbot/main/current_version.txt"
-local_version = "V1.4.5.3"
+local_version = "V1.4.5.4"
 
 
 
@@ -41,7 +42,16 @@ show_frame = True if input("Enter 1 for GUI, or 2 for no GUI: ") == "1" else Fal
 
 clearfig()
 
-config = True if input("Enter 1 for using a config, or 2 for no config: ") == "1" else False
+
+
+config_file_path = "./config.json"
+config = False
+
+if os.path.exists(config_file_path):
+    config = True if input("Enter 1 for using a config, or 2 for no config: ") == "1" else False
+else:
+    exit
+
 
 
 net = cv2.dnn.readNetFromDarknet(CONFIG_FILE, WEIGHT_FILE)
