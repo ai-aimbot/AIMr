@@ -10,14 +10,10 @@ import threading
 import numpy as np
 import pygetwindow as gw
 import win32api, win32con, win32gui, win32ui
-import os
-
 
 # Check if AIMr is up to date
 newest_version = "https://raw.githubusercontent.com/kbdevs/ai-aimbot/main/current_version.txt"
-local_version = "V1.4.5.4"
-
-
+local_version = "V1.4.6"
 
 def clearfig():
     os.system('cls' if os.name == 'nt' else 'clear')
@@ -30,19 +26,14 @@ def clearfig():
     if remote_version != local_version:
         print("\033[91mYour version of AIMr is out of date!!\033[0m")
 
-
-
 CONFIG_FILE = './yolov7-tiny.cfg'
 WEIGHT_FILE = './yolov7-tiny.weights'
 
 clearfig()
 
-
 show_frame = True if input("Enter 1 for GUI, or 2 for no GUI: ") == "1" else False
 
 clearfig()
-
-
 
 config_file_path = "./config.json"
 config = False
@@ -51,8 +42,6 @@ if os.path.exists(config_file_path):
     config = True if input("Enter 1 for using a config, or 2 for no config: ") == "1" else False
 else:
     exit
-
-
 
 net = cv2.dnn.readNetFromDarknet(CONFIG_FILE, WEIGHT_FILE)
 net.setPreferableBackend(cv2.dnn.DNN_BACKEND_CUDA)
@@ -144,7 +133,7 @@ clearfig()
 
 def movement_thread_func(x, y):
     # Move mouse towards the closest enemy
-    scale = 1.7
+    scale = 1.4
     x_smooth = int(x * scale)
     y_smooth = int(y * scale)
 
@@ -156,109 +145,33 @@ def movement_thread_func(x, y):
     delta_x = ((target_x - current_x) / steps) / 1.2
     delta_y = ((target_y - current_y) / steps) / 1.2
 
-    if keyboard.is_pressed(key):  # Check if the "1" key is held
-        if abs(current_x - target_x) + abs(current_y - target_y) < 1200:
-            for step in range(steps):
-                current_x += delta_x
-                current_y += delta_y
-                # Add randomization to mouse movement
-                rand_x = np.random.randint(-2, 2)
-                rand_y = np.random.randint(-2, 2)
-                win32api.mouse_event(win32con.MOUSEEVENTF_MOVE, int(delta_x) + rand_x, int(delta_y) + rand_y, 0, 0)
-                time.sleep(0.005)
-            if shoot == "1":
-                global first_execution
-
-                if first_execution:
-                    shooting_thread = threading.Thread(target=shooting_thread_func)
-                    shooting_thread.start()
-                    first_execution = False
-
-
+    if abs(current_x - target_x) + abs(current_y - target_y) < 1200:
+        for steps in range(steps):
+            current_x += delta_x
+            current_y += delta_y
+            # Add randomization to mouse movement
+            rand_x = np.random.randint(-2, 2)
+            rand_y = np.random.randint(-2, 2)
+            win32api.mouse_event(win32con.MOUSEEVENTF_MOVE, int(delta_x) + rand_x, int(delta_y) + rand_y, 0, 0)
+            time.sleep(0.005)
+        if shoot == "1":
+            shooting_thread = threading.Thread(target=shooting_thread_func)
+            shooting_thread.start()
 
 def movement(x, y):
     movement_thread = threading.Thread(target=movement_thread_func, args=(x, y))
     movement_thread.start()
 
-
 def shooting_thread_func():
-
     # Shoot
     win32api.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN, 0, 0, 0, 0)
     time.sleep(0.07)
     win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP, 0, 0, 0, 0)
-    time.sleep(0.2)  # Delay for 0.5 seconds
-    global first_execution
-    first_execution = True
+    time.sleep(0.2)  # Delay for 0.2 seconds
 
-
-while True:
-    # Get image of screen
-    hwnd = win32gui.GetDesktopWindow()
-
-    wDC = win32gui.GetWindowDC(hwnd)
-    dcObj = win32ui.CreateDCFromHandle(wDC)
-    cDC = dcObj.CreateCompatibleDC()
-
-    bmp = win32ui.CreateBitmap()
-    bmp.CreateCompatibleBitmap(dcObj, region[2], region[3])
-    cDC.SelectObject(bmp)
-    cDC.BitBlt((0, 0), (region[2], region[3]), dcObj, (region[0], region[1]), win32con.SRCCOPY)
-
-    signed_ints_array = bmp.GetBitmapBits(True)
-    frame = np.frombuffer(signed_ints_array, dtype='uint8')
-    frame.shape = (region[3], region[2], 4)
-
-    dcObj.DeleteDC()
-    cDC.DeleteDC()
-    win32gui.ReleaseDC(hwnd, wDC)
-    win32gui.DeleteObject(bmp.GetHandle())
-
-    frame = frame[..., 2::-1]  # Remove the alpha channel
-    frame = cv2.cvtColor(frame, cv2.COLOR_BGRA2RGB)
-
-    frame_height, frame_width = frame.shape[:2]
-
-    # Crop frame to the square region in the middle
-    square_frame = frame[square_y:square_y + square_size, square_x:square_x + square_size]
-    square_frame_height, square_frame_width = square_frame.shape[:2]
-
-  
-
-    if placement_side == 'left':
-        # Rectangle on the left side
-        rect_size_y = 300
-        rect_size_x = 200
-        rect_color = (0, 0, 0)
-        rect_x = 0  # Left side
-        rect_y = square_frame_height - rect_size_y
-    elif placement_side == 'right':
-        # Rectangle on the right side
-        rect_size_y = 250
-        rect_size_x = 150
-        rect_color = (0, 0, 0)
-        rect_x = square_frame_width - rect_size_x  # Right side
-        rect_y = square_frame_height - rect_size_y
-    elif placement_side == 'no':
-        # Rectangle on the right side
-        rect_size_y = 0
-        rect_size_x = 0
-        rect_color = (0, 0, 0)
-        rect_x = square_frame_width - rect_size_x  # Right side
-        rect_y = square_frame_height - rect_size_y
-    else:
-        print("Invalid input. Please enter 'left' or 'no'.")
-        exit(1)
-
-    # Add a block rectangle to the square frame
-    cv2.rectangle(square_frame, (rect_x, rect_y), (rect_x + rect_size_x, rect_y + rect_size_y), rect_color, -1)
-
-    if show_frame:
-        # Display the cropped frame in the new window
-        cropped_frame = np.copy(square_frame)  # Create a copy of the cropped frame
-
+def detect_objects(frame):
     # Detection loop
-    blob = cv2.dnn.blobFromImage(square_frame, 1 / 255.0, (320, 320), crop=False)
+    blob = cv2.dnn.blobFromImage(frame, 1 / 255.0, (320, 320), crop=False)
     net.setInput(blob)
     layerOutputs = net.forward(ln)
 
@@ -271,19 +184,97 @@ while True:
             classID = np.argmax(scores)
             confidence = scores[classID]
             if confidence > 0.7 and classID == 0:
-                box = detection[:4] * np.array(
-                    [square_frame_width, square_frame_height, square_frame_width, square_frame_height])
+                box = detection[:4] * np.array([square_size, square_size, square_size, square_size])
                 (centerX, centerY, width, height) = box.astype("int")
                 x = int(centerX - (width / 2))
                 y = int(centerY - (height / 2))
                 box = [x, y, int(width), int(height)]
-                # Adjust the box coordinates to the original frame
-                box[0] += square_x
-                box[1] += square_y
                 boxes.append(box)
                 confidences.append(float(confidence))
 
     indices = cv2.dnn.NMSBoxes(boxes, confidences, 0.4, 0.4)
+
+    return boxes, confidences, indices
+
+def draw_boxes(frame, boxes, confidences, indices):
+    for i, box in enumerate(boxes):
+        (x, y, w, h) = box
+        if locked_box is not None and box == locked_box:
+            color = (0, 255, 0)  # Green color for locked box
+        else:
+            color = (255, 255, 255)  # White color for other boxes
+
+        if show_frame:
+            cv2.rectangle(frame, (x, y), (x + w, y + h), color, 2)
+
+            # Draw line from box to center of the frame
+            cv2.line(frame, (x + w // 2, y + h // 2), (square_size // 2, square_size // 2), (0, 0, 255), 2)
+
+            # Display confidence percentage above the box
+            confidence_text = f'{confidences[i] * 100:.2f}%'
+            text_width, text_height = cv2.getTextSize(confidence_text, cv2.FONT_HERSHEY_SIMPLEX, 0.5, 1)[0]
+            cv2.putText(frame, confidence_text, (x, y - 5), cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 1, cv2.LINE_AA)
+
+    if show_frame:
+        cv2.imshow("Cropped Frame", frame)
+        cv2.waitKey(1)
+
+while True:
+    # Get image of screen
+    hwnd = win32gui.GetDesktopWindow()
+
+    wDC = win32gui.GetWindowDC(hwnd)
+    dcObj = win32ui.CreateDCFromHandle(wDC)
+    cDC = dcObj.CreateCompatibleDC()
+
+    bmp = win32ui.CreateBitmap()
+    bmp.CreateCompatibleBitmap(dcObj, square_size, square_size)
+    cDC.SelectObject(bmp)
+    cDC.BitBlt((0, 0), (square_size, square_size), dcObj, (square_x, square_y), win32con.SRCCOPY)
+
+    signed_ints_array = bmp.GetBitmapBits(True)
+    frame = np.frombuffer(signed_ints_array, dtype='uint8')
+    frame.shape = (square_size, square_size, 4)
+
+    dcObj.DeleteDC()
+    cDC.DeleteDC()
+    win32gui.ReleaseDC(hwnd, wDC)
+    win32gui.DeleteObject(bmp.GetHandle())
+
+    frame = frame[..., 2::-1]  # Remove the alpha channel
+    frame = cv2.cvtColor(frame, cv2.COLOR_BGRA2RGB)
+
+    frame_height, frame_width = frame.shape[:2]
+
+    if placement_side == 'left':
+        # Rectangle on the left side
+        rect_size_y = 300
+        rect_size_x = 200
+        rect_color = (0, 0, 0)
+        rect_x = 0  # Left side
+        rect_y = square_size - rect_size_y
+    elif placement_side == 'right':
+        # Rectangle on the right side
+        rect_size_y = 250
+        rect_size_x = 150
+        rect_color = (0, 0, 0)
+        rect_x = square_size - rect_size_x  # Right side
+        rect_y = square_size - rect_size_y
+    elif placement_side == 'no':
+        # Rectangle on the right side
+        rect_size_y = 0
+        rect_size_x = 0
+        rect_color = (0, 0, 0)
+        rect_x = square_size - rect_size_x  # Right side
+        rect_y = square_size - rect_size_y
+    else:
+        print("Invalid input. Please enter 'left' or 'no'.")
+        exit(1)
+
+    # Add a block rectangle to the square frame
+    cv2.rectangle(frame, (rect_x, rect_y), (rect_x + rect_size_x, rect_y + rect_size_y), rect_color, -1)
+
+    boxes, confidences, indices = detect_objects(frame)
 
     if locked_box is not None:
         if locked_box not in boxes:
@@ -295,10 +286,9 @@ while True:
 
     if locked_box is None:
         if len(indices) > 0:
-            clearfig()
-            print(f"Detected: {len(indices)}")
-            center_x = square_x + square_size // 2
-            center_y = square_y + square_size // 2
+            # print(f"Detected: {len(indices)}")
+            center_x = square_size // 2
+            center_y = square_size // 2
 
             min_dist = float('inf')
             for i in indices.flatten():
@@ -314,36 +304,13 @@ while True:
         x = int(locked_box[0] + locked_box[2] / 2 - frame_width / 2)
         y = int(locked_box[1] + locked_box[3] / 2 - frame_height / 2) - locked_box[3] * 0.5  # For head shot
 
+    if keyboard.is_pressed(key):
         movement(x, y)
-        if shoot == "1":
-            if keyboard.is_pressed(key):  # Check if the "1" key is held
-                # Shoot
+    if shoot == "1":
+        if keyboard.is_pressed(key):  # Check if the "1" key is held
+            # Shoot
+            win32api.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN, 0, 0, 0, 0)
+            time.sleep(0.07)
+            win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP, 0, 0, 0, 0)
 
-                win32api.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN, 0, 0, 0, 0)
-                time.sleep(0.07)
-                win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP, 0, 0, 0, 0)
-
-    # Display the cropped frame in the new window
-    for i, box in enumerate(boxes):
-        (x, y, w, h) = box
-        if locked_box is not None and box == locked_box:
-            color = (0, 255, 0)  # Green color for locked box
-        else:
-            color = (255, 255, 255)  # White color for other boxes
-
-        cv2.rectangle(cropped_frame, (x - square_x, y - square_y), (x + w - square_x, y + h - square_y),
-                      color, 2)
-
-        # Draw line from box to center of the frame
-        cv2.line(cropped_frame, (x - square_x + w // 2, y - square_y + h // 2), (square_size // 2, square_size // 2),
-                 (0, 0, 255), 2)
-
-        # Display confidence percentage above the box
-        confidence_text = f'{confidences[i] * 100:.2f}%'
-        text_width, text_height = cv2.getTextSize(confidence_text, cv2.FONT_HERSHEY_SIMPLEX, 0.5, 1)[0]
-        cv2.putText(cropped_frame, confidence_text, (x - square_x, y - square_y - 5),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 1, cv2.LINE_AA)
-        
-    if show_frame:
-        cv2.imshow("Cropped Frame", cropped_frame)
-        cv2.waitKey(1)
+    draw_boxes(frame, boxes, confidences, indices)
