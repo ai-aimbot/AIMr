@@ -13,7 +13,7 @@ import win32api, win32con, win32gui, win32ui
 
 # Check if AIMr is up to date
 newest_version = "https://raw.githubusercontent.com/kbdevs/ai-aimbot/main/current_version.txt"
-local_version = "V1.4.6"
+local_version = "V1.4.6.1"
 
 def clearfig():
     os.system('cls' if os.name == 'nt' else 'clear')
@@ -133,9 +133,8 @@ clearfig()
 
 def movement_thread_func(x, y):
     # Move mouse towards the closest enemy
-    scale = 1.4
-    x_smooth = int(x * scale)
-    y_smooth = int(y * scale)
+    x_smooth = x
+    y_smooth = y
 
     current_x, current_y = win32api.GetCursorPos()
     target_x = current_x + x_smooth + 2
@@ -146,7 +145,7 @@ def movement_thread_func(x, y):
     delta_y = ((target_y - current_y) / steps) / 1.2
 
     if abs(current_x - target_x) + abs(current_y - target_y) < 1200:
-        for steps in range(steps):
+        for step in range(steps):
             current_x += delta_x
             current_y += delta_y
             # Add randomization to mouse movement
@@ -168,56 +167,6 @@ def shooting_thread_func():
     time.sleep(0.07)
     win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP, 0, 0, 0, 0)
     time.sleep(0.2)  # Delay for 0.2 seconds
-
-def detect_objects(frame):
-    # Detection loop
-    blob = cv2.dnn.blobFromImage(frame, 1 / 255.0, (320, 320), crop=False)
-    net.setInput(blob)
-    layerOutputs = net.forward(ln)
-
-    boxes = []
-    confidences = []
-
-    for output in layerOutputs:
-        for detection in output:
-            scores = detection[5:]
-            classID = np.argmax(scores)
-            confidence = scores[classID]
-            if confidence > 0.7 and classID == 0:
-                box = detection[:4] * np.array([square_size, square_size, square_size, square_size])
-                (centerX, centerY, width, height) = box.astype("int")
-                x = int(centerX - (width / 2))
-                y = int(centerY - (height / 2))
-                box = [x, y, int(width), int(height)]
-                boxes.append(box)
-                confidences.append(float(confidence))
-
-    indices = cv2.dnn.NMSBoxes(boxes, confidences, 0.4, 0.4)
-
-    return boxes, confidences, indices
-
-def draw_boxes(frame, boxes, confidences, indices):
-    for i, box in enumerate(boxes):
-        (x, y, w, h) = box
-        if locked_box is not None and box == locked_box:
-            color = (0, 255, 0)  # Green color for locked box
-        else:
-            color = (255, 255, 255)  # White color for other boxes
-
-        if show_frame:
-            cv2.rectangle(frame, (x, y), (x + w, y + h), color, 2)
-
-            # Draw line from box to center of the frame
-            cv2.line(frame, (x + w // 2, y + h // 2), (square_size // 2, square_size // 2), (0, 0, 255), 2)
-
-            # Display confidence percentage above the box
-            confidence_text = f'{confidences[i] * 100:.2f}%'
-            text_width, text_height = cv2.getTextSize(confidence_text, cv2.FONT_HERSHEY_SIMPLEX, 0.5, 1)[0]
-            cv2.putText(frame, confidence_text, (x, y - 5), cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 1, cv2.LINE_AA)
-
-    if show_frame:
-        cv2.imshow("Cropped Frame", frame)
-        cv2.waitKey(1)
 
 while True:
     # Get image of screen
@@ -274,7 +223,30 @@ while True:
     # Add a block rectangle to the square frame
     cv2.rectangle(frame, (rect_x, rect_y), (rect_x + rect_size_x, rect_y + rect_size_y), rect_color, -1)
 
-    boxes, confidences, indices = detect_objects(frame)
+    # Detection loop
+    blob = cv2.dnn.blobFromImage(frame, 1 / 255.0, (320, 320), crop=False)
+    net.setInput(blob)
+    layerOutputs = net.forward(ln)
+
+    boxes = []
+    confidences = []
+
+    for output in layerOutputs:
+        for detection in output:
+            scores = detection[5:]
+            classID = np.argmax(scores)
+            confidence = scores[classID]
+            if confidence > 0.7 and classID == 0:
+                box = detection[:4] * np.array([square_size, square_size, square_size, square_size])
+                (centerX, centerY, width, height) = box.astype("int")
+                x = int(centerX - (width / 2))
+                y = int(centerY - (height / 2))
+                box = [x, y, int(width), int(height)]
+                boxes.append(box)
+                confidences.append(float(confidence))
+
+    indices = cv2.dnn.NMSBoxes(boxes, confidences, 0.7, 0.7)
+
 
     if locked_box is not None:
         if locked_box not in boxes:
@@ -304,7 +276,7 @@ while True:
         x = int(locked_box[0] + locked_box[2] / 2 - frame_width / 2)
         y = int(locked_box[1] + locked_box[3] / 2 - frame_height / 2) - locked_box[3] * 0.5  # For head shot
 
-    if keyboard.is_pressed(key):
+    if locked_box is not None and keyboard.is_pressed(key):
         movement(x, y)
     if shoot == "1":
         if keyboard.is_pressed(key):  # Check if the "1" key is held
@@ -313,4 +285,26 @@ while True:
             time.sleep(0.07)
             win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP, 0, 0, 0, 0)
 
-    draw_boxes(frame, boxes, confidences, indices)
+    for i, box in enumerate(boxes):
+        (x, y, w, h) = box
+        if locked_box is not None and box == locked_box:
+            color = (0, 255, 0)  # Green color for locked box
+        else:
+            color = (255, 255, 255)  # White color for other boxes
+
+        if show_frame:
+            cv2.rectangle(frame, (x, y), (x + w, y + h), color, 2)
+
+            # Draw line from box to center of the frame
+            cv2.line(frame, (x + w // 2, y + h // 2), (square_size // 2, square_size // 2), (0, 0, 255), 2)
+
+            # Display confidence percentage above the box
+            confidence_text = f'{confidences[i] * 100:.2f}%'
+            text_width, text_height = cv2.getTextSize(confidence_text, cv2.FONT_HERSHEY_SIMPLEX, 0.5, 1)[0]
+            cv2.putText(frame, confidence_text, (x, y - 5), cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 1, cv2.LINE_AA)
+
+    if show_frame:
+        cv2.imshow("Cropped Frame", frame)
+        cv2.waitKey(1)
+
+
