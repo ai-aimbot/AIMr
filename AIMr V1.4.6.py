@@ -306,5 +306,3 @@ while True:
     if show_frame:
         cv2.imshow("Cropped Frame", frame)
         cv2.waitKey(1)
-
-
