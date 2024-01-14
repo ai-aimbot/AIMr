@@ -13,7 +13,7 @@ import win32api, win32con, win32gui, win32ui
 
 # Check if AIMr is up to date
 newest_version = "https://raw.githubusercontent.com/kbdevs/ai-aimbot/main/current_version.txt"
-local_version = "V1.4.6.1"
+local_version = "V1.4.6.2"
 
 def clearfig():
     os.system('cls' if os.name == 'nt' else 'clear')
@@ -31,7 +31,7 @@ WEIGHT_FILE = './yolov7-tiny.weights'
 
 clearfig()
 
-show_frame = True if input("Enter 1 for GUI, or 2 for no GUI: ") == "1" else False
+show_frame = True if input("Do you want to use a GUI? (y/n): ").lower() == "y" else False
 
 clearfig()
 
@@ -39,7 +39,7 @@ config_file_path = "./config.json"
 config = False
 
 if os.path.exists(config_file_path):
-    config = True if input("Enter 1 for using a config, or 2 for no config: ") == "1" else False
+    config = True if input("Do you want to use a config? (y/n): ").lower() == "y" else False
 else:
     exit
 
@@ -61,13 +61,11 @@ for i, window in enumerate(windows, start=1):
     print(f"{i}: {window}")
 
 try:
-    selection = int(input("Enter the number of the window you want to select (0 to exit): "))
+    selection = int(input("Enter the number from the list of the game: "))
     
     if 1 <= selection <= len(windows):
         selected_window = gw.getWindowsWithTitle(windows[selection - 1])[0]
         print(f"Selected window: {selected_window.title}")
-    elif selection == 0:
-        print("Exiting the script.")
     else:
         print("Invalid selection. Please enter a valid number.")
 except ValueError:
@@ -110,13 +108,13 @@ if config:
     # Convert smoothness to integer
     smoothness = int(smoothness)
 else:
-    shoot = input("Press 1 for to enable shooting, or anything else for just aim to be enabled: \n")
-    key = input("Press the key you want to use to aim: \n").lower()
+    shoot = True if input("Do you want it to shoot? (y/n): ").lower() == "y" else False
+    key = input("Press the key you want to use to aim: ").lower()
     placement_side = input("Enter 'left' or 'right' or 'no' to place the detection block rectangle: ").lower()
-    smoothness = input("Smoothness? (1-10): \n")
+    smoothness = input("Smoothness? (1-10): ")
     smoothness = int(smoothness)
-    save_config = input("Do you want to save your answers to a config.json file? (y/n): ").lower()
-    if save_config == "y":
+    save_config = True if input("Do you want to save this config? (y/n): ").lower() == "y" else False
+    if save_config:
         config_data = {
             "enable_shooting": shoot,
             "aim_key": key,
@@ -153,7 +151,7 @@ def movement_thread_func(x, y):
             rand_y = np.random.randint(-2, 2)
             win32api.mouse_event(win32con.MOUSEEVENTF_MOVE, int(delta_x) + rand_x, int(delta_y) + rand_y, 0, 0)
             time.sleep(0.005)
-        if shoot == "1":
+        if shoot:
             shooting_thread = threading.Thread(target=shooting_thread_func)
             shooting_thread.start()
 
@@ -167,6 +165,8 @@ def shooting_thread_func():
     time.sleep(0.07)
     win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP, 0, 0, 0, 0)
     time.sleep(0.2)  # Delay for 0.2 seconds
+
+print("Script Loaded.")
 
 while True:
     # Get image of screen
@@ -278,7 +278,7 @@ while True:
 
     if locked_box is not None and keyboard.is_pressed(key):
         movement(x, y)
-    if shoot == "1":
+    if shoot:
         if keyboard.is_pressed(key):  # Check if the "1" key is held
             # Shoot
             win32api.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN, 0, 0, 0, 0)
