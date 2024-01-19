@@ -14,7 +14,7 @@ import win32api, win32con, win32gui, win32ui
 
 # Check if AIMr is up to date
 newest_version = "https://raw.githubusercontent.com/kbdevs/ai-aimbot/main/current_version.txt"
-local_version = "V1.4.7.1"
+local_version = "V1.4.7.2"
 
 def typinglogo(text):
     for character in text:
@@ -38,11 +38,8 @@ def typingInput(text):
 
 os.system('cls' if os.name == 'nt' else 'clear')
 
-typingPrint("Loading...")
+typingPrint("Loading... \n")
 
-time.sleep(1)
-
-os.system('cls' if os.name == 'nt' else 'clear')
 result = pyfiglet.figlet_format("A I M r", font="3-d")
 typinglogo("\u001b[35m" + result + "\u001b[0m")
 typingPrint("\nLoaded.")
@@ -199,7 +196,7 @@ def shooting_thread_func():
     win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP, 0, 0, 0, 0)
     time.sleep(0.2)  # Delay for 0.2 seconds
 
-typingPrint("Ready...")
+typingPrint("\u001b[32mRunning...\u001b[0m\n")
 
 while True:
     # Get image of screen
