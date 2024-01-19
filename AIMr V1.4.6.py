@@ -1,5 +1,6 @@
 import os
 import cv2
+import sys
 import json
 import time
 import math
@@ -13,25 +14,40 @@ import win32api, win32con, win32gui, win32ui
 
 # Check if AIMr is up to date
 newest_version = "https://raw.githubusercontent.com/kbdevs/ai-aimbot/main/current_version.txt"
-local_version = "V1.4.6.2"
+local_version = "V1.4.7"
+
+
+def typingPrint(text):
+    for character in text:
+        sys.stdout.write(character)
+        sys.stdout.flush()
+        time.sleep(0.02)
+
+def typingInput(text):
+    for character in text:
+        sys.stdout.write(character)
+        sys.stdout.flush()
+        time.sleep(0.02)
+    value = input()
+    return value
 
 def clearfig():
     os.system('cls' if os.name == 'nt' else 'clear')
     result = pyfiglet.figlet_format("A I M r", font="3-d")
     print("\u001b[35m" + result + "\u001b[0m")
-    print(local_version + "\n")
+    print(local_version)
     response = requests.get(newest_version, headers={"Cache-Control": 'no-cache', "Pragma": "no-cache"})
     remote_version = response.text.strip()
 
     if remote_version != local_version:
-        print("\033[91mYour version of AIMr is out of date!!\033[0m")
+        print("\033[91mYour version of AIMr is out of date!!\033[0m" + "\n")
 
 CONFIG_FILE = './yolov7-tiny.cfg'
 WEIGHT_FILE = './yolov7-tiny.weights'
 
 clearfig()
 
-show_frame = True if input("Do you want to use a GUI? (y/n): ").lower() == "y" else False
+show_frame = True if typingInput("Do you want to use a GUI? (y/n): ").lower() == "y" else False
 
 clearfig()
 
@@ -39,7 +55,7 @@ config_file_path = "./config.json"
 config = False
 
 if os.path.exists(config_file_path):
-    config = True if input("Do you want to use a config? (y/n): ").lower() == "y" else False
+    config = True if typingInput("Do you want to use a config? (y/n): ").lower() == "y" else False
 else:
     exit
 
@@ -61,15 +77,14 @@ for i, window in enumerate(windows, start=1):
     print(f"{i}: {window}")
 
 try:
-    selection = int(input("Enter the number from the list of the game: "))
+    selection = int(typingInput("Enter the number from the list of the game: "))
     
     if 1 <= selection <= len(windows):
         selected_window = gw.getWindowsWithTitle(windows[selection - 1])[0]
-        print(f"Selected window: {selected_window.title}")
     else:
-        print("Invalid selection. Please enter a valid number.")
+        typingPrint("Invalid selection. Please enter a valid number.")
 except ValueError:
-    print("Invalid input. Please enter a number.")
+    typingPrint("Invalid input. Please enter a number.")
 
 wintitle = selected_window.title
 
@@ -108,12 +123,12 @@ if config:
     # Convert smoothness to integer
     smoothness = int(smoothness)
 else:
-    shoot = True if input("Do you want it to shoot? (y/n): ").lower() == "y" else False
-    key = input("Press the key you want to use to aim: ").lower()
-    placement_side = input("Enter 'left' or 'right' or 'no' to place the detection block rectangle: ").lower()
-    smoothness = input("Smoothness? (1-10): ")
+    shoot = True if typingInput("Do you want it to shoot? (y/n): ").lower() == "y" else False
+    key = typingInput("Press the key you want to use to aim: ").lower()
+    placement_side = typingInput("Enter 'left' or 'right' or 'no' to place the detection block rectangle: ").lower()
+    smoothness = typingInput("Smoothness? (1-10): ")
     smoothness = int(smoothness)
-    save_config = True if input("Do you want to save this config? (y/n): ").lower() == "y" else False
+    save_config = True if typingInput("Do you want to save this config? (y/n): ").lower() == "y" else False
     if save_config:
         config_data = {
             "enable_shooting": shoot,
@@ -123,9 +138,9 @@ else:
         }
         with open('config.json', 'w') as f:
             json.dump(config_data, f)
-            print("Config file saved.")
+            typingPrint("Config file saved.")
     else:
-        print("Config file not saved.")
+        typingPrint("Config file not saved.")
 
 clearfig()
 
@@ -166,7 +181,7 @@ def shooting_thread_func():
     win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP, 0, 0, 0, 0)
     time.sleep(0.2)  # Delay for 0.2 seconds
 
-print("Script Loaded.")
+typingPrint("Script Loaded.")
 
 while True:
     # Get image of screen
@@ -217,7 +232,7 @@ while True:
         rect_x = square_size - rect_size_x  # Right side
         rect_y = square_size - rect_size_y
     else:
-        print("Invalid input. Please enter 'left' or 'no'.")
+        typingPrint("Invalid input. Please enter 'left' or 'no'.")
         exit(1)
 
     # Add a block rectangle to the square frame
