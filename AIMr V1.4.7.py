@@ -199,7 +199,7 @@ def shooting_thread_func():
     win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP, 0, 0, 0, 0)
     time.sleep(0.2)  # Delay for 0.2 seconds
 
-typingPrint("Script Loaded.")
+typingPrint("Ready...")
 
 while True:
     # Get image of screen
