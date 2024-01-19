@@ -14,8 +14,13 @@ import win32api, win32con, win32gui, win32ui
 
 # Check if AIMr is up to date
 newest_version = "https://raw.githubusercontent.com/kbdevs/ai-aimbot/main/current_version.txt"
-local_version = "V1.4.7"
+local_version = "V1.4.7.1"
 
+def typinglogo(text):
+    for character in text:
+        sys.stdout.write(character)
+        sys.stdout.flush()
+        time.sleep(0.01)
 
 def typingPrint(text):
     for character in text:
@@ -30,6 +35,19 @@ def typingInput(text):
         time.sleep(0.02)
     value = input()
     return value
+
+os.system('cls' if os.name == 'nt' else 'clear')
+
+typingPrint("Loading...")
+
+time.sleep(1)
+
+os.system('cls' if os.name == 'nt' else 'clear')
+result = pyfiglet.figlet_format("A I M r", font="3-d")
+typinglogo("\u001b[35m" + result + "\u001b[0m")
+typingPrint("\nLoaded.")
+
+time.sleep(1)
 
 def clearfig():
     os.system('cls' if os.name == 'nt' else 'clear')
