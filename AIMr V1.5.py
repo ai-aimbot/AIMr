@@ -14,7 +14,7 @@ import win32api, win32con, win32gui, win32ui
 
 # Check if AIMr is up to date
 newest_version = "https://raw.githubusercontent.com/kbdevs/ai-aimbot/main/current_version.txt"
-local_version = "V1.4.9"
+local_version = "V1.5"
 
 def clearfig():
         os.system('cls' if os.name == 'nt' else 'clear')
@@ -51,8 +51,8 @@ try:
 
     time.sleep(1)
 
-    CONFIG_FILE = './yolov7-tiny.cfg'
-    WEIGHT_FILE = './yolov7-tiny.weights'
+    CONFIG_FILE = './yolov4-tiny.cfg'
+    WEIGHT_FILE = './yolov4-tiny.weights'
 
     clearfig()
 
@@ -193,9 +193,11 @@ try:
         win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP, 0, 0, 0, 0)
         time.sleep(0.2)  # Delay for 0.2 seconds
 
+    typewriter(f"Hold {key} for it to aim. \n", "print")
     typewriter("\u001b[32mRunning...\u001b[0m", "print")
-
+    
     while True:
+        start_time = time.perf_counter()
         # Get image of screen
         hwnd = win32gui.GetDesktopWindow()
 
@@ -251,7 +253,7 @@ try:
         cv2.rectangle(frame, (rect_x, rect_y), (rect_x + rect_size_x, rect_y + rect_size_y), rect_color, -1)
 
         # Detection loop
-        blob = cv2.dnn.blobFromImage(frame, 1 / 255.0, (320, 320), crop=False)
+        blob = cv2.dnn.blobFromImage(frame, 1 / 255.0, (320, 320), crop=True)
         net.setInput(blob)
         layerOutputs = net.forward(ln)
 
@@ -263,7 +265,7 @@ try:
                 scores = detection[5:]
                 classID = np.argmax(scores)
                 confidence = scores[classID]
-                if confidence > 0.7 and classID == 0:
+                if confidence > 0.4 and classID == 0:
                     box = detection[:4] * np.array([square_size, square_size, square_size, square_size])
                     (centerX, centerY, width, height) = box.astype("int")
                     x = int(centerX - (width / 2))
@@ -272,7 +274,7 @@ try:
                     boxes.append(box)
                     confidences.append(float(confidence))
 
-        indices = cv2.dnn.NMSBoxes(boxes, confidences, 0.7, 0.7)
+        indices = cv2.dnn.NMSBoxes(boxes, confidences, 0.4, 0.4)
 
 
         if locked_box is not None:
@@ -334,6 +336,7 @@ try:
             if floating:
                 cv2.namedWindow("Cropped Frame", cv2.WINDOW_NORMAL)
                 cv2.setWindowProperty("Cropped Frame", cv2.WND_PROP_TOPMOST, 1)
+            cv2.putText(frame, f"FPS: {int(1/(time.perf_counter() - start_time))}", (5, 30), cv2.FONT_HERSHEY_DUPLEX, 1, (113, 116, 244), 2)
             cv2.imshow("Cropped Frame", frame)
             cv2.waitKey(1)
 
