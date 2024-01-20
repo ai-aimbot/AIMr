@@ -14,7 +14,7 @@ import win32api, win32con, win32gui, win32ui
 
 # Check if AIMr is up to date
 newest_version = "https://raw.githubusercontent.com/kbdevs/ai-aimbot/main/current_version.txt"
-local_version = "V1.4.7.3"
+local_version = "V1.4.9"
 
 def clearfig():
         os.system('cls' if os.name == 'nt' else 'clear')
@@ -123,7 +123,7 @@ try:
         # Load config from config.json file
         with open('config.json') as f:
             config = json.load(f)
-
+        floating = config.get("floating", "0")
         shoot = config.get("enable_shooting", "0")
         key = config.get("aim_key", "").lower()
         placement_side = config.get("placement_side", "").lower()
@@ -132,6 +132,8 @@ try:
         # Convert smoothness to integer
         smoothness = int(smoothness)
     else:
+        if show_frame:
+            floating = True if typewriter("Do you want the detection window be pinned on top? (y/n): ", "input").lower() == "y" else False
         shoot = True if typewriter("Do you want it to shoot? (y/n): ", "input").lower() == "y" else False
         key = typewriter("Press the key you want to use to aim: ", "input").lower()
         placement_side = typewriter("Enter 'left' or 'right' or 'no' to place the detection block rectangle: ", "input").lower()
@@ -140,6 +142,7 @@ try:
         save_config = True if typewriter("Do you want to save this config? (y/n): ", "input").lower() == "y" else False
         if save_config:
             config_data = {
+                "floating": floating,
                 "enable_shooting": shoot,
                 "aim_key": key,
                 "placement_side": placement_side,
@@ -328,6 +331,9 @@ try:
                 cv2.putText(frame, confidence_text, (x, y - 5), cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 1, cv2.LINE_AA)
 
         if show_frame:
+            if floating:
+                cv2.namedWindow("Cropped Frame", cv2.WINDOW_NORMAL)
+                cv2.setWindowProperty("Cropped Frame", cv2.WND_PROP_TOPMOST, 1)
             cv2.imshow("Cropped Frame", frame)
             cv2.waitKey(1)
 
