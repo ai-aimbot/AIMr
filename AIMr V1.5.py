@@ -14,7 +14,7 @@ import win32api, win32con, win32gui, win32ui
 
 # Check if AIMr is up to date
 newest_version = "https://raw.githubusercontent.com/kbdevs/ai-aimbot/main/current_version.txt"
-local_version = "V1.5"
+local_version = "V1.5.2"
 
 def clearfig():
         os.system('cls' if os.name == 'nt' else 'clear')
@@ -307,12 +307,6 @@ try:
 
         if locked_box is not None and keyboard.is_pressed(key):
             movement(x, y)
-        if shoot:
-            if keyboard.is_pressed(key):  # Check if the "1" key is held
-                # Shoot
-                win32api.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN, 0, 0, 0, 0)
-                time.sleep(0.07)
-                win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP, 0, 0, 0, 0)
 
         for i, box in enumerate(boxes):
             (x, y, w, h) = box
@@ -334,10 +328,10 @@ try:
 
         if show_frame:
             if floating:
-                cv2.namedWindow("Cropped Frame", cv2.WINDOW_NORMAL)
-                cv2.setWindowProperty("Cropped Frame", cv2.WND_PROP_TOPMOST, 1)
+                cv2.namedWindow("Detections", cv2.WINDOW_NORMAL)
+                cv2.setWindowProperty("Detections", cv2.WND_PROP_TOPMOST, 1)
             cv2.putText(frame, f"FPS: {int(1/(time.perf_counter() - start_time))}", (5, 30), cv2.FONT_HERSHEY_DUPLEX, 1, (113, 116, 244), 2)
-            cv2.imshow("Cropped Frame", frame)
+            cv2.imshow("Detections", frame)
             cv2.waitKey(1)
 
 except KeyboardInterrupt:
