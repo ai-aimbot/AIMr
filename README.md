@@ -16,7 +16,7 @@ AIMr is an ai aimbot that uses the yolov7 detection model, you can choose in the
 
 
 > [!WARNING]
-> <span style="color: red;">Everything past this is found more updated and with more detail in the discord</span>
+> ## <span style="color: red;">Everything past this is found more updated and with more detail in the discord</span>
 
 # NOTICES
 - The mouse movements are not functioning in VALORANT but it will still work as a triggerbot.
