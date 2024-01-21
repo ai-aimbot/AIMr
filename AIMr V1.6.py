@@ -23,6 +23,7 @@ local_version = "V1.6"
 url = "https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Flocalhost%2FAIMr&count_bg=%23FF0000&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Launches&edge_flat=false"
 response = requests.get(url)
 
+
 def clearfig():
         os.system('cls' if os.name == 'nt' else 'clear')
         result = pyfiglet.figlet_format("A I M r", font="3-d")
@@ -45,8 +46,21 @@ def typewriter(text,option):
         if option == "input":
             value = input()
             return value
+        
+def clearfig():
+        os.system('cls' if os.name == 'nt' else 'clear')
+        result = pyfiglet.figlet_format("A I M r", font="3-d")
+        print("\u001b[35m" + result + "\u001b[0m")
+        response = requests.get(newest_version, headers={"Cache-Control": 'no-cache', "Pragma": "no-cache"})
+        remote_version = response.text.strip()
+        if remote_version != local_version:
+            print("\033[91mYour version of AIMr is out of date!!\033[0m" + "\n")
+        else:
+            print(local_version + "\n")
 
 try:
+
+    
 
     os.system('cls' if os.name == 'nt' else 'clear')
 
@@ -66,6 +80,9 @@ try:
     option = True if typewriter("Do you want aimbot or a triggerbot? (1/2): ", "input").lower() == "1" else False
 
     if option:
+
+
+
         clearfig()
         show_frame = True if typewriter("Do you want to use a GUI? (y/n): ", "input").lower() == "y" else False
 
@@ -104,9 +121,6 @@ try:
         frames_without_detection = 0
         max_frames_without_detection = 10
 
-        if show_frame:
-            cv2.namedWindow('Cropped Frame', cv2.WINDOW_NORMAL)
-
         first_execution = True
 
         if config:
@@ -124,12 +138,18 @@ try:
         else:
             if show_frame:
                 floating = True if typewriter("Do you want the detection window be pinned on top? (y/n): ", "input").lower() == "y" else False
+            clearfig()
             shoot = True if typewriter("Do you want it to shoot? (y/n): ", "input").lower() == "y" else False
+            clearfig()
             key = typewriter("Press the key you want to use to aim: ", "input").lower()
+            clearfig()
             placement_side = typewriter("Enter 'left' or 'right' or 'no' to place the detection block rectangle: ", "input").lower()
+            clearfig()
             smoothness = typewriter("Smoothness? (1-10): ", "input")
+            clearfig()
             smoothness = int(smoothness)
             save_config = True if typewriter("Do you want to save this config? (y/n): ", "input").lower() == "y" else False
+            clearfig()
             if save_config:
                 config_data = {
                     "floating": floating,
