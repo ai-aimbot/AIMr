@@ -15,7 +15,7 @@ AIMr is an ai aimbot that uses the yolov7 detection model, you can choose in the
 (Views reset at 4pm PST for some reason)
 
 
-> # [!WARNING]
+> [!WARNING]
 > # <span style="color: red;">Everything past this is found more updated and with more detail in the discord</span>
 
 # NOTICES
