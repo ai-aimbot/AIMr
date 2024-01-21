@@ -87,8 +87,6 @@ try:
         ln = [ln[i - 1] for i in net.getUnconnectedOutLayers()]
 
         screen_size = win32api.GetSystemMetrics(0), win32api.GetSystemMetrics(1)
-        print(screen_size)
-        time.sleep(10)
 
         region = 0, 0, screen_size[0], screen_size[1]
 
