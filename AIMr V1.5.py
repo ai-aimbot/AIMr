@@ -12,9 +12,15 @@ import numpy as np
 import pygetwindow as gw
 import win32api, win32con, win32gui, win32ui
 
+
+
 # Check if AIMr is up to date
 newest_version = "https://raw.githubusercontent.com/kbdevs/ai-aimbot/main/current_version.txt"
-local_version = "V1.5.2"
+local_version = "V1.5.3"
+
+# Launch counter
+url = "https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Flocalhost%2FAIMr&count_bg=%23FF0000&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Launches&edge_flat=false"
+response = requests.get(url)
 
 def clearfig():
         os.system('cls' if os.name == 'nt' else 'clear')
