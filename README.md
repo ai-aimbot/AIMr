@@ -6,13 +6,13 @@
 
 ![AIMr](https://external-content.duckduckgo.com/iu/?u=https://i.imgur.com/KREk0tS.gif)
 
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Flocalhost%2FAIMr&count_bg=%23000000&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Launches&edge_flat=false)](https://hits.seeyoufarm.com)
-
 
 # AIMr
 
 AIMr is an ai aimbot that uses the yolov7 detection model, you can choose in the script if you want a gui, shooting key, if you just want it to aim, where the block window is (to block player model in fn), and smoothness of aim.
 
+
+[![Launcher](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Flocalhost%2FAIMr&count_bg=%23000000&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Launches&edge_flat=false)](https://hits.seeyoufarm.com)
 [![Views](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fkbdevs%2Fai-aimbot&count_bg=%239279B5&title_bg=%23555555&icon=&icon_color=%23FFFFFF&title=Views&edge_flat=false)](https://hits.seeyoufarm.com)
 (Views reset at 4pm PST for some reason)
 
