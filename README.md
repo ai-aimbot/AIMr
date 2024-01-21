@@ -14,7 +14,7 @@ AIMr is an ai aimbot that uses the yolov7 detection model, you can choose in the
 [![Views](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fkbdevs%2Fai-aimbot&count_bg=%239279B5&title_bg=%23555555&icon=&icon_color=%23FFFFFF&title=Views&edge_flat=false)](https://hits.seeyoufarm.com)
 (Views reset at 4pm PST for some reason)
 
-## Everything past this is found more updated and with more detail in the discord
+## <span style="color: red;">Everything past this is found more updated and with more detail in the discord</span>
 
 # NOTICES
 - The mouse movements are not functioning in VALORANT but it will still work as a triggerbot.
