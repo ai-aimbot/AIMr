@@ -10,9 +10,7 @@ import keyboard
 import pyautogui
 import threading
 import numpy as np
-import pygetwindow as gw
 import win32api, win32con, win32gui, win32ui
-import win32api
 
 
 # Check if AIMr is up to date
@@ -46,7 +44,8 @@ def typewriter(text,option):
         if option == "input":
             value = input()
             return value
-        
+
+
 def clearfig():
         os.system('cls' if os.name == 'nt' else 'clear')
         result = pyfiglet.figlet_format("A I M r", font="3-d")
@@ -59,8 +58,6 @@ def clearfig():
             print(local_version + "\n")
 
 try:
-
-    
 
     os.system('cls' if os.name == 'nt' else 'clear')
 
@@ -81,15 +78,12 @@ try:
 
     if option:
 
-
-
         clearfig()
         show_frame = True if typewriter("Do you want to use a GUI? (y/n): ", "input").lower() == "y" else False
 
         clearfig()
 
         config_file_path = "./config.json"
-        config = False
 
         if os.path.exists(config_file_path):
             config = True if typewriter("Do you want to use a config? (y/n): ", "input").lower() == "y" else False
@@ -109,9 +103,7 @@ try:
 
         region = 0, 0, screen_size[0], screen_size[1]
 
-        size_scale = 2
-
-        # Define the square region in the middle
+        # square_size = 540
         square_size = min(region[2], region[3]) // 2
         square_x = region[0] + (region[2] - square_size) // 2
         square_y = region[1] + (region[3] - square_size) // 2
@@ -120,8 +112,6 @@ try:
         locked_box = None
         frames_without_detection = 0
         max_frames_without_detection = 10
-
-        first_execution = True
 
         if config:
             # Load config from config.json file
@@ -236,15 +226,15 @@ try:
 
             if placement_side == 'left':
                 # Rectangle on the left side
-                rect_size_y = 300
-                rect_size_x = 200
+                rect_size_y = int(round(square_size * 3/5.4))
+                rect_size_x = int(round(square_size * 2/5.4))
                 rect_color = (0, 0, 0)
                 rect_x = 0  # Left side
                 rect_y = square_size - rect_size_y
             elif placement_side == 'right':
                 # Rectangle on the right side
-                rect_size_y = 250
-                rect_size_x = 150
+                rect_size_y = int(round(square_size * 2.5/5.4))
+                rect_size_x = int(round(square_size * 1.5/5.4))
                 rect_color = (0, 0, 0)
                 rect_x = square_size - rect_size_x  # Right side
                 rect_y = square_size - rect_size_y
