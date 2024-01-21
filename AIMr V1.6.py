@@ -79,6 +79,8 @@ try:
         else:
             exit
 
+        clearfig()
+
         net = cv2.dnn.readNetFromDarknet(CONFIG_FILE, WEIGHT_FILE)
         net.setPreferableBackend(cv2.dnn.DNN_BACKEND_CUDA)
         net.setPreferableTarget(cv2.dnn.DNN_TARGET_CUDA)
