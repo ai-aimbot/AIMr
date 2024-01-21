@@ -351,7 +351,7 @@ try:
         delay = int(typewriter("Enter the delay (ms) you want to use for the triggerbot: ", "input"))
 
         clearfig()
-        typewriter(f"Hold {key} for it to aim. \n", "print")
+        typewriter(f"Hold {key} for it to shoot when it notices changes. \n", "print")
         typewriter("\u001b[32mRunning...\u001b[0m", "print")
 
         while True:
