@@ -2,7 +2,6 @@ numpy
 pywin32
 opencv-python
 keyboard
-pygetwindow
 pyfiglet
 requests
 pyautogui
