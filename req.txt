@@ -5,3 +5,4 @@ keyboard
 pygetwindow
 pyfiglet
 requests
+pyautogui
