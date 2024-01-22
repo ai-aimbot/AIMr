@@ -74,6 +74,8 @@ try:
 
     clearfig()
 
+    config = False
+
     option = True if typewriter("Do you want aimbot or a triggerbot? (1/2): ", "input").lower() == "1" else False
 
     if option:
@@ -112,6 +114,8 @@ try:
         locked_box = None
         frames_without_detection = 0
         max_frames_without_detection = 10
+
+
 
         if config:
             # Load config from config.json file
