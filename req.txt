@@ -5,3 +5,5 @@ keyboard
 pyfiglet
 requests
 pyautogui
+pyscreeze
+pillow
