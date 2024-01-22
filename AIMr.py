@@ -13,9 +13,10 @@ import numpy as np
 import win32api, win32con, win32gui, win32ui
 
 
-# Check if AIMr is up to date
-newest_version = "https://raw.githubusercontent.com/kbdevs/ai-aimbot/main/current_version.txt"
-local_version = "V1.6.2"
+
+with open("localv.json", "r") as file:
+    data = json.load(file)
+    local_version = data["version"]
 
 # Launch counter
 url = "https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Flocalhost%2FAIMr&count_bg=%23FF0000&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Launches&edge_flat=false"
@@ -26,12 +27,7 @@ def clearfig():
         os.system('cls' if os.name == 'nt' else 'clear')
         result = pyfiglet.figlet_format("A I M r", font="3-d")
         print("\u001b[35m" + result + "\u001b[0m")
-        response = requests.get(newest_version, headers={"Cache-Control": 'no-cache', "Pragma": "no-cache"})
-        remote_version = response.text.strip()
-        if remote_version != local_version:
-            print("\033[91mYour version of AIMr is out of date!!\033[0m" + "\n")
-        else:
-            print(local_version + "\n")
+        print(local_version + "\n")
 
 def typewriter(text,option):
         for character in text:
@@ -50,12 +46,7 @@ def clearfig():
         os.system('cls' if os.name == 'nt' else 'clear')
         result = pyfiglet.figlet_format("A I M r", font="3-d")
         print("\u001b[35m" + result + "\u001b[0m")
-        response = requests.get(newest_version, headers={"Cache-Control": 'no-cache', "Pragma": "no-cache"})
-        remote_version = response.text.strip()
-        if remote_version != local_version:
-            print("\033[91mYour version of AIMr is out of date!!\033[0m" + "\n")
-        else:
-            print(local_version + "\n")
+        print(local_version + "\n")
 
 try:
 
@@ -69,8 +60,8 @@ try:
 
     time.sleep(1)
 
-    CONFIG_FILE = './yolov4-tiny.cfg'
-    WEIGHT_FILE = './yolov4-tiny.weights'
+    CONFIG_FILE = './yolo.cfg'
+    WEIGHT_FILE = './yolo.weights'
 
     clearfig()
 
