@@ -47,7 +47,7 @@ try:
 
             print("Downloading...")
             # Download the zip file
-            url = "https://codeload.github.com/ai-aimbot/AIMr/zip/refs/heads/testing"
+            url = "https://codeload.github.com/ai-aimbot/AIMr/zip/refs/heads/main"
             response = urllib.request.urlopen(url)
             zip_content = response.read()
 
