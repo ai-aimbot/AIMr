@@ -7,7 +7,8 @@ import subprocess
 
 try:
     newest_version = "https://raw.githubusercontent.com/kbdevs/ai-aimbot/main/current_version.txt"
-    response = urllib.request.urlopen(newest_version)
+    req = urllib.request.Request(newest_version, headers={'Cache-Control': 'no-cache'})
+    response = urllib.request.urlopen(req)
     remote_version = response.read().decode().strip()
 
     file_paths = [
