@@ -134,6 +134,8 @@ try:
         else:
             if show_frame:
                 floating = True if typewriter("Do you want the detection window be pinned on top? (y/n): ", "input").lower() == "y" else False
+            else:
+                floating = False
             clearfig()
             shoot = True if typewriter("Do you want it to shoot? (y/n): ", "input").lower() == "y" else False
             clearfig()
@@ -232,7 +234,7 @@ try:
 
             if placement_side == 'left':
                 # Rectangle on the left side
-                rect_size_y = int(round(square_size * 3/5.4))
+                rect_size_y = int(round(square_size * 4/5.4))
                 rect_size_x = int(round(square_size * 2/5.4))
                 rect_color = (0, 0, 0)
                 rect_x = 0  # Left side
