@@ -13,7 +13,7 @@ import keyboard
 import pyautogui
 import threading
 import numpy as np
-from os import system
+from colorama import Fore, Style
 import win32api, win32con, win32gui, win32ui
 
 with open("localv.json", "r") as file:
@@ -34,12 +34,6 @@ cstitle = threading.Thread(target=set_console_title)
 cstitle.daemon = True  # Set the thread as a daemon thread
 cstitle.start()
 
-def clearfig():
-        os.system('cls' if os.name == 'nt' else 'clear')
-        result = pyfiglet.figlet_format("A I M r", font="3-d")
-        print("\u001b[35m" + result + "\u001b[0m")
-        print(local_version + "\n")
-
 def typewriter(text,option):
         for character in text:
             sys.stdout.write(character)
@@ -52,22 +46,31 @@ def typewriter(text,option):
             value = input()
             return value
 
+def AIMr(q, text, indent):
+    if q:
+        printable = (Fore.BLUE + "[Question] " + Style.RESET_ALL + Style.DIM + text + Style.RESET_ALL)
+    else:
+        printable = (Fore.MAGENTA + "[AIMr] " + Style.RESET_ALL + Style.DIM + text + Style.RESET_ALL)
+    if indent:
+        printable = printable + "\n"
+    return printable
 
 def clearfig():
         os.system('cls' if os.name == 'nt' else 'clear')
         result = pyfiglet.figlet_format("A I M r", font="3-d")
         print("\u001b[35m" + result + "\u001b[0m")
-        print(local_version + "\n")
+        print(AIMr(False, "Join the discord: dsc.gg/AIMr", False))
+        print(AIMr(False, local_version, True))
 
 try:
 
     os.system('cls' if os.name == 'nt' else 'clear')
 
-    typewriter("Loading... \n", "print")
+    typewriter(AIMr(False, "Loading...", True), "print")
 
     result = pyfiglet.figlet_format("A I M r", font="3-d")
     typewriter("\u001b[35m" + result + "\u001b[0m", "logo")
-    typewriter("\nLoaded.", "print")
+    typewriter("\n" + AIMr(False, "Loaded", True), "print")
 
     time.sleep(1)
 
@@ -78,19 +81,19 @@ try:
 
     config = False
 
-    option = True if typewriter("Do you want aimbot or a triggerbot? (1/2): ", "input").lower() == "1" else False
+    option = True if typewriter(AIMr(True, "Do you want aimbot or a triggerbot? (1/2): ", False), "input").lower() == "1" else False
 
     if option:
 
         clearfig()
-        show_frame = True if typewriter("Do you want to use a GUI? (y/n): ", "input").lower() == "y" else False
+        show_frame = True if typewriter(AIMr(True, "Do you want to use a GUI? (y/n): ", False), "input").lower() == "y" else False
 
         clearfig()
 
         config_file_path = "./config.json"
 
         if os.path.exists(config_file_path):
-            config = True if typewriter("Do you want to use a config? (y/n): ", "input").lower() == "y" else False
+            config = True if typewriter(AIMr(True, "Do you want to use a config? (y/n): ", False), "input").lower() == "y" else False
         else:
             exit
 
@@ -133,20 +136,26 @@ try:
             smoothness = int(smoothness)
         else:
             if show_frame:
-                floating = True if typewriter("Do you want the detection window be pinned on top? (y/n): ", "input").lower() == "y" else False
+                floating = True if typewriter(AIMr(True, "Do you want the detection window to be pinned on top? (y/n): ", False), "input").lower() == "y" else False
             else:
                 floating = False
+
             clearfig()
-            shoot = True if typewriter("Do you want it to shoot? (y/n): ", "input").lower() == "y" else False
+
+            shoot = True if typewriter(AIMr(True, "Do you want it to shoot? (y/n): ", False), "input").lower() == "y" else False
             clearfig()
-            key = typewriter("Press the key you want to use to aim: ", "input").lower()
+
+            key = typewriter(AIMr(True, "Press the key you want to use to aim: ", False), "input").lower()
             clearfig()
-            placement_side = typewriter("Enter 'left' or 'right' or 'no' to place the detection block rectangle: ", "input").lower()
+
+            placement_side = typewriter(AIMr(True, "Enter 'left' or 'right' or 'no' to place the detection block rectangle: ", False), "input").lower()
             clearfig()
-            smoothness = typewriter("Smoothness? (1-10): ", "input")
+
+            smoothness = typewriter(AIMr(True, "Smoothness? (1-10): ", False), "input")
             clearfig()
             smoothness = int(smoothness)
-            save_config = True if typewriter("Do you want to save this config? (y/n): ", "input").lower() == "y" else False
+
+            save_config = True if typewriter(AIMr(True, "Do you want to save this config? (y/n): ", False), "input").lower() == "y" else False
             clearfig()
             if save_config:
                 config_data = {
@@ -158,9 +167,11 @@ try:
                 }
                 with open('config.json', 'w') as f:
                     json.dump(config_data, f)
-                    typewriter("Config file saved.", "print")
+                    typewriter(AIMr(True,"Config file saved.", False), "print")
             else:
-                typewriter("Config file not saved.", "print")
+                typewriter(AIMr(True, "Config file not saved.", False), "print")
+            
+            time.sleep(1)
 
         clearfig()
 
@@ -201,8 +212,8 @@ try:
             win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP, 0, 0, 0, 0)
             time.sleep(0.2)  # Delay for 0.2 seconds
 
-        typewriter(f"Hold {key} for it to aim. \n", "print")
-        typewriter("\u001b[32mRunning...\u001b[0m", "print")
+        typewriter(AIMr(False, f"Hold {key} for it to aim.", True), "print")
+        typewriter(AIMr(False, "\u001b[32mRunning...\u001b[0m", False), "print")
         
         while True:
             start_time = time.perf_counter()
@@ -254,7 +265,7 @@ try:
                 rect_x = square_size - rect_size_x  # Right side
                 rect_y = square_size - rect_size_y
             else:
-                typewriter("Invalid input. Please enter 'left' or 'no'.", "print")
+                typewriter(AIMr(False, "Invalid input. Please enter 'left' or 'no'.", False), "print")
                 exit(1)
 
             # Add a block rectangle to the square frame
@@ -344,13 +355,13 @@ try:
 
     else:
         clearfig()
-        key = typewriter("Enter the key you want to use to activate the triggerbot: ", "input")
+        key = typewriter(AIMr(True, "Enter the key you want to use to activate the triggerbot: ", False), "input")
         clearfig()
-        delay = int(typewriter("Enter the delay (ms) you want to use for the triggerbot: ", "input"))
+        delay = int(typewriter(AIMr(True, "Enter the delay (ms) you want to use for the triggerbot: ", False), "input"))
 
         clearfig()
-        typewriter(f"Hold {key} for it to shoot when it notices changes. \n", "print")
-        typewriter("\u001b[32mRunning...\u001b[0m", "print")
+        typewriter(AIMr(False, f"Hold {key} for it to shoot when it notices changes.", True), "print")
+        typewriter(AIMr(False, "\u001b[32mRunning...\u001b[0m", False), "print")
 
         while True:
             time.sleep(0.010)
@@ -364,5 +375,5 @@ try:
 
 except KeyboardInterrupt:
     clearfig()
-    typewriter("\u001b[0m\033[91mExiting...\n\u001b[0m", "print")
+    typewriter(AIMr(False, "\u001b[0m\033[91mExiting... Goodbye!\n\u001b[0m", False), "print")
     time.sleep(0.2)
