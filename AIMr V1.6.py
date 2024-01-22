@@ -354,7 +354,7 @@ try:
                 og_pixel_color = pyautogui.pixel(965, 538)
                 pixel_color = pyautogui.pixel(965, 538)
                 if abs(sum(pixel_color) - sum(og_pixel_color)) > 0.05 * sum(og_pixel_color):  # Change the condition based on the desired color
-                    time.sleep((delay-10)/1000)
+                    time.sleep((delay)/1000)
                     win32api.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN, 0, 0, 0, 0)
                     win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP, 0, 0, 0, 0)
 
