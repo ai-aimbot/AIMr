@@ -4,15 +4,17 @@ import sys
 import json
 import time
 import math
+import ctypes
+import random
+import string
 import pyfiglet
 import requests
 import keyboard
 import pyautogui
 import threading
 import numpy as np
+from os import system
 import win32api, win32con, win32gui, win32ui
-
-
 
 with open("localv.json", "r") as file:
     data = json.load(file)
@@ -22,6 +24,15 @@ with open("localv.json", "r") as file:
 url = "https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Flocalhost%2FAIMr&count_bg=%23FF0000&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Launches&edge_flat=false"
 response = requests.get(url)
 
+def set_console_title():
+    while True:
+        randomchar = ''.join(random.choices(string.ascii_letters + string.digits, k=16))
+        ctypes.windll.kernel32.SetConsoleTitleW(randomchar)
+        time.sleep(0.01)
+
+cstitle = threading.Thread(target=set_console_title)
+cstitle.daemon = True  # Set the thread as a daemon thread
+cstitle.start()
 
 def clearfig():
         os.system('cls' if os.name == 'nt' else 'clear')
