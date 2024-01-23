@@ -59,8 +59,8 @@ def clearfig():
     os.system('cls' if os.name == 'nt' else 'clear')
     result = pyfiglet.figlet_format("A I M r", font="larry3d")
     print("\u001b[35m" + result.rstrip() + "\u001b[0m \n")
-    print(AIMr(False, "Join the discord: dsc.gg/AIMr", False))
-    print(AIMr(False, local_version, True))
+    print(AIMr(False, "Welcome to AIMr [" +  local_version + "]", False))
+    print(AIMr(False, "Join the discord: dsc.gg/AIMr", True))
 
 try:
 
