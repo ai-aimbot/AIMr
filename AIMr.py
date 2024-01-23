@@ -56,11 +56,11 @@ def AIMr(q, text, indent):
     return printable
 
 def clearfig():
-        os.system('cls' if os.name == 'nt' else 'clear')
-        result = pyfiglet.figlet_format("A I M r", font="3-d")
-        print("\u001b[35m" + result + "\u001b[0m")
-        print(AIMr(False, "Join the discord: dsc.gg/AIMr", False))
-        print(AIMr(False, local_version, True))
+    os.system('cls' if os.name == 'nt' else 'clear')
+    result = pyfiglet.figlet_format("A I M r", font="larry3d")
+    print("\u001b[35m" + result.rstrip() + "\u001b[0m \n")
+    print(AIMr(False, "Join the discord: dsc.gg/AIMr", False))
+    print(AIMr(False, local_version, True))
 
 try:
 
@@ -68,8 +68,8 @@ try:
 
     typewriter(AIMr(False, "Loading...", True), "print")
 
-    result = pyfiglet.figlet_format("A I M r", font="3-d")
-    typewriter("\u001b[35m" + result + "\u001b[0m", "logo")
+    result = pyfiglet.figlet_format("A I M r", font="larry3d")
+    typewriter("\u001b[35m" + result.rstrip() + "\u001b[0m \n", "logo")
     typewriter("\n" + AIMr(False, "Loaded", True), "print")
 
     time.sleep(1)
