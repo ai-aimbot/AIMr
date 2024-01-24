@@ -167,9 +167,9 @@ try:
                 }
                 with open('config.json', 'w') as f:
                     json.dump(config_data, f)
-                    typewriter(AIMr(True,"Config file saved.", False), "print")
+                    typewriter(AIMr(False,"Config file saved.", False), "print")
             else:
-                typewriter(AIMr(True, "Config file not saved.", False), "print")
+                typewriter(AIMr(False, "Config file not saved.", False), "print")
             
             time.sleep(1)
 
@@ -213,7 +213,7 @@ try:
             time.sleep(0.2)  # Delay for 0.2 seconds
 
         typewriter(AIMr(False, f"Hold {key} for it to aim.", True), "print")
-        typewriter(AIMr(False, "\u001b[32mRunning...\u001b[0m", False), "print")
+        typewriter(AIMr(False, Style.RESET_ALL + "\u001b[32mRunning...\u001b[0m", False), "print")
         
         while True:
             start_time = time.perf_counter()
