@@ -148,7 +148,7 @@ try:
             key = typewriter(AIMr(True, "Press the key you want to use to aim: ", False), "input").lower()
             clearfig()
 
-            placement_side = typewriter(AIMr(True, "Enter 'left' or 'right' or 'no' to place the detection block rectangle: ", False), "input").lower()
+            placement_side = typewriter(AIMr(True, "Enter 'left' or 'right' or 'no' to pick a detection block: ", False), "input").lower()
             clearfig()
 
             smoothness = typewriter(AIMr(True, "Smoothness? (1-10): ", False), "input")
