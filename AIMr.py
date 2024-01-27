@@ -5,8 +5,6 @@ import zipfile
 import subprocess
 import urllib.request
 
-
-
 try:
     newest_version = "https://raw.githubusercontent.com/kbdevs/ai-aimbot/main/current_version.txt"
     req = urllib.request.Request(newest_version, headers={'Cache-Control': 'no-cache'})
