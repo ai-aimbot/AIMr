@@ -12,7 +12,7 @@ try:
     remote_version = response.read().decode().strip()
 
     file_paths = [
-        "./AIMr.py",
+        "./library.py",
         "./yolo.cfg",
         "./yolo.weights",
         "./req.txt",
@@ -87,7 +87,7 @@ try:
                     data2["pip"] = True
                     json.dump(data2, file)
 
-    subprocess.run(["python", "AIMr.py"])
+    subprocess.run(["python", "library.py"])
 
 except KeyboardInterrupt:
     exit()
