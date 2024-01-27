@@ -12,7 +12,7 @@
 
 AIMr is an ai aimbot that uses the yolov7 detection model, you can choose in the script if you want a gui, shooting key, if you just want it to aim, where the block window is (to block player model in fn), and smoothness of aim.
 
-## RUN IT USING LAUNCHER.PY
+
 
 
 [How many times has it been launched?](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Flocalhost%2FAIMr&count_bg=%23000000&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Launches&edge_flat=false)
