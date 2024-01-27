@@ -103,11 +103,20 @@ try:
 
         if pip is not True:
             print("Installing required modules...")
-            os.system("pip install -r req.txt")
-            os.system("pip3 install -r req.txt")
+            subprocess.run(["pip", "install", "-r", "req.txt"])
+            subprocess.run(["pip3", "install", "-r", "req.txt"])
             with open("localv.json", "w") as file:
                 data2["pip"] = True
                 json.dump(data2, file)
+
+            os.remove(file_paths[3])
+
+        for file_path in file_paths[4:7]:
+            if os.path.exists(file_path):
+                try:
+                    os.remove(file_path)
+                except Exception as e:
+                    print(f"Error occurred while removing {file_path}: {e}")
 
     if os.path.exists("library.py"):
         subprocess.run(["python", "library.py"])
