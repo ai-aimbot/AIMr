@@ -30,25 +30,10 @@ AIMr is an ai aimbot that uses the yolov7 detection model, you can choose in the
 ![image](https://github.com/kbdevs/ai-aimbot/assets/86767129/1b2980a6-4c4a-48ff-b475-0a6ee286d768)
 
 
-# NOTICES
-- The mouse movements are not functioning in VALORANT but it will still work as a triggerbot.
-- Game must be on windowed fullscreen
-
-# TODO
-- Refine aim
-- Changeable FOV for the detection
-- Showcase Video
-- Create EXE's for no install running
-- Fully make ESP
-- Make a GUI
-- Make a full tutorial and explain everything
-- Make config files
-- Widescreen support
-
-
 # How to run
 Join the [discord](https://dsc.gg/AIMr) and check the guides channel and if those don't work open a ticket <br>
 Basic Help Guide: https://www.youtube.com/watch?v=-QbQrsrmpo0
+
 ## I need help!
 
 You can join the [discord](https://dsc.gg/AIMr) and make a ticket in the support channel and we also have guides there.
@@ -58,11 +43,6 @@ You can join the [discord](https://dsc.gg/AIMr) and make a ticket in the support
 ## Which games is AIMr compatible with?
 
 AIMr is expected to work with games that have player models resembling human anatomy.
-
-## How can I use AIMr?
-
-To configure AIMr for your desired game, simply run the program, answer the questions it asks then use it! 
-
 
 ## How do I make it use GPU (RTX-ONLY)?
 ![image](https://github.com/kbdevs/ai-aimbot/assets/86767129/4231cfa3-6a3f-485e-aaa7-ef7a78680ae8)
