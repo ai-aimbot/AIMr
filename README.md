@@ -23,7 +23,7 @@ AIMr is an ai aimbot that uses the yolov7 detection model, you can choose in the
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/N2wy5XQ-37c/0.jpg)](https://www.youtube.com/watch?v=N2wy5XQ-37c)
 
 > [!WARNING]
-> # <span style="color: red;">Everything past this is found more updated and with more detail in the discord</span>
+> # <span style="color: red;">Everything past this is found more updated and with more detail in the discord, as well boosters get priority support</span>
 
 ## Thank you to relaaaaaaaxed and rastn on discord for translating
 
