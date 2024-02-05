@@ -1,5 +1,5 @@
 
-<h2 style="text-align: center;"> Join the Discord for help (support channel) and announcements https://dsc.gg/AIMr (1k+ members)</h2>
+<h2 style="text-align: center;"> Join the Discord for help (support channel) and announcements https://discord.gg/AIMr (2k+ members)</h2>
 
 > [!WARNING]
 > I am not responsible if you get banned (Haven't gotten any reports of bans)
@@ -34,12 +34,12 @@ AIMr is an ai aimbot that uses the yolov7 detection model, you can choose in the
 
 
 # How to run
-Join the [discord](https://dsc.gg/AIMr) and check the guides channel and if those don't work open a ticket <br>
+Join the [discord](https://discord.gg/AIMr) and check the guides channel and if those don't work open a ticket <br>
 Basic Help Guide: https://www.youtube.com/watch?v=-QbQrsrmpo0
 
 ## I need help!
 
-You can join the [discord](https://dsc.gg/AIMr) and make a ticket in the support channel and we also have guides there.
+You can join the [discord](https://discord.gg/AIMr) and make a ticket in the support channel and we also have guides there.
 
 # FAQ
 
