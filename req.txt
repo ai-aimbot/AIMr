@@ -8,3 +8,5 @@ pyautogui
 pyscreeze
 pillow
 colorama
+customtkinter
+bettercam
