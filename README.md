@@ -19,7 +19,7 @@ AIMr is an ai aimbot that uses the yolov7 detection model, you can choose in the
 [![Views](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fkbdevs%2Fai-aimbot&count_bg=%239279B5&title_bg=%23555555&icon=&icon_color=%23FFFFFF&title=Views&edge_flat=false)](https://hits.seeyoufarm.com)
 (daily resets at 4pm PST for some reason)
 
-## How to run
+## How to run (Click it)
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/JvctAGLBmwI/0.jpg)](https://www.youtube.com/watch?v=JvctAGLBmwI)
 
 ## Showcase (Click it)
