@@ -1,6 +1,8 @@
 
 <h2 style="text-align: center;"> Join the Discord for help (support channel) and announcements https://discord.gg/AIMr (2k+ members)</h2>
 
+<iframe src="https://discord.com/widget?id=1191468194490241075&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+
 > [!WARNING]
 > I am not responsible if you get banned (Haven't gotten any reports of bans)
 
