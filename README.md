@@ -1,5 +1,5 @@
 
-<h2 style="text-align: center;"> Join the Discord for help (support channel) and announcements https://discord.gg/AIMr (2k+ members)</h2>
+<h2 style="text-align: center;"> Join the Discord for help ([support channel](https://discord.com/channels/1191468194490241075/1191470814000857179) and announcements https://discord.gg/AIMr (2k+ members)</h2>
 
 
 > [!WARNING]
