@@ -6,9 +6,6 @@
 > I am not responsible if you get banned (Haven't gotten any reports of bans)
 
 ![AIMr](https://external-content.duckduckgo.com/iu/?u=https://i.imgur.com/KREk0tS.gif)
-
-<iframe src="https://discord.com/widget?id=1191468194490241075&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-
 # AIMr
 
 AIMr is an ai aimbot that uses the yolov7 detection model, you can choose in the script if you want a gui, shooting key, if you just want it to aim, where the block window is (to block player model in fn), and smoothness of aim.
