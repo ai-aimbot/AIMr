@@ -29,6 +29,7 @@ try:
             "version": remote_version,
             "pip": False,
             "python": False,
+            "first_launch": True
         }
         with open(localv_path, "w") as file:
             json.dump(data, file)
