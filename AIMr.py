@@ -28,7 +28,6 @@ try:
         data = {
             "version": remote_version,
             "pip": False,
-            "python": False,
             "first_launch": True
         }
         with open(localv_path, "w") as file:
@@ -94,41 +93,6 @@ try:
         with open("localv.json", "w") as file:
             data["version"] = remote_version
             json.dump(data, file)
-
-        with open("localv.json", "r") as file:
-            pls = json.load(file)
-            python = pls["python"]
-
-        if python is not True:
-            print("Downloading python...")
-            # Download the python
-            url = "https://www.python.org/ftp/python/3.12.1/python-3.12.1-amd64.exe"
-            filename = "pythoninstaller.exe"
-            urllib.request.urlretrieve(url, filename)
-
-            print("Installing python...")
-            subprocess.run([filename, "/quiet", "InstallAllUsers=1", "PrependPath=1", "Include_test=0"])
-
-            with open("localv.json", "w") as file:
-                pls["python"] = True
-                json.dump(pls, file)
-
-            os.remove(filename)
-
-
-        with open("localv.json", "r") as file:
-            data2 = json.load(file)
-            pip = data["pip"]
-
-        if pip is not True:
-            print("Installing required modules...")
-            subprocess.run(["pip", "install", "-r", "req.txt"])
-            subprocess.run(["pip3", "install", "-r", "req.txt"])
-            with open("localv.json", "w") as file:
-                data2["pip"] = True
-                json.dump(data2, file)
-
-            os.remove(file_paths[3])
 
         for file_path in file_paths[4:7]:
             if os.path.exists(file_path):
