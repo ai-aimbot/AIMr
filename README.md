@@ -1,6 +1,4 @@
 
-<h2 style="text-align: center;"> Join the Discord for help (support channel) and announcements https://discord.gg/AIMr (2k+ members)</h2>
-
 
 > [!WARNING]
 > I am not responsible if you get banned (Haven't gotten any reports of bans)
@@ -9,7 +7,7 @@
 # AIMr
 
 AIMr is an ai aimbot that uses the yolov7 detection model, you can choose in the script if you want a gui, shooting key, if you just want it to aim, where the block window is (to block player model in fn), and smoothness of aim.
-
+<h2 style="text-align: center;"> Join the Discord for help and announcements https://discord.gg/AIMr</h2>
 
 
 
@@ -17,47 +15,34 @@ AIMr is an ai aimbot that uses the yolov7 detection model, you can choose in the
 [![Views](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fkbdevs%2Fai-aimbot&count_bg=%239279B5&title_bg=%23555555&icon=&icon_color=%23FFFFFF&title=Views&edge_flat=false)](https://hits.seeyoufarm.com)
 (daily resets at 4pm PST for some reason)
 
-<br>
-<br>
 
 
-# [DOWNLOAD!](https://direct-link.net/461464/aimr-auto-install)
+# How to use
+### Option 1
+Run the auto install from [releases](https://github.com/kbdevs/ai-aimbot/releases/tag/launcher) and you should be good to go! <br>
+### Option 2 (if you dont want the EXE or linkvertise)
+Join our [discord](https://discord.gg/AIMr) and go the [guides channel](https://discord.com/channels/1191468194490241075/1191799494031982592).
+### If none of those work
+Feel free to join our [discord](https://discord.gg/AIMr) for [help](https://discord.com/channels/1191468194490241075/1191470814000857179)!
+![image](https://github.com/kbdevs/ai-aimbot/assets/86767129/4e035e78-1a44-47e6-921a-886b28455d20)
 
-<br>
-<br>
+## Which games is AIMr compatible with?
 
+AIMr is expected to work with games that have player that look like humans, we have an option of a block area for games like fortnite to block out detecting your own player.
 
 ## How to run (Click it)
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/JvctAGLBmwI/0.jpg)](https://www.youtube.com/watch?v=JvctAGLBmwI)
 
-## Showcase (Click it)
+## Old Showcase (Click it)
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/N2wy5XQ-37c/0.jpg)](https://www.youtube.com/watch?v=N2wy5XQ-37c)
-
-> [!WARNING]
-> # <span style="color: red;">Everything past this is found more updated and with more detail in the discord</span>
-
-## Thank you to relaaaaaaaxed, rastn, and spec_2 on discord for translating
-![image](https://github.com/kbdevs/ai-aimbot/assets/86767129/4e035e78-1a44-47e6-921a-886b28455d20)
-
-
-
-# How to run
-Join the [discord](https://discord.gg/AIMr) and check the guides channel and if those don't work open a ticket <br>
-Basic Help Guide: https://www.youtube.com/watch?v=-QbQrsrmpo0
-
-## I need help!
-
-You can join the [discord](https://discord.gg/AIMr) and make a ticket in the support channel and we also have guides there.
-
-# FAQ
-
-## Which games is AIMr compatible with?
-
-AIMr is expected to work with games that have player models resembling human anatomy.
 
 ## How do I make it use GPU (RTX-ONLY)?
 ![image](https://github.com/kbdevs/ai-aimbot/assets/86767129/4231cfa3-6a3f-485e-aaa7-ef7a78680ae8)
 [You can use this guide.](https://medium.com/analytics-vidhya/build-opencv-from-source-with-cuda-for-gpu-access-on-windows-5cd0ce2b9b37) 
+
+## I need help!
+
+You can join the [discord](https://discord.gg/AIMr) and make a ticket in the [support channel](https://discord.com/channels/1191468194490241075/1191470814000857179) and we also have guides there.
 
 ## Free spoofer if you want to use one
 
