@@ -37,6 +37,20 @@ try:
             data = json.load(file)
             local_version = data["version"]
 
+    if first_launch is not True:
+        with open("localv.json", "r") as file:
+                data2 = json.load(file)
+                pip = data["pip"]
+
+        if pip is not True:
+            print("Installing required modules...")
+            os.system("pip install -r req.txt")
+            os.system("pip3 install -r req.txt")
+            with open("localv.json", "w") as file:
+                data2["pip"] = True
+                json.dump(data2, file)
+            os.remove(file_paths[3])
+
     if remote_version != local_version:
 
         print("Deleting old files...")
