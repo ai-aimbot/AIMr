@@ -19,6 +19,7 @@ try:
         "./LICENSE",
         "./README.md",
         "./current_version.txt",
+        "./AIMr.py"
     ]
 
     localv_path = "localv.json"
