@@ -6,7 +6,8 @@
 ![AIMr](https://external-content.duckduckgo.com/iu/?u=https://i.imgur.com/KREk0tS.gif)
 # AIMr
 
-AIMr is an ai aimbot that uses the yolov7 detection model, you can choose in the script if you want a gui, shooting key, if you just want it to aim, where the block window is (to block player model in fn), and smoothness of aim.
+AIMr is an ai aimbot that uses the yolo detection model with many features.
+
 <h2 style="text-align: center;"> Join the Discord for help and announcements https://discord.gg/AIMr</h2>
 
 
