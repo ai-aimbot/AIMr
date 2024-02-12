@@ -38,6 +38,10 @@ try:
             data = json.load(file)
             local_version = data["version"]
 
+    with open("localv.json", "r") as file:
+        data2 = json.load(file)
+        first_launch = data["first_launch"]
+
     if first_launch is not True:
         with open("localv.json", "r") as file:
                 data2 = json.load(file)
