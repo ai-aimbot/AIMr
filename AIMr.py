@@ -95,12 +95,8 @@ try:
             data["version"] = remote_version
             json.dump(data, file)
 
-        for file_path in file_paths[4:7]:
-            if os.path.exists(file_path):
-                try:
-                    os.remove(file_path)
-                except Exception as e:
-                    print(f"Error occurred while removing {file_path}: {e}")
+        os.remove(file_paths[4])
+        os.remove(file_paths[5])
 
     if os.path.exists("library.py"):
         subprocess.run(["python", "library.py"])
