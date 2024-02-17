@@ -1,0 +1,52 @@
+{
+    "language": {
+        "english": {
+            "text": [
+                "Enter the key to toggle the gui (default o)",
+                "Set (Will change after restarting script)",
+                "Do you want triggerbot or aimbot?",
+                "Do you want the detection window to be pinned on top?",
+                "Do you want it to shoot?",
+                "Enter the key to aim (default e)",
+                "Select 1, 2 or 3 for left, right or no to pick a detection block",
+                "Smoothness (1-10)",
+                "Enter the key to activate the triggerbot (default e)",
+                "Enter the delay (ms) for the triggerbot (default 50)",
+                "Set",
+                "Do you want a detection window?",
+                "What fov do you want (higher is slower)?",
+                "Do you want Discord RPC?"
+            ],
+            "aimr": [
+                "[Question] ",
+                "[AIMr] ",
+                "Welcome to AIMr",
+                "Join the discord: discord.gg/AIMr",
+                "Loading...",
+                "Loaded",
+                "Hold ",
+                " for it to aim.",
+                "Running...",
+                "AIMr Detections",
+                " for it to shoot when it notices changes.",
+                "Exiting... Goodbye!",
+                "OpenCV was not built with CUDA. AIMr will run much slower. There is a guide in the discord on how to build with CUDA.",
+                "OpenCV was built with CUDA. AIMr will run faster."
+            ],
+            "info": [
+                "RPC: ",
+                "Detection Window: ",
+                "Pinned GUI: ",
+                "Shoot: ",
+                "Shoot Key: ",
+                "Block Side: ",
+                "Smoothness: ",
+                "FOV: ",
+                "ENABLED",
+                "DISABLED",
+                "Triggerbot key: ",
+                "Delay: "
+            ]
+        }
+    }
+}
