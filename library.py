@@ -444,3 +444,8 @@ except KeyboardInterrupt:
     camera.release()
     typewriter(AIMr(False, "\u001b[0m\033[91m" + questions(11) + "\n\u001b[0m", False), "print")
     time.sleep(0.2)
+
+except Exception as e:
+    print(f"An error occurred: {e}")
+    # Wait for 15 seconds before closing
+    time.sleep(15)
