@@ -42,16 +42,16 @@ try:
         with open(localv_path, "w") as file:
             json.dump(data, file)
         config = {
-            "aimbot": True,
-            "detection": True,
-            "pinned": True,
-            "shoot": True,
+            "aimbot": False,
+            "detection": False,
+            "pinned": False,
+            "shoot": False,
             "aimkey": "e",
             "trigkey": "e",
             "trigdelay": "50",
-            "side": 3.0,
+            "side": 2.0,
             "smoothness": 5.0,
-            "fov": 3,
+            "fov": 5,
             "rpc": True,
         }
         with open(config_path, "w") as configfile:
