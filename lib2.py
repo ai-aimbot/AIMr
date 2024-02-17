@@ -34,7 +34,8 @@ try:
             "pip": False,
             "python": False,
             "language": "english",
-            "first_launch": True
+            "first_launch": True,
+            "activated": False
         }
         with open(localv_path, "w") as file:
             json.dump(data, file)
@@ -76,6 +77,33 @@ try:
                 data2["pip"] = True
                 json.dump(data2, file)
             os.remove(file_paths[3])
+
+    with open(localv_path, "r") as file:
+            data = json.load(file)
+            activated = data["activated"]
+    
+    if activated is not True:
+        def check_string(string):
+            numbers_count = sum(c.isdigit() for c in string)
+            symbols_count = sum(not c.isalnum() for c in string)
+            charcount = len(string)
+
+            if numbers_count == 5 and symbols_count == 2 and charcount == 16:
+                return True
+            else:
+                return False
+
+        print("AIMr is not activated. Please go to https://is.gd/a8yJ7f to get your one time activation key!")
+        key = input("Enter your key: ")
+        
+        if check_string(key):
+            print("Thank you for activating, AIMr will now install!")
+        else:
+            print("Please enter a valid key.")
+            exit()
+        with open("localv.json", "w") as file:
+            data["activated"] = True
+            json.dump(data, file)
 
 
     if remote_version != local_version:
