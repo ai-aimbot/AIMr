@@ -10,3 +10,4 @@ pillow
 colorama
 customtkinter
 bettercam
+pypresence
