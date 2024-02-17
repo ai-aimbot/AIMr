@@ -20,7 +20,7 @@ AIMr is an ai aimbot that uses the yolo detection model with many features.
 
 # How to use
 ### Option 1
-Run the auto install from [releases](https://github.com/kbdevs/ai-aimbot/releases/tag/launcher) and you should be good to go! <br>
+Run the auto install from [releases](https://github.com/ai-aimbot/AIMr/releases/tag/Launcher) and you should be good to go! <br>
 ### Option 2 (if you dont want the EXE or linkvertise)
 Join our [discord](https://discord.gg/AIMr) and go to the [guides channel](https://discord.com/channels/1191468194490241075/1191799494031982592).
 ### If none of those work
