@@ -4,7 +4,7 @@
             "text": [
                 "Enter the key to toggle the gui (default o)",
                 "Set (Will change after restarting script)",
-                "Do you want triggerbot or aimbot?",
+                "Do you want aimbot or triggerbot?",
                 "Do you want the detection window to be pinned on top?",
                 "Do you want it to shoot?",
                 "Enter the key to aim (default e)",
@@ -29,9 +29,7 @@
                 "Running...",
                 "AIMr Detections",
                 " for it to shoot when it notices changes.",
-                "Exiting... Goodbye!",
-                "OpenCV was not built with CUDA. AIMr will run much slower. There is a guide in the discord on how to build with CUDA.",
-                "OpenCV was built with CUDA. AIMr will run faster."
+                "Exiting... Goodbye!"
             ],
             "info": [
                 "RPC: ",
@@ -43,7 +41,7 @@
                 "Smoothness: ",
                 "FOV: ",
                 "ENABLED",
-                "DISABLED",
+                "DISABLED | There is a guide in the discord to enable",
                 "Triggerbot key: ",
                 "Delay: "
             ]
