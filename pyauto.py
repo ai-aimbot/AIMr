@@ -40,16 +40,16 @@ try:
         with open(localv_path, "w") as file:
             json.dump(data, file)
         config = {
-            "aimbot": True,
-            "detection": True,
-            "pinned": True,
-            "shoot": True,
+            "aimbot": False,
+            "detection": False,
+            "pinned": False,
+            "shoot": False,
             "aimkey": "e",
             "trigkey": "e",
             "trigdelay": "50",
-            "side": 3.0,
+            "side": 2.0,
             "smoothness": 5.0,
-            "fov": 3,
+            "fov": 5,
             "rpc": True,
         }
         with open(config_path, "w") as configfile:
@@ -159,7 +159,7 @@ try:
             filename = "pythoninstaller.exe"
             urllib.request.urlretrieve(url, filename)
 
-            print("Installing python...")
+            print("Installing python (may take a little while)...")
             subprocess.run([filename, "/quiet", "InstallAllUsers=1", "PrependPath=1", "Include_test=0"])
 
             with open("localv.json", "w") as file:
@@ -190,3 +190,8 @@ try:
 
 except KeyboardInterrupt:
     exit()
+
+except Exception as e:
+        print(f"An error occurred: {e}")
+        # Wait for 15 seconds before closing
+        time.sleep(15)
