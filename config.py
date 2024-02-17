@@ -248,3 +248,8 @@ try:
 
 except KeyboardInterrupt:
     exit()
+
+except Exception as e:
+    print(f"An error occurred: {e}")
+    # Wait for 15 seconds before closing
+    time.sleep(15)
