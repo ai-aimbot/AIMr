@@ -104,7 +104,7 @@ try:
             with open("localv.json", "w") as file:
                 data2["pip"] = True
                 json.dump(data2, file)
-            os.remove(file_paths[3])
+           # os.remove(file_paths[3])
 
 
     if remote_version != local_version:
