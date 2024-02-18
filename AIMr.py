@@ -4,7 +4,6 @@ import time
 import shutil
 import zipfile
 import subprocess
-import re
 import urllib.request
 
 try:
@@ -23,7 +22,9 @@ try:
         "./current_version.txt",
         "./lang.json",
         "./AIMr.ico",
-        "./AIMr.py"
+        "./AIMr.py",
+        "./theme.json",
+        "./config.py",
     ]
 
     localv_path = "localv.json"
@@ -42,7 +43,7 @@ try:
         with open(localv_path, "w") as file:
             json.dump(data, file)
         config = {
-            "aimbot": False,
+            "aimbot": True,
             "detection": False,
             "pinned": False,
             "shoot": False,
@@ -104,10 +105,14 @@ try:
             with open("localv.json", "w") as file:
                 data2["pip"] = True
                 json.dump(data2, file)
-                os.remove(file_paths[3])
+            os.remove(file_paths[3])
 
 
     if remote_version != local_version:
+
+        with open("localv.json", "w") as file:
+                data2["pip"] = False
+                json.dump(data2, file)
 
         print("Deleting old files...")
         for file_path in file_paths:
