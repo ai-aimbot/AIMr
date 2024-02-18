@@ -12,3 +12,4 @@ customtkinter
 bettercam
 pypresence
 CTkColorPicker
+urllib3
