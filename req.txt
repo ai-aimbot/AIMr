@@ -11,3 +11,4 @@ colorama
 customtkinter
 bettercam
 pypresence
+CTkColorPicker
