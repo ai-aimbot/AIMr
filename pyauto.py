@@ -21,7 +21,10 @@ try:
         "./README.md",
         "./current_version.txt",
         "./lang.json",
-        "./AIMr.ico"
+        "./AIMr.ico",
+        "./AIMr.py",
+        "./theme.json",
+        "./config.py",
     ]
 
     localv_path = "localv.json"
@@ -40,7 +43,7 @@ try:
         with open(localv_path, "w") as file:
             json.dump(data, file)
         config = {
-            "aimbot": False,
+            "aimbot": True,
             "detection": False,
             "pinned": False,
             "shoot": False,
@@ -108,6 +111,10 @@ try:
 
     if remote_version != local_version:
 
+        with open("localv.json", "w") as file:
+                data2["pip"] = False
+                json.dump(data2, file)
+
         print("Deleting old files...")
         for file_path in file_paths:
             if os.path.exists(file_path):
@@ -152,21 +159,24 @@ try:
             data = json.load(file)
             python = data["python"]
 
-        if python is not True:
-            print("Downloading python...")
-            # Download the python
-            url = "https://www.python.org/ftp/python/3.12.1/python-3.12.1-amd64.exe"
-            filename = "pythoninstaller.exe"
-            urllib.request.urlretrieve(url, filename)
+        install_python = False if input("Do you have python installed? (y/n): ").lower() == "y" else True
 
-            print("Installing python (may take a little while)...")
-            subprocess.run([filename, "/quiet", "InstallAllUsers=1", "PrependPath=1", "Include_test=0"])
+        if install_python:
+            if python is not True:
+                print("Downloading python...")
+                # Download the python
+                url = "https://www.python.org/ftp/python/3.12.1/python-3.12.1-amd64.exe"
+                filename = "pythoninstaller.exe"
+                urllib.request.urlretrieve(url, filename)
 
-            with open("localv.json", "w") as file:
-                data["python"] = True
-                json.dump(data, file)
+                print("Installing python (may take a little while)...")
+                subprocess.run([filename, "/quiet", "InstallAllUsers=1", "PrependPath=1", "Include_test=0"])
 
-            os.remove(filename)
+                with open("localv.json", "w") as file:
+                    data["python"] = True
+                    json.dump(data, file)
+
+                os.remove(filename)
 
         with open("localv.json", "w") as file:
             data["first_launch"] = False
@@ -195,3 +205,4 @@ except Exception as e:
         print(f"An error occurred: {e}")
         # Wait for 15 seconds before closing
         time.sleep(15)
+        exit()
