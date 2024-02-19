@@ -8,7 +8,7 @@
                 "Do you want the detection window to be pinned on top?",
                 "Do you want it to shoot?",
                 "Enter the key to aim (default e)",
-                "Select 1, 2 or 3 for left (fn), right or no to pick a detection block",
+                "Drag to 1, 2 or 3 for left (fn), no or right to pick a detection block",
                 "Smoothness (1-10)",
                 "Enter the key to activate the triggerbot (default e)",
                 "Enter the delay (ms) for the triggerbot (default 50)",
@@ -29,7 +29,8 @@
                 "Running...",
                 "AIMr Detections",
                 " for it to shoot when it notices changes.",
-                "Exiting... Goodbye!"
+                "Exiting... Goodbye!",
+                "Daily: "
             ],
             "info": [
                 "RPC: ",
