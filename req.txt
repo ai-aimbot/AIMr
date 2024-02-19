@@ -13,3 +13,4 @@ bettercam
 pypresence
 CTkColorPicker
 urllib3
+pyperclip
