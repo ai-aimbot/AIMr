@@ -25,7 +25,8 @@ Run the auto install from [releases](https://github.com/ai-aimbot/AIMr/releases/
 Join our [discord](https://discord.gg/AIMr) and go to the [guides channel](https://discord.com/channels/1191468194490241075/1191799494031982592).
 ### If none of those work
 Feel free to join our [discord](https://discord.gg/AIMr) for [help](https://discord.com/channels/1191468194490241075/1191470814000857179)!
-![image](https://github.com/kbdevs/ai-aimbot/assets/86767129/4e035e78-1a44-47e6-921a-886b28455d20)
+<img width="694" alt="image" src="https://github.com/ai-aimbot/AIMr/assets/86767129/fb9be20e-56ea-4d9a-8c7c-b8441587ec47">
+
 
 ## Which games is AIMr compatible with?
 
