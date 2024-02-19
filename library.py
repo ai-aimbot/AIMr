@@ -16,7 +16,7 @@ import threading
 import numpy as np
 from pypresence import Presence
 from colorama import Fore, Style
-import win32api, win32con, win32gui, win32ui
+import win32api, win32con
 
 # start bettercam
 camera = bettercam.create()
@@ -26,9 +26,19 @@ with open("localv.json", "r") as file:
     data = json.load(file)
     local_version = data["version"]
 
+# discord channel launches
+launchesurl = 'https://aimrstats.folate-lathe-0d.workers.dev/'
+try:
+    response = requests.get(launchesurl)
+except Exception as e:
+    pass
+
 # Launch counter
 url = "https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Flocalhost%2FAIMr&count_bg=%23FF0000&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Launches&edge_flat=false"
 response = requests.get(url)
+
+dailyurl = "https://raw.githubusercontent.com/ai-aimbot/AIMr/main/daily.txt"
+dailyresponse = str(requests.get(dailyurl).text)
 
 # randomize terminal/window title
 def set_console_title():
@@ -93,7 +103,8 @@ def clearfig():
     result = pyfiglet.figlet_format("A I M r", font="larry3d")
     print("\u001b[35m" + result.rstrip() + "\u001b[0m \n")
     print(AIMr(False, questions(2) + " [" +  local_version + "]", False))
-    print(AIMr(False, questions(3), True))
+    print(AIMr(False, questions(3), False))
+    print(AIMr(False, questions(12) + dailyresponse, False))
 
 # main loop
 try:
@@ -187,9 +198,9 @@ try:
         if placement_side == 1:
             placement_side = "left"
         elif placement_side == 2:
-            placement_side = "right"
-        elif placement_side == 3:
             placement_side = "no"
+        elif placement_side == 3:
+            placement_side = "right"
 
         smoothness = config_data["smoothness"]
 
