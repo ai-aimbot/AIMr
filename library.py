@@ -97,11 +97,14 @@ def AIMr(q, text, indent):
         printable = printable + "\n"
     return printable
 
+logo_url = "https://raw.githubusercontent.com/ai-aimbot/AIMr/main/logo.txt"
+response = requests.get(logo_url)
+logo_text = response.text
+
 # clear the terminal and add banner
 def clearfig():
     os.system('cls' if os.name == 'nt' else 'clear')
-    result = pyfiglet.figlet_format("A I M r", font="larry3d")
-    print("\u001b[35m" + result.rstrip() + "\u001b[0m \n")
+    print("\u001b[35m" + logo_text.rstrip() + "\u001b[0m \n")
     print(AIMr(False, questions(2) + " [" +  local_version + "]", False))
     print(AIMr(False, questions(3), False))
     print(AIMr(False, questions(12) + dailyresponse, False))
