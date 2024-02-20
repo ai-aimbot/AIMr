@@ -147,7 +147,7 @@ try:
                 large_image="aimr_icon",
                 large_text="discord.gg/AIMr",
                 buttons=[
-                    {"label": "Download", "url": "https://github.com/kbdevs/ai-aimbot"},
+                    {"label": "Download", "url": "https://github.com/ai-aimbot/AIMr"},
                 ],
                 start=int(time.time())
             )
