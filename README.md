@@ -1,5 +1,3 @@
-
-
 > [!WARNING]
 > I am not responsible if you get banned (Haven't gotten any reports of bans)
 
