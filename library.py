@@ -274,7 +274,7 @@ try:
             print(AIMr(False, information(2)  + str(floating), False))
         if shoot:
             print(AIMr(False, information(3) + str(shoot), False))
-            print(AIMr(False, information(4) + str(key), False))
+        print(AIMr(False, information(4) + str(key), False))
         print(AIMr(False, information(5)  + str(placement_side), False))
         print(AIMr(False, information(6) + str(smoothness), False))
         print(AIMr(False, information(7)  + str(fovnum), False))
