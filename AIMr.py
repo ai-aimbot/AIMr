@@ -44,15 +44,15 @@ try:
             json.dump(data, file)
         config = {
             "aimbot": True,
-            "detection": False,
-            "pinned": False,
-            "shoot": False,
+            "detection": True,
+            "pinned": True,
+            "shoot": True,
             "aimkey": "e",
             "trigkey": "e",
             "trigdelay": "50",
             "side": 2.0,
             "smoothness": 5.0,
-            "fov": 5,
+            "fov": 3,
             "rpc": True,
         }
         with open(config_path, "w") as configfile:
