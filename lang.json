@@ -4,7 +4,7 @@
             "text": [
                 "Enter the key to toggle the gui (default o)",
                 "Set (Will change after restarting script)",
-                "Off for aimbot, On for triggerbot",
+                "Off for triggerbot, on for aimbot",
                 "Do you want the detection window to be pinned on top?",
                 "Do you want it to shoot?",
                 "Enter the key to aim (default e)",
