@@ -152,7 +152,7 @@ try:
 
     # Create a switch for "Do you want aimbot or a triggerbot? (1/2):"
     optionsvar = customtkinter.StringVar(value="")
-    optionsswitch = customtkinter.CTkSwitch(generaltab, text=questions(2), command=options, variable=optionsvar, onvalue=False, offvalue=True)
+    optionsswitch = customtkinter.CTkSwitch(generaltab, text=questions(2), command=options, variable=optionsvar, onvalue=True, offvalue=False)
     optionsswitch.pack(pady=padding, padx=padding, anchor="w")
 
 
