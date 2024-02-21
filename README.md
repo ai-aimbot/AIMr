@@ -30,4 +30,4 @@ AIMr works on any game that uses human shaped models (besides valorant).
 
 
 
-### More: \[[Installation](https://github.com/kbdevs/testingreadme/blob/main/installation.md)\] \[[Info](https://github.com/kbdevs/testingreadme/blob/main/info.md)\]
+### More: \[[Installation](https://github.com/ai-aimbot/AIMr/blob/main/installation.md)\] \[[Info](https://github.com/ai-aimbot/AIMr/blob/main/info.md)\]
