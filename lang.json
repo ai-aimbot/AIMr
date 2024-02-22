@@ -41,8 +41,8 @@
                 "Block Side: ",
                 "Smoothness: ",
                 "FOV: ",
-                "ENABLED",
-                "DISABLED | There is a guide in the discord to enable",
+                "ENABLED - Faster",
+                "DISABLED - Slower | There is a guide in our discord on how to enable",
                 "Triggerbot key: ",
                 "Delay: "
             ]
