@@ -31,6 +31,14 @@ AIMr works on any game that uses human shaped models (besides valorant).
 <img src="https://i.imgur.com/iwyAQXN.png" alt="AIMr GUI1" align="right" height="120px">
 
 
+How to run (Click it)  |  How to change config (Click it) | [OLD] Showcase
+:-------------------------:|:-------------------------:|:-------------------------:
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/G5MR5_vm9Jk/0.jpg)](https://www.youtube.com/watch?v=G5MR5_vm9Jk)  |  [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/6cuxB7WoMjA/0.jpg)](https://www.youtube.com/watch?v=6cuxB7WoMjA)  |  [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/N2wy5XQ-37c/0.jpg)](https://www.youtube.com/watch?v=N2wy5XQ-37c)
+
+
+
+
+
 
 
 ### More: \[[Installation](https://github.com/ai-aimbot/AIMr/blob/main/installation.md)\] \[[Info](https://github.com/ai-aimbot/AIMr/blob/main/info.md)\]
