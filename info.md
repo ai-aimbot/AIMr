@@ -23,6 +23,9 @@ AIMr is expected to work with games that have player that look like humans, we h
 ## How to run (Click it)
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/G5MR5_vm9Jk/0.jpg)](https://www.youtube.com/watch?v=G5MR5_vm9Jk)
 
+## How to change config (Click it)
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/6cuxB7WoMjA/0.jpg)](https://www.youtube.com/watch?v=6cuxB7WoMjA)
+
 ## Old Showcase (Click it)
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/N2wy5XQ-37c/0.jpg)](https://www.youtube.com/watch?v=N2wy5XQ-37c)
 
