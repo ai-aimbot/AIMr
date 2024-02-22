@@ -1,6 +1,9 @@
 > [!WARNING]
 > We are not responsible if you get banned
 
+<h1 align="center">(OBFUSCATED BECAUSE PEOPLE WERE STEALING AIMr)</h1>
+
+
 ![AIMr](https://external-content.duckduckgo.com/iu/?u=https://i.imgur.com/KREk0tS.gif)
 <p align="center">AIMr is an ai aimbot written in python.</p>
 
