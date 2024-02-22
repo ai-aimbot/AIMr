@@ -21,7 +21,7 @@
 AIMr is expected to work with games that have player that look like humans, we have an option of a block area for games like fortnite to block out detecting your own player.
 
 ## How to run (Click it)
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/JvctAGLBmwI/0.jpg)](https://www.youtube.com/watch?v=JvctAGLBmwI)
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/G5MR5_vm9Jk/0.jpg)](https://www.youtube.com/watch?v=G5MR5_vm9Jk)
 
 ## Old Showcase (Click it)
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/N2wy5XQ-37c/0.jpg)](https://www.youtube.com/watch?v=N2wy5XQ-37c)
