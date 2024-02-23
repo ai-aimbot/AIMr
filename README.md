@@ -8,14 +8,14 @@
 <p align="center">AIMr is an ai aimbot written in python.</p>
 
 <div align="center">
-  <a href="https://discord.gg/AIMr">
-    <img src="https://dcbadge.vercel.app/api/server/AIMr" alt="Discord Server"/>
-  </a>
+  
+[![discord server](https://dcbadge.vercel.app/api/server/AIMr)](https://discord.gg/AIMr)
 
-<br>
+![views](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fkbdevs%2Fai-aimbot&count_bg=%239279B5&title_bg=%23555555&icon=&icon_color=%23FFFFFF&title=Views&edge_flat=false) ![GitHub top language](https://img.shields.io/github/languages/top/ai-aimbot/aimr?labelColor=%235B5B5B&color=%23907FB0) 
 
-<img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fkbdevs%2Fai-aimbot&count_bg=%239279B5&title_bg=%23555555&icon=&icon_color=%23FFFFFF&title=Views&edge_flat=false" alt="Views"/>
-</img>
+![GitHub last commit](https://img.shields.io/github/last-commit/ai-aimbot/AIMr?labelColor=%235B5B5B&color=%23907FB0) ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/ai-aimbot/AIMr?labelColor=%235B5B5B&color=%238A79AA)
+
+
   
 </div>
 
