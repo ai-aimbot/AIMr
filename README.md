@@ -1,7 +1,7 @@
 > [!WARNING]
 > We are not responsible if you get banned
 
-<h1 align="center">Mouse buttons are in beta on the discord</h1>
+<h1 align="center">https://discord.gg/AIMr</h1>
 
 
 ![AIMr](https://external-content.duckduckgo.com/iu/?u=https://i.imgur.com/KREk0tS.gif)
