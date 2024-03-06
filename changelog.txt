@@ -1,3 +1,4 @@
 - Added Mousebuttons
+- Added always on options
 - Added GUI icons
 - Misc Additions
