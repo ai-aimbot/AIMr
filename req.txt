@@ -16,3 +16,4 @@ urllib3
 pyperclip
 typer
 pynput
+playsound
