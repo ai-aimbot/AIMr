@@ -1,1 +1,1 @@
-using mousebuttons for aimkey is in beta, go to the discord
+mousebuttons release at 150 github stars
