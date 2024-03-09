@@ -2,3 +2,4 @@
 - Added Always on options
 - Added GUI icons
 - Misc Additions
+You may need to delete your config.json because of new features
