@@ -17,3 +17,4 @@ pyperclip
 typer
 pynput
 pystyle
+CTkToolTip
