@@ -1,6 +1,8 @@
 - Added Mousebuttons
-- Added Always on options
+- Added Always-on option
+- Added Tooltips
+- Added Showing current config
 - Added Config Presets
 - Added GUI icons
-- Misc Additions
+- Misc Additions/Fixes
 You may need to delete your config.json because of new features
