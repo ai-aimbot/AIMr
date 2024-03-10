@@ -37,3 +37,15 @@ AIMr works on any game that uses human shaped models (besides valorant).
 How to run (Click it)  |  How to change config (Click it) | [OLD] Showcase (Click it)
 :-------------------------:|:-------------------------:|:-------------------------:
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/G5MR5_vm9Jk/0.jpg)](https://www.youtube.com/watch?v=G5MR5_vm9Jk)  |  [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/6cuxB7WoMjA/0.jpg)](https://www.youtube.com/watch?v=6cuxB7WoMjA)  |  [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/N2wy5XQ-37c/0.jpg)](https://www.youtube.com/watch?v=N2wy5XQ-37c)
+
+## Star History
+
+<a href="https://star-history.com/#ai-aimbot/aimr&Date">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=ai-aimbot/aimr&type=Date&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=ai-aimbot/aimr&type=Date" />
+    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=ai-aimbot/aimr&type=Date" />
+  </picture>
+</a>
+
+
