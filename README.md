@@ -26,6 +26,8 @@ AIMr leverages many modern technologies to achieve an undetected ai aimbot syste
 
 AIMr works on any game that uses human shaped models (besides valorant).
 
+NOTICE: To make it work on valorant you need perks in our [discord](https://discord.gg/AIMr) and a [Arduino Leonardo R3](https://www.amazon.com/KEYESTUDIO-Leonardo-Development-Board-Arduino/dp/B0786LJQ8K)
+
 <img src="https://i.imgur.com/g7mNGkW.png" alt="AIMr CLI" align="right" height="120px">
 <img src="https://i.imgur.com/9VjSEIZ.png" alt="AIMr GUI3" align="right" height="120px">
 <img src="https://i.imgur.com/RCIBtOS.png" alt="AIMr GUI2" align="right" height="120px">
