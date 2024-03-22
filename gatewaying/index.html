@@ -1,0 +1,94 @@
+<!-- FILEPATH: /E:/Gaming Chair/aimbot/AIMr/active dev/combine/activationsite/index.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AIMr Gateway</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/ai-aimbot/AIMr/main/AIMr.ico" type="image/x-icon">
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+        * {
+            font-family: Lexend, sans-serif;
+        }
+
+        body {
+            background-color: #222;
+            color: #fff;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        button {
+            display: block;
+            margin: 0 auto;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #996ec2; /* Light purple color */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #777;
+        }
+
+        #randomString {
+            color: green;
+            text-align: center;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        #copyButton {
+            display: none;
+        }
+    </style>
+    <script>
+        function generateRandomString() {
+            var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+';
+            var randomString = '';
+            var numbersCount = 0;
+            var symbolsCount = 0;
+
+            while (randomString.length < 16) {
+                var randomChar = characters.charAt(Math.floor(Math.random() * characters.length));
+                randomString += randomChar;
+
+                if (/[0-9]/.test(randomChar)) {
+                    numbersCount++;
+                }
+
+                if (/[^a-zA-Z0-9]/.test(randomChar)) {
+                    symbolsCount++;
+                }
+            }
+
+            if (numbersCount === 5 && symbolsCount === 2) {
+                document.getElementById('randomString').textContent = randomString;
+                document.getElementById('copyButton').style.display = 'block';
+            } else {
+                generateRandomString();
+            }
+        }
+
+        function copyToClipboard() {
+            var randomString = document.getElementById('randomString').textContent;
+            navigator.clipboard.writeText(randomString);
+            document.getElementById('copyButton').textContent = 'Copied!';
+        }
+    </script>
+</head>
+<body>
+    <h1>AIMr Gateway</h1>
+    <button onclick="generateRandomString()">Generate gateway key</button>
+    <p id="randomString"></p>
+    <button id="copyButton" onclick="copyToClipboard()">Copy key to clipboard</button>
+</body>
+</html>

@@ -4,6 +4,7 @@
 <html>
 <head>
     <title>AIMr Activation</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/ai-aimbot/AIMr/main/AIMr.ico" type="image/x-icon">
     <style>
 
         @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
@@ -38,8 +39,20 @@
             background-color: #777;
         }
 
-        #randomString {
-            color: green;
+        #activationInput1,
+        #activationInput2 {
+            display: block;
+            margin: 0 auto;
+            margin-top: 20px;
+            padding: 10px;
+            width: 300px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        #activationStatus {
+            color: white;
             text-align: center;
             font-size: 20px;
             margin-top: 20px;
@@ -48,9 +61,59 @@
         #copyButton {
             display: none;
         }
+
+        .generatedkey {
+            text-align: center;
+            font-size: 20px;
+        }
     </style>
     <script>
-        function generateRandomString() {
+        function validateActivationKeys() {
+            var activationKey1 = document.getElementById('activationInput1').value;
+            var activationKey2 = document.getElementById('activationInput2').value;
+            var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+';
+            var numbersCount1 = 0;
+            var symbolsCount1 = 0;
+            var numbersCount2 = 0;
+            var symbolsCount2 = 0;
+
+            if (activationKey1.length === 16 && activationKey2.length === 16) {
+                for (var i = 0; i < activationKey1.length; i++) {
+                    var currentChar1 = activationKey1.charAt(i);
+                    var currentChar2 = activationKey2.charAt(i);
+
+                    if (/[0-9]/.test(currentChar1)) {
+                        numbersCount1++;
+                    }
+
+                    if (/[^a-zA-Z0-9]/.test(currentChar1)) {
+                        symbolsCount1++;
+                    }
+
+                    if (/[0-9]/.test(currentChar2)) {
+                        numbersCount2++;
+                    }
+
+                    if (/[^a-zA-Z0-9]/.test(currentChar2)) {
+                        symbolsCount2++;
+                    }
+                }
+
+                if (numbersCount1 === 5 && symbolsCount1 === 2 && numbersCount2 === 5 && symbolsCount2 === 2) {
+                    document.getElementById('activationStatus').textContent = 'Gateway keys are valid!';
+                    document.getElementById('copyButton').style.display = 'block';
+                    generateKey();
+                } else {
+                    document.getElementById('activationStatus').textContent = 'Gateway keys are invalid!';
+                    document.getElementById('copyButton').style.display = 'none';
+                }
+            } else {
+                document.getElementById('activationStatus').textContent = 'Gateway keys are invalid!';
+                document.getElementById('copyButton').style.display = 'none';
+            }
+        }
+
+        function generateKey() {
             var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+';
             var randomString = '';
             var numbersCount = 0;
@@ -70,24 +133,39 @@
             }
 
             if (numbersCount === 5 && symbolsCount === 2) {
-                document.getElementById('randomString').textContent = randomString;
+                document.getElementById('generatedKey').textContent = "Here is the activation key: " + randomString;
                 document.getElementById('copyButton').style.display = 'block';
             } else {
-                generateRandomString();
+                generateKey();
             }
         }
 
         function copyToClipboard() {
-            var randomString = document.getElementById('randomString').textContent;
-            navigator.clipboard.writeText(randomString);
+            var activationKey = document.getElementById('generatedKey').textContent.split(':')[1].trim();
+            navigator.clipboard.writeText(activationKey);
             document.getElementById('copyButton').textContent = 'Copied!';
+        }
+
+        function getGatewayKey(x) {
+            if (x === 1) {
+                window.open("keygen1/index.html", "_blank");
+            }
+            if (x === 2) {
+                window.open("keygen2/index.html", "_blank");
+            }
+            
         }
     </script>
 </head>
 <body>
     <h1>AIMr Activation</h1>
-    <button onclick="generateRandomString()">Generate activation key</button>
-    <p id="randomString"></p>
+    <button onclick="getGatewayKey(1)">Get gateway key 1</button>
+    <input type="text" id="activationInput1" placeholder="Enter gateway key 1">
+    <button onclick="getGatewayKey(2)">Get gateway key 2</button>
+    <input type="text" id="activationInput2" placeholder="Enter gateway key 2">
+    <button onclick="validateActivationKeys()">Validate gateway keys</button>
+    <p id="activationStatus"></p>
+    <p class="generatedkey" id="generatedKey"></p>
     <button id="copyButton" onclick="copyToClipboard()">Copy key to clipboard</button>
 </body>
 </html>
