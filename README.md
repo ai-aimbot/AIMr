@@ -10,7 +10,7 @@ GIANT UPDATE AT 150 STARS
 
 <h1 align="center">
 
-![PROGRESS](https://progress-bar.dev/136/?scale=150&width=400&suffix=%20stars)
+![PROGRESS](https://progress-bar.dev/137/?scale=150&width=400&suffix=%20stars)
   
   </h1>
 <h1 align="center">https://discord.gg/AIMr</h1>
