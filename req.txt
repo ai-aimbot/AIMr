@@ -18,3 +18,4 @@ typer
 pynput
 pystyle
 CTkToolTip
+deep_translator
