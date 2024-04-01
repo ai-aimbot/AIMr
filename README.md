@@ -1,18 +1,6 @@
 > [!WARNING]
 > We are not responsible if you get banned
 
-
-<h1 align="center">
-
-GIANT UPDATE AT 150 STARS
-  
-  </h1>
-
-<h1 align="center">
-
-![PROGRESS](https://progress-bar.dev/149/?scale=150&width=400&suffix=%20stars)
-  
-  </h1>
 <h1 align="center">https://discord.gg/AIMr</h1>
 
 
