@@ -1,7 +1,7 @@
 {
   "AIMrconfig": {
-    "fg_color": "#907cff",
-    "hover_color": "#564A99"
+    "fg_color": "#b389ff",
+    "hover_color": "#6B5299"
   },
   "CTk": {
     "fg_color": [
@@ -35,12 +35,12 @@
     "corner_radius": 6,
     "border_width": 0,
     "fg_color": [
-      "#907cff",
-      "#907cff"
+      "#b389ff",
+      "#b389ff"
     ],
     "hover_color": [
-      "#907cff",
-      "#564A99"
+      "#b389ff",
+      "#6B5299"
     ],
     "border_color": [
       "#3E454A",
@@ -121,7 +121,7 @@
     ],
     "progress_color": [
       "#3a7ebf",
-      "#907cff"
+      "#b389ff"
     ],
     "button_color": [
       "gray36",
@@ -192,30 +192,30 @@
     ],
     "progress_color": [
       "gray40",
-      "#907cff"
+      "#b389ff"
     ],
     "button_color": [
       "#3a7ebf",
-      "#564A99"
+      "#6B5299"
     ],
     "button_hover_color": [
       "#325882",
-      "#564A99"
+      "#2c2438"
     ]
   },
   "CTkOptionMenu": {
     "corner_radius": 6,
     "fg_color": [
       "#3a7ebf",
-      "#907cff"
+      "#b389ff"
     ],
     "button_color": [
       "#325882",
-      "#564A99"
+      "#6B5299"
     ],
     "button_hover_color": [
       "#234567",
-      "#564A99"
+      "#6B5299"
     ],
     "text_color": [
       "#DCE4EE",
@@ -276,11 +276,11 @@
     ],
     "selected_color": [
       "#3a7ebf",
-      "#907cff"
+      "#b389ff"
     ],
     "selected_hover_color": [
       "#325882",
-      "#564A99"
+      "#453a61"
     ],
     "unselected_color": [
       "#979DA2",
