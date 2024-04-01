@@ -16,6 +16,19 @@
   
 </div>
 
+## FEATURES
+- Smoothness settings
+- Detection window to see what the ai sees
+- Block options for different games to not detect yourself
+- Fov options
+- Mousebuttons for aimkey
+- Always on option
+- Valorant bypass (paid)
+- Triggerbot
+- Config Presets
+- Discord RPC
+- etc
+
 ## Which games is AIMr compatible with?
 
 AIMr is expected to work with games that have player that look like humans, we have an option of a block area for games like fortnite to block out detecting your own player.
