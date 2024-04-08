@@ -48,5 +48,3 @@ How to run (Click it)  |  How to change config (Click it) | [OLD] Showcase (Clic
     <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=ai-aimbot/aimr&type=Date" />
   </picture>
 </a>
-
-
