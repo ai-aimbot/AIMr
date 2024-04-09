@@ -32,7 +32,7 @@ NOTICE: To make it work on valorant you need perks in our [discord](https://disc
 <img src="https://i.imgur.com/RCIBtOS.png" alt="AIMr GUI2" align="right" height="120px">
 <img src="https://i.imgur.com/iwyAQXN.png" alt="AIMr GUI1" align="right" height="120px">
 
-### \[[Installation](https://github.com/ai-aimbot/AIMr/blob/main/installation.md)\] \[[Features/Info](https://github.com/ai-aimbot/AIMr/blob/main/info.md)\]
+### \[[Installation](https://github.com/ai-aimbot/AIMr/blob/main/installation.md)\] \[[Features](https://github.com/ai-aimbot/AIMr/blob/main/info.md)\]
 
 
 How to run (Click it)  |  How to change config (Click it) | [OLD] Showcase (Click it)
