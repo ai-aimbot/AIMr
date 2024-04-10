@@ -25,6 +25,8 @@ AIMr leverages many modern technologies to achieve an undetected ai aimbot syste
 
 AIMr works on any game that uses human shaped models.
 
+NOTE: To make it work to best of its potenial (3x better) you should build opencv with cuda, there is a guide in our [discord](https://discord.gg/AIMr).
+
 NOTICE: To make it work on valorant you need perks in our [discord](https://discord.gg/AIMr) and a [Arduino Leonardo R3](https://www.amazon.com/KEYESTUDIO-Leonardo-Development-Board-Arduino/dp/B0786LJQ8K)
 
 <img src="https://i.imgur.com/g7mNGkW.png" alt="AIMr CLI" align="right" height="120px">
