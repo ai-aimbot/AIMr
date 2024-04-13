@@ -41,7 +41,7 @@ NOTICE: To make it work on valorant you need perks in our [discord](https://disc
 
 How to run (Click it)  |  How to change config (Click it) | [OLD] Showcase (Click it)
 :-------------------------:|:-------------------------:|:-------------------------:
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/G5MR5_vm9Jk/0.jpg)](https://www.youtube.com/watch?v=G5MR5_vm9Jk)  |  [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/6cuxB7WoMjA/0.jpg)](https://www.youtube.com/watch?v=6cuxB7WoMjA)  |  [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/N2wy5XQ-37c/0.jpg)](https://www.youtube.com/watch?v=N2wy5XQ-37c)
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/dh6PEFoI4Cs/0.jpg)](https://www.youtube.com/watch?v=dh6PEFoI4Cs)  |  [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/6cuxB7WoMjA/0.jpg)](https://www.youtube.com/watch?v=6cuxB7WoMjA)  |  [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/N2wy5XQ-37c/0.jpg)](https://www.youtube.com/watch?v=N2wy5XQ-37c)
 
 ## Star History
 
