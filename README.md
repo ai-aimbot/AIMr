@@ -23,6 +23,18 @@
 
 AIMr leverages many modern technologies to achieve an undetected ai aimbot system with a pleasing appearance.
 
+PAID VISUALS BETA IN OUR DISCORD <br>
+<img src="https://i.imgur.com/iTBdhFI.png" alt="AIMr ESP" align="left" height="180px">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
 AIMr works on any game that uses human shaped models.
 
 NOTE: To make it work to best of its potenial (3x better) you should build opencv with cuda, there is a guide in our [discord](https://discord.gg/AIMr).
@@ -36,12 +48,14 @@ NOTICE: To make it work on valorant you need perks in our [discord](https://disc
 <img src="https://i.imgur.com/NnGKeN9.png" alt="AIMr GUI2" align="right" height="120px">
 <img src="https://i.imgur.com/UNmCZg7.png" alt="AIMr GUI1" align="right" height="120px">
 
+
 ### \[[Installation](https://github.com/ai-aimbot/AIMr/blob/main/installation.md)\] \[[Features](https://github.com/ai-aimbot/AIMr/blob/main/info.md)\]
 
 
 How to run (Click it)  |  How to change config (Click it) | [OLD] Showcase (Click it)
 :-------------------------:|:-------------------------:|:-------------------------:
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/dh6PEFoI4Cs/0.jpg)](https://www.youtube.com/watch?v=dh6PEFoI4Cs)  |  [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/6cuxB7WoMjA/0.jpg)](https://www.youtube.com/watch?v=6cuxB7WoMjA)  |  [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/N2wy5XQ-37c/0.jpg)](https://www.youtube.com/watch?v=N2wy5XQ-37c)
+
 
 ## Star History
 
