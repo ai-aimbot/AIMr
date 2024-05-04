@@ -23,7 +23,7 @@
 
 AIMr leverages many modern technologies to achieve an undetected ai aimbot system with a pleasing appearance.
 
-**PAID VISUALS BETA IN OUR DISCORD** <br>
+**PAID VISUALS BETA + VALORANT BYPASS IN OUR DISCORD** <br>
 <img src="https://i.imgur.com/iTBdhFI.png" alt="AIMr ESP" align="left" height="180px">
 <br>
 <br>
