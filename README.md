@@ -1,6 +1,6 @@
 
 > [!NOTE]
-> If you enjoy AIMr, please consider giving us a star ⭐! We appreciate it! :)
+> If you use AIMr, please consider giving us a ⭐!
 
 <h1 align="center">https://discord.gg/AIMr</h1>
 
