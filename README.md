@@ -26,15 +26,16 @@
 
 AIMr leverages many modern technologies to achieve an undetected ai aimbot system with a pleasing appearance.
 
-**[PAID ESP (ANY GAME) BETA + VALORANT BYPASS IN OUR DISCORD](https://discord.com/channels/1191468194490241075/1205549464236990514)** <br>
-![](https://github.com/ai-aimbot/AIMr/assets/86767129/53bec977-4dbd-429e-8c89-a59e80c9442c)
-<img src="https://i.imgur.com/iTBdhFI.png" alt="AIMr ESP" align="left" height="180px">
+
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
+**[PAID BETA IN OUR DISCORD WITH MANY FEATURES](https://discord.com/channels/1191468194490241075/1205549464236990514)** <br>
+
+<div>
+
+https://github.com/ai-aimbot/AIMr/assets/86767129/f41472c6-9b3d-4545-8685-a08c0cccdd48
+  
+</div>
 <br>
 <br>
 
