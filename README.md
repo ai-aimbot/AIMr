@@ -9,6 +9,8 @@
 <p align="center">AIMr is an ai aimbot written in python.</p>
 
 <div align="center">
+
+
   
 [![discord server](https://dcbadge.limes.pink/api/server/aimr)](https://discord.gg/AIMr)
 
@@ -25,6 +27,7 @@
 AIMr leverages many modern technologies to achieve an undetected ai aimbot system with a pleasing appearance.
 
 **[PAID ESP (ANY GAME) BETA + VALORANT BYPASS IN OUR DISCORD](https://discord.com/channels/1191468194490241075/1205549464236990514)** <br>
+![](https://github.com/ai-aimbot/AIMr/assets/86767129/53bec977-4dbd-429e-8c89-a59e80c9442c)
 <img src="https://i.imgur.com/iTBdhFI.png" alt="AIMr ESP" align="left" height="180px">
 <br>
 <br>
