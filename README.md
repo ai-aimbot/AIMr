@@ -1,7 +1,7 @@
 
 > [!NOTE]
 > If you use AIMr, please consider giving us a ⭐!
-> Yes, we are obfuscated, its because peopel were trying to steal AIMr, no malware, no stealers, you can ask in our discord.
+> <br>Yes, we are obfuscated, its because peopel were trying to steal AIMr, no malware, no stealers, you can ask in our discord.
 
 <h1 align="center">https://discord.gg/AIMr</h1>
 
