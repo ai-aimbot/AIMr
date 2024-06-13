@@ -30,7 +30,7 @@ AIMr leverages many modern technologies to achieve an undetected ai aimbot syste
 
 <br>
 
-**[(like 4x better) PAID BETA IN OUR DISCORD WITH MANY FEATURES](https://discord.com/channels/1191468194490241075/1205549464236990514)** <br>
+# **[(like 4x better) PAID BETA IN OUR DISCORD WITH MANY FEATURES](https://discord.com/channels/1191468194490241075/1205549464236990514)** <br>
 
 <div>
 
