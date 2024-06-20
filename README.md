@@ -30,7 +30,15 @@ AIMr leverages many modern technologies to achieve an undetected ai aimbot syste
 
 <br>
 
-# **[(like 4x better) PAID BETA IN OUR DISCORD WITH MANY FEATURES](https://discord.com/channels/1191468194490241075/1205549464236990514)** <br>
+# **[(like 4x better) PAID BETA IN OUR DISCORD](https://discord.com/channels/1191468194490241075/1205549464236990514)** <br>
+- **Pytorch version (like 3x faster)**
+- [ESP type visuals](https://discord.com/channels/1191468194490241075/1191468195211640848/1241796551345442958)
+- Aim area options, ex head neck chest
+- Confidence Slider
+- Streamproof visuals
+- Condensed gui
+- Better model
+- More being worked on
 
 <div>
 
