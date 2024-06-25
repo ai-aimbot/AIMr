@@ -59,12 +59,12 @@ https://github.com/ai-aimbot/AIMr/assets/86767129/f41472c6-9b3d-4545-8685-a08c0c
 <br>
 
 
-<img src="https://i.imgur.com/it7Bdm9.png" alt="AIMr CLI" align="right" height="130px">
-<img src="https://i.imgur.com/dxtjFgf.png" alt="AIMr GUI5" align="right" height="130px">
-<img src="https://i.imgur.com/sUEttCN.png" alt="AIMr GUI4" align="right" height="130px">
-<img src="https://i.imgur.com/CqBgZiH.png" alt="AIMr GUI3" align="right" height="130px">
-<img src="https://i.imgur.com/NnGKeN9.png" alt="AIMr GUI2" align="right" height="130px">
-<img src="https://i.imgur.com/UNmCZg7.png" alt="AIMr GUI1" align="right" height="130px">
+<img src="https://i.imgur.com/it7Bdm9.png" alt="AIMr CLI" align="right" height="125px">
+<img src="https://i.imgur.com/dxtjFgf.png" alt="AIMr GUI5" align="right" height="125px">
+<img src="https://i.imgur.com/sUEttCN.png" alt="AIMr GUI4" align="right" height="125px">
+<img src="https://i.imgur.com/CqBgZiH.png" alt="AIMr GUI3" align="right" height="125px">
+<img src="https://i.imgur.com/NnGKeN9.png" alt="AIMr GUI2" align="right" height="125px">
+<img src="https://i.imgur.com/UNmCZg7.png" alt="AIMr GUI1" align="right" height="125px">
 
 
 How to run (Click it)  |  How to change config (Click it) | [OLD] Showcase (Click it)
