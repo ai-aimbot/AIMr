@@ -28,6 +28,9 @@
 AIMr leverages many modern technologies to achieve an undetected ai aimbot system with a pleasing appearance.
 
 
+# \[[Installation](https://github.com/ai-aimbot/AIMr/blob/main/installation.md)\] \[[Features](https://github.com/ai-aimbot/AIMr/blob/main/info.md)\]
+
+
 <br>
 
 # **[(like 4x better) PAID BETA IN OUR DISCORD](https://discord.gg/AIMr)** <br>
@@ -61,9 +64,6 @@ NOTE: (NOT NECESSARY WITH THE BETA) To make it work to best of its potenial (3x 
 <img src="https://i.imgur.com/CqBgZiH.png" alt="AIMr GUI3" align="right" height="120px">
 <img src="https://i.imgur.com/NnGKeN9.png" alt="AIMr GUI2" align="right" height="120px">
 <img src="https://i.imgur.com/UNmCZg7.png" alt="AIMr GUI1" align="right" height="120px">
-
-
-### \[[Installation](https://github.com/ai-aimbot/AIMr/blob/main/installation.md)\] \[[Features](https://github.com/ai-aimbot/AIMr/blob/main/info.md)\]
 
 
 How to run (Click it)  |  How to change config (Click it) | [OLD] Showcase (Click it)
