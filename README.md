@@ -27,6 +27,13 @@
 
 AIMr leverages many modern technologies to achieve an undetected ai aimbot system with a pleasing appearance.
 
+AIMr works on any game that uses human shaped models.
+
+NOTE: (NOT NECESSARY WITH THE BETA) To make it work to best of its potenial (3x better) you should build opencv with cuda, there is a guide in our [discord](https://discord.gg/AIMr).
+
+(Working on a fix) ~~NOTICE: To make it work on valorant you need perks in our [discord](https://discord.gg/AIMr) and a [Arduino Leonardo R3](https://www.amazon.com/KEYESTUDIO-Leonardo-Development-Board-Arduino/dp/B0786LJQ8K)~~
+
+
 
 # \[[Installation](https://github.com/ai-aimbot/AIMr/blob/main/installation.md)\] \[[Features](https://github.com/ai-aimbot/AIMr/blob/main/info.md)\]
 
@@ -52,18 +59,12 @@ https://github.com/ai-aimbot/AIMr/assets/86767129/f41472c6-9b3d-4545-8685-a08c0c
 <br>
 
 
-AIMr works on any game that uses human shaped models.
-
-NOTE: (NOT NECESSARY WITH THE BETA) To make it work to best of its potenial (3x better) you should build opencv with cuda, there is a guide in our [discord](https://discord.gg/AIMr).
-
-~~NOTICE: To make it work on valorant you need perks in our [discord](https://discord.gg/AIMr) and a [Arduino Leonardo R3](https://www.amazon.com/KEYESTUDIO-Leonardo-Development-Board-Arduino/dp/B0786LJQ8K)~~
-
-<img src="https://i.imgur.com/it7Bdm9.png" alt="AIMr CLI" align="right" height="120px">
-<img src="https://i.imgur.com/dxtjFgf.png" alt="AIMr GUI5" align="right" height="120px">
-<img src="https://i.imgur.com/sUEttCN.png" alt="AIMr GUI4" align="right" height="120px">
-<img src="https://i.imgur.com/CqBgZiH.png" alt="AIMr GUI3" align="right" height="120px">
-<img src="https://i.imgur.com/NnGKeN9.png" alt="AIMr GUI2" align="right" height="120px">
-<img src="https://i.imgur.com/UNmCZg7.png" alt="AIMr GUI1" align="right" height="120px">
+<img src="https://i.imgur.com/it7Bdm9.png" alt="AIMr CLI" align="right" height="150px">
+<img src="https://i.imgur.com/dxtjFgf.png" alt="AIMr GUI5" align="right" height="150px">
+<img src="https://i.imgur.com/sUEttCN.png" alt="AIMr GUI4" align="right" height="150px">
+<img src="https://i.imgur.com/CqBgZiH.png" alt="AIMr GUI3" align="right" height="150px">
+<img src="https://i.imgur.com/NnGKeN9.png" alt="AIMr GUI2" align="right" height="150px">
+<img src="https://i.imgur.com/UNmCZg7.png" alt="AIMr GUI1" align="right" height="150px">
 
 
 How to run (Click it)  |  How to change config (Click it) | [OLD] Showcase (Click it)
