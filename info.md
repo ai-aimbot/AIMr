@@ -49,10 +49,6 @@ AIMr is expected to work with games that have player that look like humans, we h
 ## Old Showcase (Click it)
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/N2wy5XQ-37c/0.jpg)](https://www.youtube.com/watch?v=N2wy5XQ-37c)
 
-## How do I make it use GPU (RTX-ONLY)?
-![image](https://github.com/kbdevs/ai-aimbot/assets/86767129/4231cfa3-6a3f-485e-aaa7-ef7a78680ae8)
-[You can use this guide.](https://medium.com/analytics-vidhya/build-opencv-from-source-with-cuda-for-gpu-access-on-windows-5cd0ce2b9b37) 
-
 ## I need help!
 
 You can join the [discord](https://discord.gg/AIMr) and make a ticket in the [support channel](https://discord.com/channels/1191468194490241075/1191470814000857179) and we also have guides there.
