@@ -69,4 +69,4 @@ NOTE: (NOT NECESSARY WITH THE BETA) To make it work to best of its potenial (3x 
 
 How to run (Click it)  |  How to change config (Click it) | [OLD] Showcase (Click it)
 :-------------------------:|:-------------------------:|:-------------------------:
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/dh6PEFoI4Cs/0.jpg)](https://www.youtube.com/watch?v=dh6PEFoI4Cs)  |  [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/6cuxB7WoMjA/0.jpg)](https://www.youtube.com/watch?v=6cuxB7WoMjA)  |  [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/N2wy5XQ-37c/0.jpg)](https://www.youtube.com/watch?v=N2wy5XQ-37c)
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/u6xSt99ghss/0.jpg)](https://www.youtube.com/watch?v=u6xSt99ghss)  |  [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/6cuxB7WoMjA/0.jpg)](https://www.youtube.com/watch?v=6cuxB7WoMjA)  |  [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/N2wy5XQ-37c/0.jpg)](https://www.youtube.com/watch?v=N2wy5XQ-37c)
