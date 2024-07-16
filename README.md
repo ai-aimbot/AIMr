@@ -40,15 +40,19 @@ NOTE: (NOT NECESSARY WITH THE BETA) To make it work to best of its potenial (3x 
 
 <br>
 
-# **[(like 4x better) PAID BETA IN OUR DISCORD](https://discord.gg/AIMr)** <br>
+# **[(WAY BETTER) PAID VERSION IN OUR DISCORD](https://discord.gg/AIMr)** <br>
+- **DirectML version (can be 2x faster than pytorch)**
+ - Works on AMD and Intel
 - **Pytorch version (like 3x faster)**
 - [ESP type visuals](https://discord.com/channels/1191468194490241075/1191468195211640848/1241796551345442958)
-- Aim area options, ex head neck chest
-- Confidence Slider
-- Streamproof visuals
-- Condensed gui
-- Better model
-- More being worked on
+-# - Aim area options, ex head neck chest
+-# - Confidence Slider
+-# - Streamproof visuals
+-# - Condensed GUI
+-# - Better model
+-# - ~~Valorant Bypass~~ Working on a fix
+-# - More not listed
+-# - More being worked on
 
 <div>
 
