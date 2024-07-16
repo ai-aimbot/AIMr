@@ -45,20 +45,16 @@ NOTE: (NOT NECESSARY WITH THE BETA) To make it work to best of its potenial (3x 
  - Works on AMD and Intel
 - **Pytorch version (like 3x faster)**
 - [ESP type visuals](https://discord.com/channels/1191468194490241075/1191468195211640848/1241796551345442958)
--# - Aim area options, ex head neck chest
--# - Confidence Slider
--# - Streamproof visuals
--# - Condensed GUI
--# - Better model
--# - ~~Valorant Bypass~~ Working on a fix
--# - More not listed
--# - More being worked on
+- Aim area options, ex head neck chest
+- Confidence Slider
+- Streamproof visuals
+- Condensed GUI
+- Better model
+- ~~Valorant Bypass~~ Working on a fix
+- More not listed
+- More being worked on
 
-<div>
 
-https://github.com/ai-aimbot/AIMr/assets/86767129/f41472c6-9b3d-4545-8685-a08c0cccdd48
-  
-</div>
 <br>
 <br>
 
