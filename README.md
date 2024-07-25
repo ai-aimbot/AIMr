@@ -22,22 +22,6 @@
 
   
 </div>
-
-
-
-AIMr leverages many modern technologies to achieve an undetected ai aimbot system with a pleasing appearance.
-
-AIMr works on any game that uses human shaped models.
-
-NOTE: (NOT NECESSARY WITH THE BETA) To make it work to best of its potenial (3x better) you should build opencv with cuda, there is a guide in our [discord](https://discord.gg/AIMr).
-
-(Working on a fix) ~~NOTICE: To make it work on valorant you need perks in our [discord](https://discord.gg/AIMr) and a [Arduino Leonardo R3](https://www.amazon.com/KEYESTUDIO-Leonardo-Development-Board-Arduino/dp/B0786LJQ8K)~~
-
-
-
-# \[[Installation](https://github.com/ai-aimbot/AIMr/blob/main/installation.md)\] \[[Features](https://github.com/ai-aimbot/AIMr/blob/main/info.md)\]
-
-
 <br>
 
 # **[(WAY BETTER) PAID VERSION IN OUR DISCORD](https://discord.gg/AIMr)** <br>
@@ -57,6 +41,20 @@ NOTE: (NOT NECESSARY WITH THE BETA) To make it work to best of its potenial (3x 
 
 <br>
 <br>
+
+
+AIMr leverages many modern technologies to achieve an undetected ai aimbot system with a pleasing appearance.
+
+AIMr works on any game that uses human shaped models.
+
+NOTE: (NOT NECESSARY WITH THE BETA) To make it work to best of its potenial (3x better) you should build opencv with cuda, there is a guide in our [discord](https://discord.gg/AIMr).
+
+(Working on a fix) ~~NOTICE: To make it work on valorant you need perks in our [discord](https://discord.gg/AIMr) and a [Arduino Leonardo R3](https://www.amazon.com/KEYESTUDIO-Leonardo-Development-Board-Arduino/dp/B0786LJQ8K)~~
+
+
+
+# \[[Installation](https://github.com/ai-aimbot/AIMr/blob/main/installation.md)\] \[[Features](https://github.com/ai-aimbot/AIMr/blob/main/info.md)\]
+
 
 
 <img src="https://i.imgur.com/it7Bdm9.png" alt="AIMr CLI" align="right" height="120px">
