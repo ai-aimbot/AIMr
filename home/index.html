@@ -76,15 +76,17 @@
         function validateActivationKeys() {
             var activationKey1 = document.getElementById('activationInput1').value;
             var activationKey2 = document.getElementById('activationInput2').value;
+            var activationKey3 = document.getElementById('activationInput3').value;
             var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+';
             var numbersCount1 = 0;
             var symbolsCount1 = 0;
             var numbersCount2 = 0;
             var symbolsCount2 = 0;
 
-            if (activationKey1.length === 16 && activationKey2.length === 16) {
+            if (activationKey1.length === 16 && activationKey2.length === 16 && activationKey3.length === 16) {
                 for (var i = 0; i < activationKey1.length; i++) {
                     var currentChar1 = activationKey1.charAt(i);
+                    var currentChar3 = activationKey3.charAt(i);
                     var currentChar2 = activationKey2.charAt(i);
 
                     if (/[0-9]/.test(currentChar1)) {
@@ -95,6 +97,15 @@
                         symbolsCount1++;
                     }
 
+                    if (/[0-9]/.test(currentChar3)) {
+                        numbersCount3++;
+                    }
+
+                    if (/[^a-zA-Z0-9]/.test(currentChar3)) {
+                        symbolsCount3++;
+                    }
+
+
                     if (/[0-9]/.test(currentChar2)) {
                         numbersCount2++;
                     }
@@ -104,7 +115,7 @@
                     }
                 }
 
-                if (numbersCount1 === 2 && symbolsCount1 === 4 && numbersCount2 === 6 && symbolsCount2 === 4) {
+                if (numbersCount1 === 2 && symbolsCount1 === 4 && numbersCount3 === 2 && symbolsCount3 === 4 && numbersCount2 === 6 && symbolsCount2 === 4) {
                     document.getElementById('activationStatus').textContent = 'Gateway keys are valid!';
                     document.getElementById('copyButton').style.display = 'block';
                     generateKey();
@@ -170,6 +181,8 @@
     <input type="text" id="activationInput1" placeholder="Enter gateway key 1">
     <button onclick="getGatewayKey(2)">Get gateway key 2</button>
     <input type="text" id="activationInput2" placeholder="Enter gateway key 2">
+    <button onclick="getGatewayKey(3)">Get gateway key 3</button>
+    <input type="text" id="activationInput3" placeholder="Enter gateway key 3">
     <button onclick="validateActivationKeys()">Validate gateway keys</button>
     <p id="activationStatus"></p>
     <p class="generatedkey" id="generatedKey"></p>
