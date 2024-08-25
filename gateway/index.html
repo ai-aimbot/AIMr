@@ -49,6 +49,11 @@
         #copyButton {
             display: none;
         }
+        .notice {
+            text-align: center;
+            font-size: 20px;
+            color: red;
+        }
     </style>
     <script>
         function generateRandomString() {
@@ -87,6 +92,7 @@
 </head>
 <body>
     <h1>AIMr Gateway</h1>
+    <p class="notice">THIS IS NOT YOUR KEY, PUT THIS IN THE MAIN PAGE</p>
     <button onclick="generateRandomString()">Generate gateway key</button>
     <p id="randomString"></p>
     <button id="copyButton" onclick="copyToClipboard()">Copy key to clipboard</button>
