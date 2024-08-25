@@ -1,0 +1,179 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AIMr Activation</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/ai-aimbot/AIMr/main/AIMr.ico" type="image/x-icon">
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+        * {
+            font-family: Lexend, sans-serif;
+        }
+
+        body {
+            background-color: #222;
+            color: #fff;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        button {
+            display: block;
+            margin: 0 auto;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #996ec2; /* Light purple color */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #777;
+        }
+
+        #activationInput1,
+        #activationInput2 {
+            display: block;
+            margin: 0 auto;
+            margin-top: 20px;
+            padding: 10px;
+            width: 300px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        #activationStatus {
+            color: white;
+            text-align: center;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        #copyButton {
+            display: none;
+        }
+
+        .generatedkey {
+            text-align: center;
+            font-size: 20px;
+        }
+        .notice {
+            text-align: center;
+            font-size: 20px;
+            color: red;
+        }
+    </style>
+    <script>
+        function validateActivationKeys() {
+            var activationKey1 = document.getElementById('activationInput1').value;
+            var activationKey2 = document.getElementById('activationInput2').value;
+            var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+';
+            var numbersCount1 = 0;
+            var symbolsCount1 = 0;
+            var numbersCount2 = 0;
+            var symbolsCount2 = 0;
+
+            if (activationKey1.length === 16 && activationKey2.length === 16) {
+                for (var i = 0; i < activationKey1.length; i++) {
+                    var currentChar1 = activationKey1.charAt(i);
+                    var currentChar2 = activationKey2.charAt(i);
+
+                    if (/[0-9]/.test(currentChar1)) {
+                        numbersCount1++;
+                    }
+
+                    if (/[^a-zA-Z0-9]/.test(currentChar1)) {
+                        symbolsCount1++;
+                    }
+
+
+                    if (/[0-9]/.test(currentChar2)) {
+                        numbersCount2++;
+                    }
+
+                    if (/[^a-zA-Z0-9]/.test(currentChar2)) {
+                        symbolsCount2++;
+                    }
+                }
+
+                if (numbersCount1 === 2 && symbolsCount1 === 4 && numbersCount2 === 6 && symbolsCount2 === 4) {
+                    document.getElementById('activationStatus').textContent = 'Gateway keys are valid!';
+                    document.getElementById('copyButton').style.display = 'block';
+                    generateKey();
+                } else {
+                    document.getElementById('activationStatus').textContent = 'Gateway keys are invalid!';
+                    document.getElementById('copyButton').style.display = 'none';
+                }
+            } else {
+                document.getElementById('activationStatus').textContent = 'Gateway keys are invalid!';
+                document.getElementById('copyButton').style.display = 'none';
+            }
+        }
+
+        function generateKey() {
+            var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+';
+            var randomString = '';
+            var numbersCount = 0;
+            var symbolsCount = 0;
+
+            while (randomString.length < 16) {
+                var randomChar = characters.charAt(Math.floor(Math.random() * characters.length));
+                randomString += randomChar;
+
+                if (/[0-9]/.test(randomChar)) {
+                    numbersCount++;
+                }
+
+                if (/[^a-zA-Z0-9]/.test(randomChar)) {
+                    symbolsCount++;
+                }
+            }
+
+            if (numbersCount === 5 && symbolsCount === 2) {
+                document.getElementById('generatedKey').textContent = "Here is the activation key: " + randomString;
+                document.getElementById('copyButton').style.display = 'block';
+            } else {
+                generateKey();
+            }
+        }
+
+        function copyToClipboard() {
+            var activationKey = document.getElementById('generatedKey').textContent.split(':')[1].trim();
+            navigator.clipboard.writeText(activationKey);
+            document.getElementById('copyButton').textContent = 'Copied!';
+        }
+
+        function getGatewayKey(x) {
+            if (x === 1) {
+                window.open("https://loot-link.com/s?57abc779", "_blank");
+            }
+            if (x === 2) {
+                window.open("https://loot-link.com/s?64cf5f92", "_blank");
+            }
+        }
+    </script>
+  <script data-cfasync="false" src="//dcbbwymp1bhlf.cloudfront.net/?wbbcd=1085903"></script>
+</head>
+<body>
+    <h1>AIMr Activation</h1>
+    <p class="notice">GATEWAY CODES DO NOT WORK FOR ACTIVATING AIMr</p>
+    <p class="notice">YOU MUST GET BOTH GATEWAY CODES THEN CLICK VALIDATE</p>
+    <button onclick="getGatewayKey(1)">Get gateway key 1</button>
+    <input type="text" id="activationInput1" placeholder="Enter gateway key 1">
+    <a href="https://ai-aimbot.github.io/AIMr/gateway"><button>Get gateway key 2</button></a>
+    <input type="text" id="activationInput2" placeholder="Enter gateway key 2">
+    <button onclick="validateActivationKeys()">Validate gateway keys</button>
+    <p id="activationStatus"></p>
+    <p class="generatedkey" id="generatedKey"></p>
+    <button id="copyButton" onclick="copyToClipboard()">Copy key to clipboard</button>
+</body>
+</html>
