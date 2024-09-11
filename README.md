@@ -25,14 +25,14 @@
 <br>
 
 # **[(WAY BETTER) PAID VERSION IN OUR DISCORD](https://discord.gg/AIMr)** <br>
-- **DirectML version (can be 2x faster than pytorch)**
-  - Works on AMD/Intel/NVIDIA
-- **Pytorch version (like 3x faster than cpu)**
-  - Works on NVIDIA
+- **DirectML 4x better than free**
+- ^ Works on ANY GPU
 - [ESP type visuals](https://discord.com/channels/1191468194490241075/1191468195211640848/1241796551345442958)
+- Humanization for smooooth aim
+- Prediction
 - Aim area options, ex head neck chest
-- Confidence Slider
 - More precise sliders
+- Confidence Slider
 - Streamproof visuals
 - Condensed GUI
 - Better model
