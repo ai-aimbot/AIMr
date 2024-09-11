@@ -24,8 +24,8 @@
 </div>
 <br>
 
-# **[(WAY BETTER) PAID VERSION IN OUR DISCORD](https://discord.gg/AIMr)** <br>
-- **DirectML 4x better than free**
+# **[INFINTELY BETTER PAID VERSION IN OUR DISCORD](https://discord.gg/AIMr)** <br>
+- **DirectML, infinitely better than free**
 - ^ Works on ANY GPU
 - [ESP type visuals](https://discord.com/channels/1191468194490241075/1191468195211640848/1241796551345442958)
 - Humanization for smooooth aim
