@@ -24,7 +24,7 @@
 </div>
 <br>
 
-# **[INFINTELY BETTER PAID VERSION IN OUR DISCORD](https://discord.gg/AIMr)** <br>
+# **[INFINITELY BETTER PAID VERSION IN OUR DISCORD](https://discord.gg/AIMr)** <br>
 - **DirectML, infinitely better than free**
 - ^ Works on ANY GPU
 - [ESP type visuals](https://discord.com/channels/1191468194490241075/1191468195211640848/1241796551345442958)
