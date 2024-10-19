@@ -3,7 +3,7 @@
 > If you use AIMr, please consider giving us a ⭐!
 > <br>Yes, we are obfuscated, its because people were trying to steal AIMr, no malware, no stealers, you can ask in our discord.
 
-<h1 align="center">https://discord.gg/AIMr</h1>
+<h1 align="center">https://aimr.dev/discord</h1>
 
 
 ![AIMr](https://external-content.duckduckgo.com/iu/?u=https://i.imgur.com/KREk0tS.gif)
