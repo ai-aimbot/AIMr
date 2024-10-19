@@ -13,7 +13,7 @@
 
 
   
-[![discord server](https://dcbadge.limes.pink/api/server/aimr)](https://discord.gg/AIMr)
+[![discord server](https://dcbadge.limes.pink/api/server/aimr)](https://aimr.dev/discord)
 
 ![views](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fkbdevs%2Fai-aimbot&count_bg=%239279B5&title_bg=%23555555&icon=&icon_color=%23FFFFFF&title=Views&edge_flat=false) ![GitHub top language](https://img.shields.io/github/languages/top/ai-aimbot/aimr?labelColor=%235B5B5B&color=%23907FB0) 
 
