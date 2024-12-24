@@ -7,7 +7,8 @@
 
 <div align="center">
   
-![discord server banner](https://github.com/user-attachments/assets/0248634e-8dc1-4373-8a18-f54392a15e72)
+![discord server banner round](https://github.com/user-attachments/assets/0bf2db33-40c8-4cac-a170-3604c7f89e22)
+
 
 
 <p align="center">AIMr is an ai aimbot written in python.</p>
