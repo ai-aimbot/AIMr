@@ -5,11 +5,13 @@
 
 <h1 align="center">https://aimr.dev/discord</h1>
 
+<div align="center">
+  
+![aimr discord bot banner](https://github.com/user-attachments/assets/95ee825a-4c25-481e-aa33-822877c3ba8c)
 
-![AIMr](https://external-content.duckduckgo.com/iu/?u=https://i.imgur.com/KREk0tS.gif)
 <p align="center">AIMr is an ai aimbot written in python.</p>
 
-<div align="center">
+
 
 
   
@@ -25,20 +27,31 @@
 <br>
 
 # **[INFINITELY BETTER PAID VERSION IN OUR DISCORD](https://discord.gg/AIMr)** <br>
-- **DirectML, infinitely better than free**
-- ^ Works on ANY GPU
-- [ESP type visuals](https://discord.com/channels/1191468194490241075/1191468195211640848/1241796551345442958)
-- Humanization for smooooth aim
-- Prediction
-- Aim area options, ex head neck chest
-- More precise sliders
-- Confidence Slider
-- Streamproof visuals
-- Condensed GUI
-- Better model
-- ~~Valorant Bypass~~ Working on a fix
-- **More not listed**
-- More being worked on
+### DIFFERENCES FROM FREE
+- **Valorant Bypass**
+  - Arduino Leonardo and Host Shield
+- **Detections**
+  - **DirectML backend 400% faster than free**
+    - Works on NVIDIA, AMD, Intel
+  - Confidence Slider
+    - Better model
+    - Max detections option
+- **Customizable Visuals**
+  - Changeable FOV display: Square, Corners, Circle, Rounded, None
+  - Changeable detections display: Square, Corners, Rounded, None
+  - Aim line toggle
+  - Condensed GUI
+- **AIM**
+  - Recoil Control
+  - Prediction
+  - Humanization for smooth aim
+  - Aim area options: head, neck, chest
+- **General**
+  - Web GUI
+  - GUI while it's running
+  - More precise sliders
+  - More random additions I forgot
+
 
 
 <br>
