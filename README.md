@@ -28,7 +28,7 @@
 </div>
 <br>
 
-# **[INFINITELY BETTER PAID VERSION IN OUR DISCORD](https://discord.gg/AIMr)** <br>
+# **[INFINITELY BETTER PAID VERSION IN OUR DISCORD](https://aimr.dev/discord)** <br>
 ### DIFFERENCES FROM FREE
 - **Valorant Bypass**
   - Arduino Leonardo and Host Shield
