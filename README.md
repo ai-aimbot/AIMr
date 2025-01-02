@@ -66,8 +66,6 @@ AIMr works on any game that uses human shaped models.
 
 NOTE: (NOT NECESSARY WITH THE PAID VERSION) To make it work to best of its potenial (3x better) you should build opencv with cuda, there is a guide in our [discord](https://discord.gg/AIMr).
 
-(Working on a fix) ~~NOTICE: To make it work on valorant you need perks in our [discord](https://discord.gg/AIMr) and a [Arduino Leonardo R3](https://www.amazon.com/KEYESTUDIO-Leonardo-Development-Board-Arduino/dp/B0786LJQ8K)~~
-
 
 
 # \[[Installation](https://github.com/ai-aimbot/AIMr/blob/main/installation.md)\] \[[Features](https://github.com/ai-aimbot/AIMr/blob/main/info.md)\]
