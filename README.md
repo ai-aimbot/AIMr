@@ -9,7 +9,7 @@
   
 ![discord server banner round](https://github.com/user-attachments/assets/0bf2db33-40c8-4cac-a170-3604c7f89e22)
 
-
+---
 
 <p align="center">AIMr is an ai aimbot written in python.</p>
 
@@ -29,9 +29,10 @@
 <br>
 
 # **[INFINITELY BETTER PAID VERSION IN OUR DISCORD](https://aimr.dev/discord)** <br>
-### DIFFERENCES FROM FREE
+### DIFFERENCES FROM FREE (most likely out of date)
 - **Valorant Bypass**
   - Arduino Leonardo and Host Shield
+  - kmbox Net
 - **Detections**
   - **DirectML backend 400% faster than free**
     - Works on NVIDIA, AMD, Intel
@@ -45,11 +46,11 @@
   - Condensed GUI
 - **AIM**
   - Recoil Control
+  - Silent Aim
   - Prediction
   - Humanization for smooth aim
   - Aim area options: head, neck, chest
 - **General**
-  - Web GUI
   - GUI while it's running
   - More precise sliders
   - More random additions I forgot
