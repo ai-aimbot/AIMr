@@ -33,6 +33,7 @@
 - **Valorant Bypass**
   - Arduino Leonardo and Host Shield
   - kmbox Net
+  - makcu
 - **Detections**
   - **DirectML backend 400% faster than free**
     - Works on NVIDIA, AMD, Intel
