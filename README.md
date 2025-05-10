@@ -29,31 +29,38 @@
 
 # **[INFINITELY BETTER PAID VERSION IN OUR DISCORD](https://aimr.dev/discord)** <br>
 ### DIFFERENCES FROM FREE (most likely out of date)
-- **Valorant Bypass**
-  - Arduino Leonardo and Host Shield
-  - kmbox Net
-  - makcu
-- **Detections**
-  - **DirectML backend 400% faster than free**
+- Hardware Bypass
+  - Arduino
+  - MAKCU
+  - KMBOX
+  - 2PC
+- Detections
+  - DirectML backend 400% faster than free
     - Works on NVIDIA, AMD, Intel
   - Confidence Slider
-    - Better model
-    - Max detections option
-- **Customizable Visuals**
+  - Better model
+  - Max detections option
+  - Multiple models to choose from
+- Customizable Visuals
   - Changeable FOV display: Square, Corners, Circle, Rounded, None
   - Changeable detections display: Square, Corners, Rounded, None
   - Aim line toggle
   - Condensed GUI
-- **AIM**
-  - Recoil Control
-  - Silent Aim
+- AIM
+  - Recoil control
+  - Silent aim
   - Prediction
   - Humanization for smooth aim
   - Aim area options: head, neck, chest
-- **General**
-  - GUI while it's running
+- General
+  - Triggerbot
+  - Revamped GUI 
   - More precise sliders
   - More random additions I forgot
+  - Streamproof
+  - Config manager
+  - Hidden window
+  - Always on top
 
 
 
