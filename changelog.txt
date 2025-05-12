@@ -1,10 +1,1 @@
-- Added Mousebuttons
-- Added New aim calculations (way better)
-- Added Always-on option
-- Added Tooltips
-- Added Showing current config
-- Added Config Presets
-- Added GUI icons
-- Added All Languages
-- Misc Additions/Fixes
-You may need to delete your config.json because of new features
+- Tons of bug fixes
