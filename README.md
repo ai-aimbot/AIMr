@@ -88,6 +88,6 @@ NOTE: (NOT NECESSARY WITH THE PAID VERSION) To make it work to best of its poten
 <img src="https://i.imgur.com/UNmCZg7.png" alt="AIMr GUI1" align="right" height="120px">
 
 
-How to run (Click it)  |  How to change config (Click it) | [OLD] Showcase (Click it)
-:-------------------------:|:-------------------------:|:-------------------------:
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/u6xSt99ghss/0.jpg)](https://www.youtube.com/watch?v=u6xSt99ghss)  |  [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/6cuxB7WoMjA/0.jpg)](https://www.youtube.com/watch?v=6cuxB7WoMjA)  |  [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/N2wy5XQ-37c/0.jpg)](https://www.youtube.com/watch?v=N2wy5XQ-37c)
+(How to change config (Click it) | [OLD] Showcase (Click it)
+:-------------------------:|:-------------------------:
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/6cuxB7WoMjA/0.jpg)](https://www.youtube.com/watch?v=6cuxB7WoMjA)  |  [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/N2wy5XQ-37c/0.jpg)](https://www.youtube.com/watch?v=N2wy5XQ-37c)
