@@ -72,7 +72,7 @@ AIMr leverages many modern technologies to achieve an undetected ai aimbot syste
 
 AIMr works on any game that uses human shaped models.
 
-NOTE: (NOT NECESSARY WITH THE PAID VERSION) To make it work to best of its potenial (3x better) you should build opencv with cuda, there is a guide in our [discord](https://discord.gg/AIMr).
+NOTE: (NOT NECESSARY WITH THE PAID VERSION) To make it work to best of its potenial (3x better) you should build opencv with cuda, there is a guide in our [discord](https://aimr.dev/discord).
 
 
 
