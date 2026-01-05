@@ -71,7 +71,6 @@
 <br>
 <br>
 
-
 AIMr leverages many modern technologies to achieve an undetected ai aimbot system with a pleasing appearance.
 
 AIMr works on any game that uses human shaped models.
