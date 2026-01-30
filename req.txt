@@ -20,3 +20,4 @@ CTkColorPicker
 opencv-python
 pyscreeze
 deep_translator
+ 
