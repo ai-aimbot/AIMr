@@ -1,4 +1,3 @@
-
 > [!NOTE]
 > If you use AIMr, please consider giving us a ⭐!
 
@@ -17,22 +16,19 @@
 
 <p align="center">AIMr is an ai aimbot written in python.</p>
 
-
-
-
-  
 [![discord server](https://dcbadge.limes.pink/api/server/aimr)](https://aimr.dev/discord)
 
 ![](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fkbdevs%2Fai-aimbot&count_bg=%239279B5&title_bg=%23555555&icon=&icon_color=%23FFFFFF&title=Views&edge_flat=false) ![GitHub top language](https://img.shields.io/github/languages/top/ai-aimbot/aimr?labelColor=%235B5B5B&color=%23907FB0)
 
-![GitHub last commit](https://img.shields.io/github/last-commit/ai-aimbot/AIMr?labelColor=%235B5B5B&color=%23907FB0) 
+![GitHub last commit](https://img.shields.io/github/last-commit/ai-aimbot/AIMr?labelColor=%235B5B5B&color=%23907FB0)
 
-  
 </div>
 <br>
 
 # **[INFINITELY BETTER PAID VERSION IN OUR DISCORD](https://aimr.dev/discord)** <br>
+
 ### DIFFERENCES FROM FREE (most likely out of date)
+
 - Hardware Bypass
   - Arduino
   - MAKCU
@@ -58,15 +54,13 @@
   - Aim area options: head, neck, chest
 - General
   - Triggerbot
-  - Revamped GUI 
+  - Revamped GUI
   - More precise sliders
   - More random additions I forgot
   - Streamproof
   - Config manager
   - Hidden window
   - Always on top
-
-
 
 <br>
 <br>
@@ -77,11 +71,7 @@ AIMr works on any game that uses human shaped models.
 
 NOTE: (NOT NECESSARY WITH THE PAID VERSION) To make it work to best of its potenial (3x better) you should build opencv with cuda, there is a guide in our [discord](https://aimr.dev/discord).
 
-
-
 # \[[Installation](https://github.com/ai-aimbot/AIMr/blob/main/installation.md)\] \[[Features](https://github.com/ai-aimbot/AIMr/blob/main/info.md)\]
-
-
 
 <img src="https://i.imgur.com/it7Bdm9.png" alt="AIMr CLI" align="right" height="120px">
 <img src="https://i.imgur.com/dxtjFgf.png" alt="AIMr GUI5" align="right" height="120px">
@@ -90,7 +80,6 @@ NOTE: (NOT NECESSARY WITH THE PAID VERSION) To make it work to best of its poten
 <img src="https://i.imgur.com/NnGKeN9.png" alt="AIMr GUI2" align="right" height="120px">
 <img src="https://i.imgur.com/UNmCZg7.png" alt="AIMr GUI1" align="right" height="120px">
 
-
-(How to change config (Click it) | [OLD] Showcase (Click it)
-:-------------------------:|:-------------------------:
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/6cuxB7WoMjA/0.jpg)](https://www.youtube.com/watch?v=6cuxB7WoMjA)  |  [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/N2wy5XQ-37c/0.jpg)](https://www.youtube.com/watch?v=N2wy5XQ-37c)
+|                                          (How to change config (Click it)                                           |                                              [OLD] Showcase (Click it)                                              |
+| :-----------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------: |
+| [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/6cuxB7WoMjA/0.jpg)](https://www.youtube.com/watch?v=6cuxB7WoMjA) | [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/N2wy5XQ-37c/0.jpg)](https://www.youtube.com/watch?v=N2wy5XQ-37c) |
