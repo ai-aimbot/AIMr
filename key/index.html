@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AIMr Key Generator</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/ai-aimbot/AIMr/main/AIMr.ico" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+        * {
+            font-family: Lexend, sans-serif;
+        }
+
+        body {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 50px;
+        }
+
+        button {
+            display: block;
+            margin: 0 auto;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #996ec2; /* Light purple color */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #777;
+        }
+
+        #copyButton {
+            display: none;
+            background-color: #4CAF50; /* Green for copy */
+        }
+
+        .generatedkey {
+            font-size: 24px;
+            margin-top: 30px;
+            font-weight: bold;
+            color: #e0e0e0;
+        }
+    </style>
+    <script>
+        function generateKey() {
+            var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+';
+            var randomString = '';
+            var numbersCount = 0;
+            var symbolsCount = 0;
+
+            // Generate 16 random characters
+            while (randomString.length < 16) {
+                var randomChar = characters.charAt(Math.floor(Math.random() * characters.length));
+                randomString += randomChar;
+
+                if (/[0-9]/.test(randomChar)) {
+                    numbersCount++;
+                }
+
+                if (/[^a-zA-Z0-9]/.test(randomChar)) {
+                    symbolsCount++;
+                }
+            }
+
+            // Enforce the specific constraints: 5 numbers and 2 symbols
+            if (numbersCount === 5 && symbolsCount === 2) {
+                document.getElementById('generatedKey').textContent = "Key: " + randomString;
+                document.getElementById('copyButton').style.display = 'block';
+                document.getElementById('copyButton').textContent = 'Copy key to clipboard';
+            } else {
+                // If constraints aren't met, retry automatically
+                generateKey();
+            }
+        }
+
+        function copyToClipboard() {
+            // Extracts the key part after "Key: "
+            var keyText = document.getElementById('generatedKey').textContent.split(': ')[1];
+            navigator.clipboard.writeText(keyText);
+            document.getElementById('copyButton').textContent = 'Copied!';
+        }
+    </script>
+</head>
+<body>
+    <h1>AIMr Generator</h1>
+    
+    <button onclick="generateKey()">Generate Key</button>
+    
+    <p class="generatedkey" id="generatedKey"></p>
+    
+    <button id="copyButton" onclick="copyToClipboard()">Copy key to clipboard</button>
+</body>
+</html>
