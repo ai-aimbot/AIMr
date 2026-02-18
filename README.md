@@ -1,7 +1,6 @@
 > [!NOTE]
 > If you use AIMr, please consider giving us a ⭐!
 
-<h1 align="center">SUPPORTS THE NEW FORTNITE UPDATE</h1>
 <h1 align="center">
   
 [ ⭐ ⭐ ⭐DOWNLOAD HERE ⭐ ⭐ ⭐](https://aimr.dev/lootlabs?url=launcher)
