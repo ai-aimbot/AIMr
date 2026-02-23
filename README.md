@@ -3,9 +3,10 @@
 
 <h1 align="center">
   
-[ ⭐ ⭐ ⭐DOWNLOAD HERE ⭐ ⭐ ⭐](https://aimr.dev/lootlabs?url=launcher)
+💎💎💎[DOWNLOAD](https://aimr.dev/lootlabs?url=launcher)💎💎💎
+
+  
 </h1>
-<h1 align="center">https://aimr.dev/discord</h1>
 
 <div align="center">
   
@@ -13,64 +14,62 @@
 
 ---
 
-<p align="center">AIMr is an ai aimbot written in python.</p>
+# AIMr — AI-Powered Aimbot
 
-[![discord server](https://dcbadge.limes.pink/api/server/b39SaRZAUx)](https://aimr.dev/discord)
+**An undetected, AI-driven aimbot built in Python. Works on any game with human-shaped models.**
 
-![](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fai-aimbot%2FAIMr&count_bg=%239279B5&title_bg=%23555555&icon=&icon_color=%23FFFFFF&title=Views&edge_flat=false) ![GitHub top language](https://img.shields.io/github/languages/top/ai-aimbot/aimr?labelColor=%235B5B5B&color=%23907FB0)
+[![Download](https://img.shields.io/badge/⬇%20Download%20Launcher-blueviolet?style=for-the-badge)](https://aimr.dev/lootlabs?url=launcher)
+[![Discord](https://dcbadge.limes.pink/api/server/b39SaRZAUx)](https://aimr.dev/discord)
 
-![GitHub last commit](https://img.shields.io/github/last-commit/ai-aimbot/AIMr?labelColor=%235B5B5B&color=%23907FB0)
+![Top Language](https://img.shields.io/github/languages/top/ai-aimbot/aimr?labelColor=%235B5B5B&color=%23907FB0)
+![Last Commit](https://img.shields.io/github/last-commit/ai-aimbot/AIMr?labelColor=%235B5B5B&color=%23907FB0)
 
 </div>
 <br>
 
-# **[INFINITELY BETTER PAID VERSION IN OUR DISCORD](https://aimr.dev/discord)** <br>
+## ✨ Free vs. Paid
 
-### DIFFERENCES FROM FREE (most likely out of date)
+Want the full experience? The **paid version** — available exclusively in our [Discord](https://aimr.dev/discord) — includes significant upgrades across every category.
 
-- Hardware Bypass
-  - Arduino
-  - MAKCU
-  - KMBOX
-  - 2PC
-- Detections
-  - DirectML backend 400% faster than free
-    - Works on NVIDIA, AMD, Intel
-  - Confidence Slider
-  - Better model
-  - Max detections option
-  - Multiple models to choose from
-- Customizable Visuals
-  - Changeable FOV display: Square, Corners, Circle, Rounded, None
-  - Changeable detections display: Square, Corners, Rounded, None
-  - Aim line toggle
-  - Condensed GUI
-- AIM
-  - Recoil control
-  - Silent aim
-  - Prediction
-  - Humanization for smooth aim
-  - Aim area options: head, neck, chest
-- General
-  - Triggerbot
-  - Revamped GUI
-  - More precise sliders
-  - More random additions I forgot
-  - Streamproof
-  - Config manager
-  - Hidden window
-  - Always on top
+### 🖱️ Hardware Bypass
+- Arduino, MAKCU, KMBOX, and 2PC support
 
-<br>
-<br>
+### 🎯 Detection Engine
+- **DirectML backend** — up to **400% faster** than the free version
+- Compatible with NVIDIA, AMD, and Intel GPUs
+- Multiple models to choose from
+- Confidence slider & max detections option
+- Improved base model accuracy
 
-AIMr leverages many modern technologies to achieve an undetected ai aimbot system with a pleasing appearance.
+### 👁️ Visuals
+- Customizable FOV display: Square, Corners, Circle, Rounded, or None
+- Customizable detection display: Square, Corners, Rounded, or None
+- Aim line toggle
+- Condensed GUI mode
 
-AIMr works on any game that uses human shaped models.
+### 🎯 Aim
+- Recoil control
+- Silent aim
+- Target prediction
+- Humanized smooth aim
+- Aim area selection: Head, Neck, or Chest
 
-NOTE: (NOT NECESSARY WITH THE PAID VERSION) To make it work to best of its potenial (3x better) you should build opencv with cuda, there is a guide in our [discord](https://aimr.dev/discord).
+### ⚙️ General
+- Triggerbot
+- Revamped GUI with more precise sliders
+- Config manager
+- Streamproof & hidden window mode
+- Always-on-top support
 
-# \[[Installation](https://github.com/ai-aimbot/AIMr/blob/main/installation.md)\] \[[Features](https://github.com/ai-aimbot/AIMr/blob/main/info.md)\]
+---
+
+---
+
+## 📖 Overview
+
+AIMr leverages modern AI and computer vision technologies to deliver a fast, accurate, and undetected aimbot experience with a polished UI. It works on any game that uses human-shaped models.
+
+> **💡 Pro tip:** Building OpenCV with CUDA support can improve performance by up to **3x**. A full guide is available in our [Discord](https://aimr.dev/discord). *(Not required for the paid version.)*
 
 <img src="https://i.imgur.com/it7Bdm9.png" alt="AIMr CLI" align="right" height="120px">
 <img src="https://i.imgur.com/dxtjFgf.png" alt="AIMr GUI5" align="right" height="120px">
