@@ -78,6 +78,6 @@ AIMr leverages modern AI and computer vision technologies to deliver a fast, acc
 <img src="https://i.imgur.com/NnGKeN9.png" alt="AIMr GUI2" align="right" height="120px">
 <img src="https://i.imgur.com/UNmCZg7.png" alt="AIMr GUI1" align="right" height="120px">
 
-|How to setup|[OLD] Showcase (Click it)|
+|How to setup|Showcase (Click it)|
 | :-----------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------: |
 | [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/eRbrQaeyNZc/0.jpg)](https://youtu.be/eRbrQaeyNZc) | [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/i2gDJevA0qk/0.jpg)](https://www.youtube.com/watch?v=i2gDJevA0qk) |
