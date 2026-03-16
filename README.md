@@ -80,4 +80,4 @@ AIMr leverages modern AI and computer vision technologies to deliver a fast, acc
 
 |How to setup|[OLD] Showcase (Click it)|
 | :-----------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------: |
-| [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/eRbrQaeyNZc/0.jpg)](https://youtu.be/eRbrQaeyNZc) | [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/N2wy5XQ-37c/0.jpg)](https://www.youtube.com/watch?v=N2wy5XQ-37c) |
+| [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/eRbrQaeyNZc/0.jpg)](https://youtu.be/eRbrQaeyNZc) | [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/i2gDJevA0qk/0.jpg)](https://www.youtube.com/watch?v=i2gDJevA0qk) |
