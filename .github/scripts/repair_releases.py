@@ -12,7 +12,7 @@ BOT = "github-actions[bot]"
 REPO = "ai-aimbot/AIMr"
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = json.loads((ROOT / "release-repair.json").read_text())
-BACKUP = Path(os.environ.get("REPAIR_DIR", "/tmp/aimr-release-repair"))
+BACKUP = Path(os.environ.get("REPAIR_DIR", str(Path(os.environ.get("RUNNER_TEMP", "/tmp")) / "release-repair")))
 
 
 def require(condition, message):
