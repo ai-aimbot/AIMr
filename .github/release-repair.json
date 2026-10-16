@@ -1,0 +1,48 @@
+{
+  "latest_tag": "aimr-launcher",
+  "probe_tag": "nothing",
+  "tags": {
+    "aimr-launcher": "26129ccaee5fe5c9fe35938f4527f9122cd16112",
+    "launcher": "a85154fd3d66e3d6f6a59fb8ef420d22440c76d8",
+    "nothing": "5c7a9488c4a90dcdfe04ce444799e88c2712fe6e",
+    "nothing2": "b1c34084fbc560614195cdbd960a0147d4000ffb",
+    "nothing3": "25ee93f94cc56b22cd544dcf7c716a089b95caa1"
+  },
+  "releases": [
+    {
+      "tag_name": "launcher",
+      "target_commitish": "main",
+      "name": "Auto Install/Launcher",
+      "body": "## We have a paid version in [our discord](https://aimr.dev/discord), which is completely incomparable to this version. The paid version was rewritten from the ground up for quality and performance. Why use garbage when you could be great.\r\n[![discord server](https://dcbadge.limes.pink/api/server/aimr)](https://aimr.dev/discord)\r\n\r\n\r\n##### [CLICK ME FOR DOWNLOAD!](https://aimr.dev/lootlabs?url=launcher)\r\n##### this release will never be out of date.\r\n##### How to run (Click it)\r\n[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/G5MR5_vm9Jk/0.jpg)](https://www.youtube.com/watch?v=G5MR5_vm9Jk)\r\n",
+      "prerelease": false,
+      "original_id": 150291744,
+      "assets": []
+    },
+    {
+      "tag_name": "nothing3",
+      "target_commitish": "main",
+      "name": "Frontend Web Graphics",
+      "body": "",
+      "prerelease": false,
+      "original_id": 243676021,
+      "assets": [
+        {
+          "name": "AIMr.AI.Free.zip",
+          "label": null,
+          "size": 79422096,
+          "content_type": "application/x-zip-compressed",
+          "digest": "sha256:de133d0f34710c566eee2468e5203a403add0713067b5d39ea5e74ba4a36121d"
+        }
+      ]
+    },
+    {
+      "tag_name": "aimr-launcher",
+      "target_commitish": "main",
+      "name": "Launcher",
+      "body": "<div align=\"center\">\r\n\r\n<img src=\"https://github.com/user-attachments/assets/0bf2db33-40c8-4cac-a170-3604c7f89e22\" width=\"100%\" alt=\"AIMR Banner\">\r\n\r\n# \u26a1 Unlock the Full Experience\r\n\r\n**The free version is just a preview.**\r\nWe have completely rewritten AIMr from the ground up for the paid version. It offers significantly better performance, stability, and features that simply aren't possible here.\r\n\r\n# [\ud83d\ude80 BUY THE PREMIUM VERSION @ AIMr.dev](https://aimr.dev)\r\n\r\n---\r\n[![Discord Status](https://dcbadge.limes.pink/api/server/b39SaRZAUx?style=for-the-badge)](https://aimr.dev/discord)\r\n\r\n---\r\n\r\n## \ud83d\udce5 [**DOWNLOAD THE LAUNCHER**](https://aimr.dev/lootlabs?url=launcher)\r\n*(This release is auto-updating and will never be out of date)*\r\n\r\n\r\n### \ud83d\udcfa How to Install & Run\r\n*Click the thumbnail below to watch the setup guide*\r\n\r\n[![Watch the tutorial](https://img.youtube.com/vi/kDz6HAQ7N4M/maxresdefault.jpg)](https://www.youtube.com/watch?v=kDz6HAQ7N4M)\r\n\r\n</div>",
+      "prerelease": false,
+      "original_id": 243751423,
+      "assets": []
+    }
+  ]
+}

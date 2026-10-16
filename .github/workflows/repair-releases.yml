@@ -1,0 +1,53 @@
+name: Repair release publishers
+
+on:
+  workflow_dispatch:
+    inputs:
+      backup_run_id:
+        description: Prior repair run with a release-repair-backup artifact (restore only)
+        required: false
+        type: string
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: repair-release-publishers
+  cancel-in-progress: false
+
+jobs:
+  repair:
+    if: github.repository == 'ai-aimbot/AIMr' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+      REPAIR_DIR: ${{ runner.temp }}/release-repair
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Back up and verify release files
+        env:
+          BACKUP_RUN_ID: ${{ inputs.backup_run_id }}
+        run: python3 .github/scripts/repair_releases.py backup
+      - name: Save backup before changing releases
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: release-repair-backup
+          path: ${{ runner.temp }}/release-repair/
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 7
+      - name: Replace release publishers and verify
+        run: python3 .github/scripts/repair_releases.py repair
+      - name: Save verification results
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: release-repair-receipt
+          path: ${{ runner.temp }}/release-repair/receipt.json
+          if-no-files-found: ignore
+          retention-days: 7
