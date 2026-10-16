@@ -3,6 +3,11 @@ name: Repair release publishers
 on:
   workflow_dispatch:
     inputs:
+      runner_label:
+        description: Runner label
+        required: false
+        type: string
+        default: ubuntu-latest
       backup_run_id:
         description: Prior repair run with a release-repair-backup artifact (restore only)
         required: false
@@ -19,7 +24,7 @@ concurrency:
 jobs:
   repair:
     if: github.repository == 'ai-aimbot/AIMr' && github.ref == 'refs/heads/main'
-    runs-on: ubuntu-latest
+    runs-on: ${{ inputs.runner_label || 'ubuntu-latest' }}
     timeout-minutes: 15
     env:
       GH_TOKEN: ${{ github.token }}
