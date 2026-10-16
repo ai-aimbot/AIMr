@@ -77,7 +77,10 @@ def verify_assets(actual, expected, complete):
             if not complete and actual["draft"] and asset["state"] == "starter" and asset["size"] == 0:
                 continue
         for key in ("size", "digest", "content_type", "label"):
-            require(asset.get(key) == want[name].get(key), f"Asset changed: {name} / {key}")
+            actual_value, expected_value = asset.get(key), want[name].get(key)
+            if key == "label":
+                actual_value, expected_value = actual_value or "", expected_value or ""
+            require(actual_value == expected_value, f"Asset changed: {name} / {key}")
 
 
 def verify_state(actual, expected):
