@@ -4,6 +4,7 @@ import hashlib
 import json
 import os
 from pathlib import Path
+import shutil
 import subprocess
 import sys
 from urllib.parse import quote
@@ -44,8 +45,8 @@ def verify_tags():
         require(tag_sha(tag) == sha, f"Tag changed: {tag}")
 
 
-def verify_file(asset):
-    path = BACKUP / asset["name"]
+def verify_file(asset, directory=None):
+    path = (directory or BACKUP) / asset["name"]
     require(path.is_file(), f"Backup is missing: {path.name}")
     require(path.stat().st_size == asset["size"], "Backup size does not match")
     checksum = hashlib.sha256()
@@ -104,6 +105,10 @@ def backup():
         verify_state(actual, expected)
         for asset in expected["assets"]:
             path = BACKUP / asset["name"]
+            if not path.exists() and os.environ.get("RUNNER_ENVIRONMENT") == "self-hosted":
+                source = Path(os.environ["REPAIR_OFFLINE_BACKUP"])
+                verify_file(asset, source)
+                shutil.copy2(source / asset["name"], path)
             if not path.exists():
                 require(actual is not None, "Supply a prior backup run ID to restore this release")
                 current = next((a for a in actual["assets"] if a["name"] == asset["name"]), None)
@@ -144,9 +149,23 @@ def repair():
     require(os.environ.get("GITHUB_ACTIONS") == "true", "Run the repair through GitHub Actions")
     require(os.environ.get("GITHUB_REPOSITORY") == REPO, "Wrong repository")
     require(json.loads((BACKUP / "manifest.json").read_text()) == MANIFEST, "Backup manifest changed")
-    artifacts = api(f"actions/runs/{os.environ['GITHUB_RUN_ID']}/artifacts")["artifacts"]
-    require(any(a["name"] == "release-repair-backup" and not a["expired"] for a in artifacts),
-            "A saved workflow backup is required before changing releases")
+    durable = None
+    if os.environ.get("RUNNER_ENVIRONMENT") == "self-hosted":
+        require(os.environ.get("REPAIR_OFFLINE_BACKUP"), "A private backup path is required on a local runner")
+        durable = Path(os.environ["REPAIR_OFFLINE_BACKUP"]).resolve()
+        require(durable != BACKUP.resolve(), "The durable backup must be separate from the job backup")
+        require(Path(os.environ["GITHUB_WORKSPACE"]).resolve() not in (durable, *durable.parents),
+                "The durable backup must be outside the checkout")
+        require(Path(os.environ["RUNNER_TEMP"]).resolve() not in (durable, *durable.parents),
+                "The durable backup must be outside the job temporary directory")
+        require(json.loads((durable / "manifest.json").read_text()) == MANIFEST, "Private backup manifest changed")
+        for expected in MANIFEST["releases"]:
+            for asset in expected["assets"]:
+                verify_file(asset, durable)
+    else:
+        artifacts = api(f"actions/runs/{os.environ['GITHUB_RUN_ID']}/artifacts")["artifacts"]
+        require(any(a["name"] == "release-repair-backup" and not a["expired"] for a in artifacts),
+                "A saved workflow backup is required before changing releases")
     verify_tags()
     for expected in MANIFEST["releases"]:
         verify_state(release(expected["tag_name"]), expected)
@@ -185,6 +204,8 @@ def repair():
                             {k: a[k] for k in ("name", "size", "digest", "browser_download_url")}
                             for a in current["assets"]]})
         (BACKUP / "receipt.json").write_text(json.dumps(receipt, indent=2) + "\n")
+        if durable:
+            (durable / "receipt.json").write_text(json.dumps(receipt, indent=2) + "\n")
         print(f"Verified bot release: {tag} ({len(receipt)} / {len(MANIFEST['releases'])})", flush=True)
     verify_tags()
     require(api("releases/latest")["tag_name"] == MANIFEST["latest_tag"], "Latest release changed")
